@@ -18,15 +18,15 @@
             <ul class="mb-5 list-group">
             {% for producto in productos %}
                 {% if categoria.categoria == producto.CATEGORIA %}
-                        <button type="button" class="p-4 list-group-item list-group-item-action products-item-separation"><span>
-                                {{ producto.NOMBRE }}
+                        <button type="button" class="p-4 list-group-item list-group-item-action products-item-separation">
 
+                            <span>{{ producto.NOMBRE }} </span>
                                 {% if producto.MEDIDA == "R" %}
-                                    </span><span>Precio ración = {{ producto.PRECIO }} $</span>
+                                    <span>Precio ración = {{ producto.PRECIO }} $</span>
                                 {% elseif producto.MEDIDA == "K" %}
-                                    </span><span>Precio kilo = {{ producto.PRECIO }} $</span>
+                                    <span>Precio kilo = {{ producto.PRECIO }} $</span>
                                 {% else %}
-                                    </span><span>Precio unidad = {{ producto.PRECIO }} $</span>
+                                    <span>Precio unidad = {{ producto.PRECIO }} $</span>
                                 {% endif %}
                         </button>
 
