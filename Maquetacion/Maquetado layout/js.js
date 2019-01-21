@@ -6,10 +6,9 @@ $(window).scroll(function(e) {
     // Check if the user has scrolled and the current position is after the scroller start location and if its not already fixed at the top 
     if ($(this).scrollTop() >= scroller_anchor && $('#scroller').css('position') != 'fixed') 
     {    // Change the CSS of the scroller to hilight it and fix it at the top of the screen.
-        $('#scroller').css({
-            'position': 'fixed',
-            'top': '62%'
-        });
+        $('#scroller').removeClass("cat-position");
+        $('#scroller').addClass("fixed-top cat-position-2");
+
         $('#scroller2').css({
             'position': 'fixed',
             'top': '38%'
@@ -23,10 +22,9 @@ $(window).scroll(function(e) {
         // Change the height of the scroller anchor to 0 and now we will be adding the scroller back to the content.
         $('.scroller_anchor').css('height', '0px');
         
-        // Change the CSS and put it back to its original position.
-        $('#scroller').css({
-            'position': 'relative'
-        });
+        // Cambio a su posicion original.
+        $('#scroller').addClass("cat-position");
+        $('#scroller').removeClass("fixed-top cat-position-2");
         $('#scroller2').css({
             'position': 'relative'
         });
