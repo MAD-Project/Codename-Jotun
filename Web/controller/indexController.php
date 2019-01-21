@@ -21,8 +21,4 @@ class indexController{
         }
     }
 
-    public function index(){
-
-        $this->render('index',array());
-    }
 }

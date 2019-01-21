@@ -14,4 +14,16 @@ class productosController extends indexController {
         $this->conectar = new Conexion();
         $this->conexion = $this->conectar->conexion();
     }
+
+    public function index(){
+
+        $producto = new Producto($this->conexion);
+        $productos = $producto->getAll();
+        $categorias = $producto->categorias();
+
+        $this->render("index", array(
+            "productos" => $productos,
+            "categorias" => $categorias
+        ));
+    }
 }
