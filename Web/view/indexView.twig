@@ -54,7 +54,7 @@
 
                                     <div class="form-group">
                                         <label for="unidades">Unidades</label>
-                                        <input type="number" class="form-control" id="unidades" name="unidades">
+                                        <input type="number" class="form-control" id="unidades" name="unidades" pattern="[0-9]" min="{{ producto.PEDIDO_MIN }}" value="0">
                                     </div>
 
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
