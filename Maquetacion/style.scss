@@ -1,0 +1,87 @@
+/* Elementos generales */
+* {
+    font-family: 'Neuton', sans-serif, arial;
+}
+
+p,
+li,
+strong,
+ul>a {
+    font-size: 107.5%;
+}
+
+/* Clases */
+.color-egibide {
+    color: #82005d;
+}
+
+.color-egibide-borde {
+    border-color: #82005d;
+}
+
+.btn-nav {
+    border: none;
+    background-color: #343a40;
+    color: white;
+}
+
+.carousel-position {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+.bg-container {
+    background-color: white;
+    margin-top: 30%;
+}
+
+.list-noborder-t {
+    border-top: none;
+
+}
+
+.list-noborder-b {
+    border-bottom: none;
+}
+
+.list-noborder {
+    border-top: none;
+    border-bottom: none;
+}
+
+.cat-position {
+    margin-top: -33.1%;
+}
+
+.a-link-color {
+    color: black;
+}
+
+.products-item-separation {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Seguimiento del scroll de categorias y carrito */
+.scroller_anchor {
+    position: absolute;
+    top: 19%;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+#scroller {
+    z-index: 2;
+    width: 15.6%;
+}
+
+#scroller2 {
+    z-index: 2;
+    width: 15.6%;
+}
+
+/* FIN Seguimiento del scroll de categorias y carrito */
