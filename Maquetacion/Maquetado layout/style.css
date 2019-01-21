@@ -68,5 +68,8 @@ ul > a {
   width: 15.6%; }
 
 /* FIN Seguimiento del scroll de categorias y carrito */
+/* IDs */
+#scroll-spy-position {
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
