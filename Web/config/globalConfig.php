@@ -1,6 +1,6 @@
 <?php
 
-define("controladorDefecto","index");
+define("controladorDefecto","productos");
 define("accionDefecto","index");
 
 ?>

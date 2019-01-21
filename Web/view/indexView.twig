@@ -1,6 +1,39 @@
 {% extends "templates/indexLayout.html.twig" %}
 
-{% block container %}
-    <h1>Este es el index</h1>
-    <a class="btn btn-outline-primary" name="formularioCliente" href="index.php?controller=clientes&action=cargarFormulario">formularioCliente</a>
-{% endblock %}
+
+
+    {% block categorias %}
+        {% for categoria in categorias %}
+        <ul id="categorias" class="list-group">
+            <a href="#{{ categoria.categoria }}" class="list-group-item list-group-item-action">{{ categoria.categoria }}</a>
+
+        </ul>
+        {% endfor %}
+    {% endblock %}
+
+    {% block productos %}
+
+        {% for categoria in categorias %}
+            <h2 class="color-egibide" id="{{ categoria.categoria }}">{{ categoria.categoria }}</h2>
+            <ul class="mb-5 list-group">
+            {% for producto in productos %}
+                {% if categoria.categoria == producto.CATEGORIA %}
+                        <button type="button" class="p-4 list-group-item list-group-item-action products-item-separation"><span>
+                                {{ producto.NOMBRE }}
+
+                                {% if producto.MEDIDA == "R" %}
+                                    </span><span>Precio ración = {{ producto.PRECIO }} $</span>
+                                {% elseif producto.MEDIDA == "K" %}
+                                    </span><span>Precio kilo = {{ producto.PRECIO }} $</span>
+                                {% else %}
+                                    </span><span>Precio unidad = {{ producto.PRECIO }} $</span>
+                                {% endif %}
+                        </button>
+
+                {% endif %}
+            {% endfor %}
+            </ul>
+            <hr class="mb-1">
+        {% endfor %}
+    {% endblock %}
+
