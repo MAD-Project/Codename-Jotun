@@ -17,7 +17,7 @@ class Conexion{
         $bbdd = $this->driver.':host='.$this->host.';dbname='.$this->database;
 
         try{
-            $connection = new PDO($bbdd,$this->user,$this->pass);
+            $connection = new PDO($bbdd,$this->user,$this->pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES  \'UTF8\''));
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $connection;
         }
