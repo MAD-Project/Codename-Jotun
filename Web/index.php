@@ -1,15 +1,14 @@
-<?php session_start() ?>
-
 <?php
+if(session_status() == PHP_SESSION_NONE){
+    session_start();
+}
+    require_once __DIR__.'/twig/vendor/autoload.php';
 
-    require_once 'twig/vendor/autoload.php';
-
-    require_once 'config/globalConfig.php';
+    require_once __DIR__.'/config/globalConfig.php';
 
     if (isset($_GET['controller'])){
 
         $controllerObj = cargarControlador($_GET['controller']);
-
         lanzarAccion($controllerObj);
     }
     else {
@@ -40,6 +39,7 @@
             return $controllerObj;
         }
         catch (Exception $e){
+
             header('Location: index.php');
         }
 
@@ -50,7 +50,6 @@
     function lanzarAccion($controllerObj){
 
         if (isset($_GET['action'])){
-
             $controllerObj->run($_GET['action']);
         }
         else {
@@ -58,5 +57,3 @@
             $controllerObj->run(accionDefecto);
         }
     }
-
-?>
