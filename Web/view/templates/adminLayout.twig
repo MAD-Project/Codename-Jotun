@@ -17,22 +17,16 @@
 
 </head>
 <body>
+    <div class="container">
+        {% block container %}
+        {% endblock %}
+    </div>
 
-<div class="container">
-
-    <form class="mt-5">
-        <div class="form-group">
-            <label for="nombreAdmin">Nombre</label>
-            <input type="text" class="form-control" id="nombreAdmin" placeholder="Nombre">
+    <footer class="container-fluid pt-5 pb-3" style="background-color: white;">
+        <div class="p-4 container" style="background-color: yellow;">
+            <h2>Footer</h2>
         </div>
-        <div class="form-group">
-            <label for="passwordAdmin">Password</label>
-            <input type="password" class="form-control" id="passwordAdmin" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
-
-</div>
+    </footer>
 
 </body>
 </html>

@@ -7,11 +7,22 @@ class administradoresController extends indexController {
     private $conexion;
 
     public function __construct(){
-        require_once __DIR__.'/../model/clases/Conexion.php';
-        require_once __DIR__ .'/../model/clases/Administrador.php';
+        require_once __DIR__ . '/../model/Conexion.php';
+        require_once __DIR__ . '/../model/Administrador.php';
 
         $this->conectar = new Conexion();
         $this->conexion = $this->conectar->conexion();
     }
 
+    public function logIn (){
+
+        $this->render("adminLogIn",array());
+    }
+
+    public function comrpobarDatos(){
+        $admin= new Administrador();
+        $admin->setPassword($_POST["password"]);
+        $admin->setUsuario($_POST["user"]);
+        $admin->comprobarCredenciales();
+    }
 }
