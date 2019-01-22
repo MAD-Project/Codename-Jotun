@@ -14,13 +14,12 @@ class Administrador {
     }
 
     public function comprobarCredenciales(){
-        $select = $this->conexion->prepare("SELECT NOMBRE FROM $this->table where USUARIO=:user AND PASSWORD=:password");
+        $select = $this->conexion->prepare("SELECT NOMBRE FROM $this->table where USUARIO=:usuario AND PASSWORD=:password");
         $select->execute(array(
-            "nombre" => $this->nombre,
-            "correo" => $this->correo,
-            "telefono" => $this->telefono
+            "usuario" => $this->usuario,
+            "password" => $this->password
         ));
-        $result = $select->fetchAll();
+        $result = $select->fetch();
 
         return $result;
     }

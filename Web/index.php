@@ -1,5 +1,7 @@
 <?php
-session_start();
+if(session_status() == PHP_SESSION_NONE){
+    session_start();
+}
     require_once __DIR__.'/twig/vendor/autoload.php';
 
     require_once __DIR__.'/config/globalConfig.php';
@@ -7,7 +9,6 @@ session_start();
     if (isset($_GET['controller'])){
 
         $controllerObj = cargarControlador($_GET['controller']);
-
         lanzarAccion($controllerObj);
     }
     else {
@@ -24,11 +25,9 @@ session_start();
             $strFileController='controller/'.$controller.'Controller.php';
 
             if (!@include_once $strFileController){
-
                 throw new Exception('Error');
             }
             else {
-
                 require_once $strFileController;
             }
 
@@ -48,7 +47,6 @@ session_start();
     function lanzarAccion($controllerObj){
 
         if (isset($_GET['action'])){
-
             $controllerObj->run($_GET['action']);
         }
         else {

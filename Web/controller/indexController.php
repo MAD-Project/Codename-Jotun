@@ -10,13 +10,11 @@ class indexController{
     }
 
     public function run($accion){
-
         try {
-
             $this->$accion();
         }
         catch (Error $e){
-
+            die($e->getMessage());
             $this->index();
         }
     }
