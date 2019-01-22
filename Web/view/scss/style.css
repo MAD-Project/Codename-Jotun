@@ -8,7 +8,7 @@ strong,
 ul > a {
   font-size: 107.5%; }
 
-ggg
+/* Clases */
 .color-egibide {
   color: #82005d; }
 
@@ -55,7 +55,7 @@ ggg
 .scroller_anchor {
   position: absolute;
   top: 19%;
-  height: 0px;
+  height: 0;
   margin: 0;
   padding: 0; }
 
@@ -71,5 +71,29 @@ ggg
 /* IDs */
 #scroll-spy-position {
   position: relative; }
+
+/*Scroll de productos*/
+.scrollbar-ripe-malinka::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+.scrollbar-ripe-malinka::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(330deg, #f0f4fb 0%, #f5f2ef 100%);
+  background-image: linear-gradient(120deg, #f2fbf9 0%, #f5f5f5 100%); }
+
+.scroll {
+  position: relative;
+  overflow-y: scroll;
+  height: auto;
+  max-height: 500px; }
+
+/*Fin scroll de productos*/
 
 /*# sourceMappingURL=style.css.map */
