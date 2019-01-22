@@ -25,9 +25,11 @@ if(session_status() == PHP_SESSION_NONE){
             $strFileController='controller/'.$controller.'Controller.php';
 
             if (!@include_once $strFileController){
+
                 throw new Exception('Error');
             }
             else {
+
                 require_once $strFileController;
             }
 
@@ -37,6 +39,7 @@ if(session_status() == PHP_SESSION_NONE){
             return $controllerObj;
         }
         catch (Exception $e){
+
             header('Location: index.php');
         }
 

@@ -15,7 +15,7 @@ class administradoresController extends indexController {
     }
 
     public function logIn (){
-        die("aqui entra");
+
         $this->render("adminLogIn",array());
     }
 
@@ -27,9 +27,9 @@ class administradoresController extends indexController {
         $nombreUsuario=$admin->comprobarCredenciales();
 
         if(!$nombreUsuario){
-            $this->render("administrador",array(["nombreUsuario"]=>$nombreUsuario));
+            $this->render("administrador",array("nombreUsuario"=>$nombreUsuario));
         }else{
-            $this->render("adminLogIn",array(["error"]=>true));
+            $this->render("adminLogIn",array("error"=>true));
         }
 
     }

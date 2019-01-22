@@ -14,7 +14,7 @@ class indexController{
             $this->$accion();
         }
         catch (Error $e){
-            die($e->getMessage());
+
             $this->index();
         }
     }
