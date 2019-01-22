@@ -26,8 +26,8 @@ class administradoresController extends indexController {
         $admin->setUsuario($_POST["user"]);
         $nombreUsuario=$admin->comprobarCredenciales();
 
-        if(!$nombreUsuario){
-            $this->render("administrador",array("nombreUsuario"=>$nombreUsuario));
+        if($nombreUsuario){
+            $this->render("administrador",array("nombreUsuario"=>$nombreUsuario["NOMBRE"]));
         }else{
             $this->render("adminLogIn",array("error"=>true));
         }
