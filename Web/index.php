@@ -1,10 +1,8 @@
-<?php session_start() ?>
-
 <?php
+session_start();
+    require_once __DIR__.'/twig/vendor/autoload.php';
 
-    require_once 'twig/vendor/autoload.php';
-
-    require_once 'config/globalConfig.php';
+    require_once __DIR__.'/config/globalConfig.php';
 
     if (isset($_GET['controller'])){
 
@@ -58,5 +56,3 @@
             $controllerObj->run(accionDefecto);
         }
     }
-
-?>
