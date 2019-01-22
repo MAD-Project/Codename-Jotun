@@ -15,14 +15,22 @@ class administradoresController extends indexController {
     }
 
     public function logIn (){
-
+        die("aqui entra");
         $this->render("adminLogIn",array());
     }
 
-    public function comrpobarDatos(){
-        $admin= new Administrador();
+    public function comprobarDatos(){
+
+        $admin= new Administrador($this->conexion);
         $admin->setPassword($_POST["password"]);
         $admin->setUsuario($_POST["user"]);
-        $admin->comprobarCredenciales();
+        $nombreUsuario=$admin->comprobarCredenciales();
+
+        if(!$nombreUsuario){
+            $this->render("administrador",array(["nombreUsuario"]=>$nombreUsuario));
+        }else{
+            $this->render("adminLogIn",array(["error"]=>true));
+        }
+
     }
 }
