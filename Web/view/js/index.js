@@ -18,6 +18,7 @@ $(window).scroll(function(e) {
         $('#scroller').addClass("d-none");
         $('#scroller').removeClass("fixed-top carrito-position");
     }
+
 });
 
 function mostrarBtn() {
