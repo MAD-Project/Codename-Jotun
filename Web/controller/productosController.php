@@ -26,4 +26,29 @@ class productosController extends indexController {
             "categorias" => $categorias
         ));
     }
+
+    public function modificar(){
+
+        $producto = new Producto($this->conexion);
+        $producto->setId($_GET['idProducto']);
+        $producto->setNombre($_POST['nombreProducto']);
+        $producto->setCategoria($_POST['categoriaProducto']);
+        $producto->setMedida($_POST['medidaProducto']);
+        $producto->setPrecio($_POST['precioProducto']);
+        $producto->setPedidoMin($_POST['pedidoMinProducto']);
+        $producto->update();
+
+        header('Location: index.php?controller=administradores&action=comprobarDatos');
+
+    }
+
+    public function borrar(){
+
+        $producto = new Producto($this->conexion);
+        $producto->setId($_GET['idProducto']);
+        $producto->del();
+
+        header('Location: index.php?controller=administradores&action=comprobarDatos');
+
+    }
 }

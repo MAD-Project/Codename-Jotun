@@ -19,7 +19,7 @@ class Producto{
 
     public function getAll(){
 
-        $select = $this->conexion->prepare("SELECT * FROM $this->table");
+        $select = $this->conexion->prepare("SELECT * FROM $this->table ORDER BY categoria");
         $select->execute();
         $result = $select->fetchAll();
 
@@ -28,12 +28,39 @@ class Producto{
 
     public function categorias(){
 
-        $select = $this->conexion->prepare("SELECT DISTINCT categoria FROM $this->table");
+        $select = $this->conexion->prepare("SELECT DISTINCT categoria FROM $this->table ORDER BY categoria");
         $select->execute();
         $result = $select->fetchAll();
         $this->conexion = null;
 
         return $result;
+    }
+
+    public function update(){
+
+        $update = $this->conexion->prepare("UPDATE productos SET nombre=:nombre, categoria=:categoria, medida=:medida, precio=:precio, pedido_min=:pedidoMin WHERE id_producto = :idProducto");
+        $update->execute(array(
+            "idProducto" => $this->id,
+            "nombre" => $this->nombre,
+            "categoria" => $this->categoria,
+            "medida" => $this->medida,
+            "precio" => $this->precio,
+            "pedidoMin" => $this->pedidoMin
+        ));
+
+        $this->conexion = null;
+
+    }
+
+    public function del(){
+
+        $delete = $this->conexion->prepare("DELETE FROM productos WHERE id_producto = :idProducto");
+        $delete->execute(array(
+           "idProducto" => $this->id
+        ));
+
+        $this->conexion = null;
+
     }
 
     /**
