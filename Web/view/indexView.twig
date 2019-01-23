@@ -19,7 +19,6 @@
                         <img id="arrow{{ categoria.categoria|replace({' ': ''}) }}" class="img-fluid" src="img/arrow-down.svg">
                     </div>
                 </a>
-
                 <div id="collapse{{ categoria.categoria|replace({' ': ''}) }}" class="collapse" aria-labelledby="heading{{ categoria.categoria|replace({' ': ''}) }}" data-parent="#accordion{{ categoria.categoria|replace({' ': ''}) }}">
                     <ul class="list-group">
                         {% for producto in productos %}
@@ -38,7 +37,7 @@
 
                             {% endif %}            
 
-                            <div class="modal fade" id="m{{ producto.ID_PRODUCTO }}" tabindex="-1" role="dialog" aria-hidden="true">
+                              <div class="modal fade" id="m{{ producto.ID_PRODUCTO }}" tabindex="-1" role="dialog" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content bg-white">
                                         <div class="modal-header">
