@@ -1,0 +1,108 @@
+/* Elementos generales */
+* {
+    font-family: 'Neuton', sans-serif, arial;
+}
+
+p,
+li,
+strong,
+ul>a {
+    font-size: 107.5%;
+}
+
+/* Clases */
+.color-egibide {
+    color: #82005d;
+}
+
+.color-egibide-bg  {
+    color: white !important;
+    background-color: #82005d;
+}
+
+.color-egibide-bg:hover {
+    background-color: #484c4e;
+}
+
+.btn-nav {
+    border: none;
+    background-color: #343a40;
+    color: white;
+}
+
+.carousel-position {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+.bg-container {
+    background-color: white;
+    margin-top: 30%;
+}
+
+.list-noborder-t {
+    border-top: none;
+
+}
+
+.list-noborder-b {
+    border-bottom: none;
+}
+
+.list-noborder {
+    border-top: none;
+    border-bottom: none;
+}
+
+.cat-position {
+    margin-top: -33.1%;
+}
+
+.cat-position-2 {
+    margin-left: 23.3em;
+    width: 15.95%;
+}
+
+.a-link-color {
+    color: black;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.item-separation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-products-item-separation {
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+    align-items: center;
+}
+
+.rotate {
+    transition: .5s;
+    transform: rotate(180deg);
+}
+
+.rotate-origin {
+    transition: .5s;
+    transform: rotate(360deg);
+}
+
+/* Seguimiento del scroll de categorias y carrito */
+.scroller_anchor {
+    position: absolute;
+    top: 1.4%;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+/* FIN Seguimiento del scroll de categorias y carrito */
