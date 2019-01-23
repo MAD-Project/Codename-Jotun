@@ -17,6 +17,25 @@ class Producto{
         $this->conexion=$conexion;
     }
 
+    public function getAll(){
+
+        $select = $this->conexion->prepare("SELECT * FROM $this->table");
+        $select->execute();
+        $result = $select->fetchAll();
+
+        return $result;
+    }
+
+    public function categorias(){
+
+        $select = $this->conexion->prepare("SELECT DISTINCT categoria FROM $this->table");
+        $select->execute();
+        $result = $select->fetchAll();
+        $this->conexion = null;
+
+        return $result;
+    }
+
     /**
      * @return mixed
      */

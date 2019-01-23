@@ -5,16 +5,38 @@ class Pedido{
     private $conexion;
 
     private $id;
-    private $fecha;
-    private $fechaEntrega;
+    private $nombre;
+    private $correo;
     private $telefono;
     private $comentario;
+    private $fecha;
+    private $fechaEntrega;
     private $estado;
 
     private $productos;
 
     public function __construct($conexion){
         $this->conexion=$conexion;
+    }
+
+    public function nuevoPedido(){
+
+        $insert = $this->conexion->prepare("INSERT INTO $this->table (NOMBRE, CORREO, TELEFONO) VALUES (:nombre,:correo,:telefono)");
+
+        try{
+            $insert->execute(array(
+                "nombre" => $this->nombre,
+                "correo" => $this->correo,
+                "telefono" => $this->telefono
+            ));
+        } catch (PDOException $e) {
+            $this->conexion = null;
+            //devuelve false si ha ocurrido un error
+            return false;
+        }
+        $this->conexion = null;
+
+        return true;
     }
 
     /**
@@ -129,6 +151,38 @@ class Pedido{
     public function setEstado($estado)
     {
         $this->estado = $estado;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * @param mixed $nombre
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCorreo()
+    {
+        return $this->correo;
+    }
+
+    /**
+     * @param mixed $correo
+     */
+    public function setCorreo($correo)
+    {
+        $this->correo = $correo;
     }
 
 
