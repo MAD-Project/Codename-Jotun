@@ -23,11 +23,11 @@
 
                             <span>{{ producto.NOMBRE }}</span>
                             {% if producto.MEDIDA == "R" %}
-                                <span>Precio ración = {{ producto.PRECIO }} $</span>
+                                <span>Precio ración = {{ producto.PRECIO }} €</span>
                             {% elseif producto.MEDIDA == "K" %}
-                                <span>Precio kilo = {{ producto.PRECIO }} $</span>
+                                <span>Precio kilo = {{ producto.PRECIO }} €</span>
                             {% else %}
-                                <span>Precio unidad = {{ producto.PRECIO }} $</span>
+                                <span>Precio unidad = {{ producto.PRECIO }} €</span>
                             {% endif %}
                         </button>
 
@@ -47,11 +47,11 @@
                                     <span>Nombre : {{ producto.NOMBRE }}</span><br>
 
                                     {% if producto.MEDIDA == "R" %}
-                                        <span>Precio ración = {{ producto.PRECIO }} $</span>
+                                        <span>Precio ración = {{ producto.PRECIO }} €</span>
                                     {% elseif producto.MEDIDA == "K" %}
-                                        <span>Precio kilo = {{ producto.PRECIO }} $</span>
+                                        <span>Precio kilo = {{ producto.PRECIO }} €</span>
                                     {% else %}
-                                        <span>Precio unidad = {{ producto.PRECIO }} $</span>
+                                        <span>Precio unidad = {{ producto.PRECIO }} €</span>
                                     {% endif %}
 
                                     <div class="form-group">
