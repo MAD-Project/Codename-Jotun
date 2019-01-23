@@ -10,6 +10,7 @@ class administradoresController extends indexController {
         require_once __DIR__ . '/../model/Conexion.php';
         require_once __DIR__ . '/../model/Administrador.php';
         require_once __DIR__ . '/../model/Producto.php';
+        require_once __DIR__ . '/../model/Pedido.php';
 
         $this->conectar = new Conexion();
         $this->conexion = $this->conectar->conexion();
@@ -32,9 +33,13 @@ class administradoresController extends indexController {
             $producto = new Producto($this->conexion);
             $productos = $producto->getAll();
 
+            $pedidos = new Pedido($this->conexion);
+            $pedidos = $pedidos->getAll();
+
             $this->render("administrador",array(
                 "nombreUsuario"=>$nombreUsuario["NOMBRE"],
-                "productos" => $productos
+                "productos" => $productos,
+                "pedidos" => $pedidos
             ));
         }else{
             $this->render("adminLogIn",array("error"=>true));

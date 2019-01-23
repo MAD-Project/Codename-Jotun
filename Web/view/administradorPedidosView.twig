@@ -1,0 +1,97 @@
+{% if(pedidos) %}
+<div id="accordionPendientes" class="col-12 mt-3">
+    <a class="producto collapsed" data-toggle="collapse" data-target="#collapsePendientes">
+        <div id="headingPendientes" class="alert alert-warning justify-content-center text-center" onclick="rotateArrow('arrowPendientes');">
+            Pedidos pendientes de aceptar
+            <img id="arrowPendientes" class="img-fluid float-right" src="../img/arrow-down.svg">
+        </div>
+    </a>
+    <div id="collapsePendientes" class="collapse" data-parent="#accordionPendientes">
+        <div class="list-group">
+        {% for pedido in pedidos if pedido.ESTADO == 'P'%}
+            <a class="list-group-item collapsed" data-toggle="collapse" data-target="#collapsePendientes{{ pedido.ID_PEDIDO }}">
+                    <span>{{ pedido.NOMBRE }}</span>
+            </a>
+            <div id="collapsePendientes{{ pedido.ID_PEDIDO }}" class="collapse" >
+                <ul class="list-group list-group-flush">
+                {% for producto in pedido.productos %}
+                    <li class="list-group-item">
+                        <span>{{ producto.nombre }}</span>
+                        <span class="badge badge-primary badge-pill">{{ producto.cantidad }} </span>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% else %}
+            no se ha encontrado nada...
+        {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+<div id="accordionAceptados" class="col-12 mt-3">
+    <a class="producto collapsed" data-toggle="collapse" data-target="#collapseAceptados">
+        <div id="headingAceptados" class="alert alert-primary justify-content-center text-center" onclick="rotateArrow('arrowAceptados');">
+            Pedidos Aceptados (Preparando)
+            <img id="arrowAceptados" class="img-fluid float-right" src="../img/arrow-down.svg">
+        </div>
+    </a>
+    <div id="collapseAceptados" class="collapse" data-parent="#accordionAceptados">
+        <div class="list-group">
+            {% for pedido in pedidos if pedido.ESTADO == 'A'%}
+                <a class="list-group-item collapsed" data-toggle="collapse" data-target="#collapseAceptados{{ pedido.ID_PEDIDO }}">
+                    <span>{{ pedido.NOMBRE }}</span>
+                </a>
+                <div id="collapseAceptados{{ pedido.ID_PEDIDO }}" class="collapse" >
+                    <ul class="list-group list-group-flush">
+                        {% for producto in pedido.productos %}
+                            <li class="list-group-item">
+                                <span>{{ producto.nombre }}</span>
+                                <span class="badge badge-primary badge-pill">{{ producto.cantidad }} </span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% else %}
+                no se ha encontrado nada...
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+<div id="accordionPreparados" class="col-12 mt-3">
+    <a class="producto collapsed" data-toggle="collapse" data-target="#collapsePreparados">
+        <div id="headingPreparados" class="alert alert-success justify-content-center text-center" onclick="rotateArrow('arrowPreparados');">
+            Pedidos terminados
+            <img id="arrowPreparados" class="img-fluid float-right" src="../img/arrow-down.svg">
+        </div>
+    </a>
+    <div id="collapsePreparados" class="collapse" data-parent="#accordionPreparados">
+        <div class="list-group">
+            {% for pedido in pedidos if pedido.ESTADO == 'A'%}
+                <a class="list-group-item collapsed" data-toggle="collapse" data-target="#collapsePreparados{{ pedido.ID_PEDIDO }}">
+                    <span>{{ pedido.NOMBRE }}</span>
+                </a>
+                <div id="collapsePreparados{{ pedido.ID_PEDIDO }}" class="collapse" >
+                    <ul class="list-group list-group-flush">
+                        {% for producto in pedido.productos %}
+                            <li class="list-group-item">
+                                <span>{{ producto.nombre }}</span>
+                                <span class="badge badge-primary badge-pill">{{ producto.cantidad }} </span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% else %}
+                no se ha encontrado nada...
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+{% else %}
+Aun no hay ningún pedido.
+{%  endif %}
