@@ -18,6 +18,7 @@ $(window).scroll(function(e) {
         $('#scroller').addClass("cat-position");
         $('#scroller').removeClass("fixed-top cat-position-2");
     }
+
 });
 
 function mostrarBtn() {

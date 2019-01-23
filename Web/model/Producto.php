@@ -28,7 +28,7 @@ class Producto{
 
     public function categorias(){
 
-        $select = $this->conexion->prepare("SELECT DISTINCT categoria FROM $this->table");
+        $select = $this->conexion->prepare("SELECT DISTINCT categoria FROM $this->table ORDER BY categoria");
         $select->execute();
         $result = $select->fetchAll();
         $this->conexion = null;
