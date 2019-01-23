@@ -25,14 +25,18 @@
       <file leaf-file-name="indexView.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/view/indexView.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="184" lean-forward="true" selection-start-line="21" selection-start-column="122" selection-end-line="21" selection-end-column="184" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="18" column="127" lean-forward="false" selection-start-line="18" selection-start-column="127" selection-end-line="18" selection-end-column="127" />
+              <folding>
+                <marker date="1548237531184" expanded="true" signature="55:66" ph="{% block categorias ...%}" />
+                <marker date="1548237531184" expanded="true" signature="5030:5082" ph="{% for categoria in categorias ...%}" />
+                <marker date="1548237531184" expanded="true" signature="5030:5101" ph="{% block productos ...%}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="administradorView.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="administradorView.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/view/administradorView.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -68,23 +72,24 @@
         <entry file="file://$PROJECT_DIR$/Web/controller/productosController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="533">
-              <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+              <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Producto.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Producto.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Web/model/Producto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="123">
+              <caret line="21" column="89" lean-forward="false" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
               <folding>
-                <marker date="1548236027849" expanded="true" signature="394:408" ph="SELECT * FRO... ${$this-&gt;table}" />
-                <marker date="1548236027849" expanded="true" signature="602:633" ph="SELECT DISTI... ${$this-&gt;table}" />
-                <marker date="1548236027849" expanded="true" signature="855:967" ph="UPDATE produ... " />
-                <marker date="1548236027849" expanded="true" signature="855:999" ph="UPDATE produ... " />
-                <marker date="1548236027849" expanded="true" signature="1405:1458" ph="DELETE FROM " />
+                <marker date="1548239839128" expanded="true" signature="394:408" ph="SELECT * FRO... ${$this-&gt;table}" />
+                <marker date="1548239839128" expanded="true" signature="394:439" ph="SELECT * FRO... ${$this-&gt;table}" />
+                <marker date="1548239839128" expanded="true" signature="621:652" ph="SELECT DISTI... ${$this-&gt;table}" />
+                <marker date="1548239839128" expanded="true" signature="874:986" ph="UPDATE produ... " />
+                <marker date="1548239839128" expanded="true" signature="874:1018" ph="UPDATE produ... " />
+                <marker date="1548239839128" expanded="true" signature="1424:1477" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -111,8 +116,8 @@
         <option value="$PROJECT_DIR$/Web/view/indexView.twig" />
         <option value="$PROJECT_DIR$/Web/controller/administradoresController.php" />
         <option value="$PROJECT_DIR$/Web/controller/productosController.php" />
-        <option value="$PROJECT_DIR$/Web/model/Producto.php" />
         <option value="$PROJECT_DIR$/Web/view/administradorView.twig" />
+        <option value="$PROJECT_DIR$/Web/model/Producto.php" />
       </list>
     </option>
   </component>
@@ -124,8 +129,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="222" />
-    <option name="y" value="52" />
+    <option name="x" value="207" />
+    <option name="y" value="13" />
     <option name="width" value="1686" />
     <option name="height" value="1017" />
   </component>
@@ -198,14 +203,6 @@
               <item name="Codename-Jotun" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="style.scss" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="Codename-Jotun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Codename-Jotun" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -249,15 +246,15 @@
       <option name="presentableId" value="Default" />
       <updated>1548058689514</updated>
       <workItem from="1548058690723" duration="5620000" />
-      <workItem from="1548229032900" duration="7920000" />
+      <workItem from="1548229032900" duration="8794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19180000" />
+    <option name="totallyTimeSpent" value="20054000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="222" y="52" width="1686" height="1017" extended-state="0" />
+    <frame x="207" y="13" width="1686" height="1017" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16886227" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -581,9 +578,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/view/indexView.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="184" lean-forward="true" selection-start-line="21" selection-start-column="122" selection-end-line="21" selection-end-column="184" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="18" column="127" lean-forward="false" selection-start-line="18" selection-start-column="127" selection-end-line="18" selection-end-column="127" />
+          <folding>
+            <marker date="1548237531184" expanded="true" signature="55:66" ph="{% block categorias ...%}" />
+            <marker date="1548237531184" expanded="true" signature="5030:5082" ph="{% for categoria in categorias ...%}" />
+            <marker date="1548237531184" expanded="true" signature="5030:5101" ph="{% block productos ...%}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -608,22 +609,8 @@
     <entry file="file://$PROJECT_DIR$/Web/controller/productosController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
-          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/model/Producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <marker date="1548236027849" expanded="true" signature="394:408" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1548236027849" expanded="true" signature="602:633" ph="SELECT DISTI... ${$this-&gt;table}" />
-            <marker date="1548236027849" expanded="true" signature="855:967" ph="UPDATE produ... " />
-            <marker date="1548236027849" expanded="true" signature="855:999" ph="UPDATE produ... " />
-            <marker date="1548236027849" expanded="true" signature="1405:1458" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -632,6 +619,21 @@
         <state relative-caret-position="323">
           <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/model/Producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="21" column="89" lean-forward="false" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
+          <folding>
+            <marker date="1548239839128" expanded="true" signature="394:408" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1548239839128" expanded="true" signature="394:439" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1548239839128" expanded="true" signature="621:652" ph="SELECT DISTI... ${$this-&gt;table}" />
+            <marker date="1548239839128" expanded="true" signature="874:986" ph="UPDATE produ... " />
+            <marker date="1548239839128" expanded="true" signature="874:1018" ph="UPDATE produ... " />
+            <marker date="1548239839128" expanded="true" signature="1424:1477" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>

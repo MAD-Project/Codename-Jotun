@@ -19,7 +19,7 @@ class Producto{
 
     public function getAll(){
 
-        $select = $this->conexion->prepare("SELECT * FROM $this->table");
+        $select = $this->conexion->prepare("SELECT * FROM $this->table ORDER BY categoria");
         $select->execute();
         $result = $select->fetchAll();
 
