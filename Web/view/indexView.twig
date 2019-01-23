@@ -35,41 +35,41 @@
                                         {% endif %}
                                     </button>
 
-                            {% endif %}            
+                                        <div class="modal fade" id="m{{ producto.ID_PRODUCTO }}" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content bg-white">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Datos Producto</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="" method="post">
+                                                            <span>Nombre : {{ producto.NOMBRE }}</span><br>
 
-                            <div class="modal fade" id="m{{ producto.ID_PRODUCTO }}" tabindex="-1" role="dialog" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content bg-white">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title">Datos Producto</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form action="" method="post">
-                                                <span>Nombre : {{ producto.NOMBRE }}</span><br>
+                                                            {% if producto.MEDIDA == "R" %}
+                                                                <span>Precio ración = {{ producto.PRECIO }} $</span>
+                                                            {% elseif producto.MEDIDA == "K" %}
+                                                                <span>Precio kilo = {{ producto.PRECIO }} $</span>
+                                                            {% else %}
+                                                                <span>Precio unidad = {{ producto.PRECIO }} $</span>
+                                                            {% endif %}
 
-                                                {% if producto.MEDIDA == "R" %}
-                                                    <span>Precio ración = {{ producto.PRECIO }} $</span>
-                                                {% elseif producto.MEDIDA == "K" %}
-                                                    <span>Precio kilo = {{ producto.PRECIO }} $</span>
-                                                {% else %}
-                                                    <span>Precio unidad = {{ producto.PRECIO }} $</span>
-                                                {% endif %}
+                                                            <div class="form-group">
+                                                                <label for="unidades">Unidades</label>
+                                                                <input type="number" class="form-control" id="unidades" name="unidades" pattern="[0-9]" min="{{ producto.PEDIDO_MIN }}" value="0">
+                                                            </div>
 
-                                                <div class="form-group">
-                                                    <label for="unidades">Unidades</label>
-                                                    <input type="number" class="form-control" id="unidades" name="unidades" pattern="[0-9]" min="{{ producto.PEDIDO_MIN }}" value="0">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                            <button type="submit" class="btn btn-primary">Añadir al carrito</button>
+                                                        </form>
+                                                    </div>
                                                 </div>
-
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                <button type="submit" class="btn btn-primary">Añadir al carrito</button>
-                                            </form>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
+
+                            {% endif %}            
 
                         {% endfor %}
 
