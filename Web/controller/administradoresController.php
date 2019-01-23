@@ -9,6 +9,7 @@ class administradoresController extends indexController {
     public function __construct(){
         require_once __DIR__ . '/../model/Conexion.php';
         require_once __DIR__ . '/../model/Administrador.php';
+        require_once __DIR__ . '/../model/Producto.php';
 
         $this->conectar = new Conexion();
         $this->conexion = $this->conectar->conexion();
@@ -27,7 +28,14 @@ class administradoresController extends indexController {
         $nombreUsuario=$admin->comprobarCredenciales();
 
         if($nombreUsuario){
-            $this->render("administrador",array("nombreUsuario"=>$nombreUsuario["NOMBRE"]));
+
+            $producto = new Producto($this->conexion);
+            $productos = $producto->getAll();
+
+            $this->render("administrador",array(
+                "nombreUsuario"=>$nombreUsuario["NOMBRE"],
+                "productos" => $productos
+            ));
         }else{
             $this->render("adminLogIn",array("error"=>true));
         }
