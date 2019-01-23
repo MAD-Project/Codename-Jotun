@@ -4,7 +4,7 @@
 
     {% block carrito %}
         No has añadido productos
-        <a id="carritobtn" class="color-egibide-bg btn btn-primary mt-5 w-100 hidden">Tramitar
+        <a id="carritobtn" class="color-egibide-bg btn btn-primary mt-5 w-100">Tramitar
                                 pedido</a>
     {% endblock %}
 
@@ -15,7 +15,7 @@
                 <a class="producto collapsed" data-toggle="collapse" data-target="#collapse{{ categoria.categoria|replace({' ': ''}) }}"
                     aria-expanded="false" aria-controls="collapse{{ categoria.categoria|replace({' ': ''}) }}">
                     <div id="heading{{ categoria.categoria|replace({' ': ''}) }}" class="item-separation" onclick="rotateArrow('arrow{{ categoria.categoria|replace({' ': ''}) }}');">
-                        <h2 class="color-egibide" id="{{ categoria.categoria|replace({' ': ''}) }}">{{ categoria.categoria|capitalize }}</h2>
+                        <h2 id="{{ categoria.categoria|replace({' ': ''}) }}">{{ categoria.categoria|capitalize }}</h2>
                         <img id="arrow{{ categoria.categoria|replace({' ': ''}) }}" class="img-fluid" src="img/arrow-down.svg">
                     </div>
                 </a>
@@ -23,21 +23,19 @@
                     <ul class="list-group">
                         {% for producto in productos %}
                             {% if categoria.categoria == producto.CATEGORIA %}
-                                    <button type="button" class="p-4 list-group-item list-group-item-action item-separation" data-toggle="modal" data-target="#m{{ producto.ID_PRODUCTO }}">
+                                <button type="button" class="p-4 list-group-item list-group-item-action item-separation" data-toggle="modal" data-target="#m{{ producto.ID_PRODUCTO }}">
 
-                                        <span>{{ producto.NOMBRE }}</span>
-                                        {% if producto.MEDIDA == "R" %}
-                                            <span>Precio ración = {{ producto.PRECIO }} $</span>
-                                        {% elseif producto.MEDIDA == "K" %}
-                                            <span>Precio kilo = {{ producto.PRECIO }} $</span>
-                                        {% else %}
-                                            <span>Precio unidad = {{ producto.PRECIO }} $</span>
-                                        {% endif %}
-                                    </button>
+                                    <span>{{ producto.NOMBRE }}</span>
+                                    {% if producto.MEDIDA == "R" %}
+                                        <span>Precio ración = {{ producto.PRECIO }} €</span>
+                                    {% elseif producto.MEDIDA == "K" %}
+                                        <span>Precio kilo = {{ producto.PRECIO }} €</span>
+                                    {% else %}
+                                        <span>Precio unidad = {{ producto.PRECIO }} €</span>
+                                    {% endif %}
+                                </button>
 
-                            {% endif %}            
-
-                            <div class="modal fade" id="m{{ producto.ID_PRODUCTO }}" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal fade" id="m{{ producto.ID_PRODUCTO }}" tabindex="-1" role="dialog" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content bg-white">
                                         <div class="modal-header">
@@ -51,25 +49,30 @@
                                                 <span>Nombre : {{ producto.NOMBRE }}</span><br>
 
                                                 {% if producto.MEDIDA == "R" %}
-                                                    <span>Precio ración = {{ producto.PRECIO }} $</span>
+                                                    <span>Precio ración = {{ producto.PRECIO }} €</span>
                                                 {% elseif producto.MEDIDA == "K" %}
-                                                    <span>Precio kilo = {{ producto.PRECIO }} $</span>
+                                                    <span>Precio kilo = {{ producto.PRECIO }} €</span>
                                                 {% else %}
-                                                    <span>Precio unidad = {{ producto.PRECIO }} $</span>
+                                                    <span>Precio unidad = {{ producto.PRECIO }} €</span>
                                                 {% endif %}
 
-                                                <div class="form-group">
-                                                    <label for="unidades">Unidades</label>
-                                                    <input type="number" class="form-control" id="unidades" name="unidades" pattern="[0-9]" min="{{ producto.PEDIDO_MIN }}" value="0">
-                                                </div>
-
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                                <button type="submit" class="btn btn-primary">Añadir al carrito</button>
-                                            </form>
+                                                    <div class="form-group">
+                                                        <label for="unidades">Unidades</label>
+                                                        <input type="number" class="form-control" id="unidades" name="unidades" pattern="[0-9]" min="{{ producto.PEDIDO_MIN }}" value="0">
+                                                    </div>
+                                                    <div class="item-separation">
+                                                        <button type="button" class="btn btn-secondary pl-4 pr-4" data-dismiss="modal">Cerrar</button>
+                                                        <button type="submit" class="btn btn-primary">Añadir al carrito</button>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+
+                            {% endif %}            
+
+                            
 
                         {% endfor %}
 

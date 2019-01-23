@@ -11,19 +11,6 @@ ul>a {
 }
 
 /* Clases */
-.color-egibide {
-    color: #82005d;
-}
-
-.color-egibide-bg  {
-    color: white !important;
-    background-color: #82005d;
-}
-
-.color-egibide-bg:hover {
-    background-color: #484c4e;
-}
-
 .btn-nav {
     border: none;
     background-color: #343a40;
@@ -57,12 +44,12 @@ ul>a {
     border-bottom: none;
 }
 
-.cat-position {
-    margin-top: -33.1%;
+.cattt {
+    transition: 2s;
 }
 
-.cat-position-2 {
-    margin-left: 23.3em;
+.carrito-position {
+    margin-left: auto;
     width: 15.95%;
 }
 
@@ -99,9 +86,8 @@ ul>a {
 /* Seguimiento del scroll de categorias y carrito */
 .scroller_anchor {
     position: absolute;
-    top: 3.25%;
+    margin-top: -35%;
     height: 0px;
-    margin: 0;
     padding: 0;
 }
 
