@@ -35,4 +35,13 @@ class pedidosController extends indexController {
 
         $this->render("formularioPedido",array("mensaje"=>$mensaje));
     }
+
+    public function enviarMail(){
+        /*Hacer esto una vez en el server, con servidor de correo
+         * $headers =  'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'From: Miki <mklferreiro@gmail.com>' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        mail('mklferreiro@gmail.com', 'Mi título', "prueba de mensaje",$headers);*/
+    }
 }
