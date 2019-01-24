@@ -1,13 +1,5 @@
 {% extends "templates/indexLayout.html.twig" %}
 
-
-
-    {% block carrito %}
-        No has añadido productos
-        <a id="carritobtn" class="color-egibide-bg btn btn-primary mt-5 w-100">Tramitar
-                                pedido</a>
-    {% endblock %}
-
     {% block productos %}
 
         {% for categoria in categorias %}
@@ -79,5 +71,13 @@
             </div>
             <hr class="mb-1">
         {% endfor %}
+    {% endblock %}
+
+    {% block carrito %}
+        <span class="col-12 mt-4">No has añadido productos</span>
+        <div class="offset-5 col-7 mb-4">
+            <a id="carritobtn" class="color-egibide-bg btn btn-primary mt-5 w-25">Tramitar
+                                pedido</a>
+        </div>
     {% endblock %}
 
