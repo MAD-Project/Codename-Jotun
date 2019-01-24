@@ -1,6 +1,9 @@
 //Ejecuciones al cargar el documento
 $(function () {
     $("#scroller").css("display", "none");
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
 });
 
 // Al pasar un ancla por la altura de noticias, activa el icono del carrito cuando se agregue un producto a la cesta
