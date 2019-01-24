@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html>
-
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,17 +14,23 @@
     </head>
 
     <body data-spy="scroll" data-target="#categorias" data-offset="0">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Codename Jotun</a>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img class="navbar-brand" height="40" src="img/logo-restaurante.png">
+                Codename Jotun
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navigationContent">
-                <ul class="navbar-nav mr-auto">
+               <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <button class="nav-link btn-nav">Inicio<span class="sr-only">(current)</span></button>
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-right" href="#">Volver</a>
                     </li>
                 </ul>
             </div>
@@ -47,25 +51,17 @@
             </div>
         </section>
 
-        <section class="container-fluid pt-5 bg-container">
-            <div id="scroller" class="p-4 d-none">
-                <h2>Carrito</h2>
-                {% block carrito %}
-                {% endblock carrito %}
+        <section id="productosDiv" class="container-fluid pt-1 bg-container">
+            <div id="scroller" class="p-2 d-none" onclick="irCarrito();">
+                    <span id="numeroProductosCarrito" class="badge badge-dark badge-pill badge-position">0</span>
+                    <img height="50" src="img/cart.svg">      
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 d-xl-inline d-none">
-                        <div>
-                            <img class="img-fluid" src="img/logo-restaurante.png">
-                        </div>
 
-                        <div class="scroller_anchor"></div>
+                    <div class="scroller_anchor"></div>
 
-                        
-                    </div>
-
-                    <div class="p-4">
+                    <div class="p-4 mt-0">
                         <div>
                             <h1>Normas</h1>
                             <ul class="list-group ">
@@ -95,16 +91,20 @@
                             {% block productos %}
                             {% endblock productos %}
                         </div>
+                        <div id="carrito" class="row mt-5 card">
+                            {% block carrito %}
+                            {% endblock carrito %}
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <footer class="container-fluid pt-5 pb-3" style="background-color: white;">
-            <div class="p-4 container" style="background-color: yellow;">
-                <h2>Footer</h2>
-            </div>
-        </footer>
+            <footer class="container-fluid pt-5 pb-3" style="background-color: white;">
+                <div class="p-4 row">
+                    <img class="offset-7 col-1 mt-3" height="30" src="img/MAD.jpeg">
+                    <p class="col-3 mt-3">Hecho con <img src="img/heart.svg" height="18"> desde Vitoria-Gasteiz.</p>
+            </footer>
+        </section>
 
     </body>
 
