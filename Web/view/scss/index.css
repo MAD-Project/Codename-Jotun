@@ -9,11 +9,6 @@ ul > a {
   font-size: 107.5%; }
 
 /* Clases */
-.btn-nav {
-  border: none;
-  background-color: #343a40;
-  color: white; }
-
 .carousel-position {
   position: fixed;
   z-index: -1;
@@ -23,7 +18,7 @@ ul > a {
 
 .bg-container {
   background-color: white;
-  margin-top: 30%; }
+  margin-top: 35%; }
 
 .list-noborder-t {
   border-top: none; }
@@ -35,12 +30,17 @@ ul > a {
   border-top: none;
   border-bottom: none; }
 
-.cattt {
-  transition: 2s; }
-
 .carrito-position {
   margin-left: auto;
-  width: 15.95%; }
+  width: 6%; }
+
+.carrito-position:hover {
+  cursor: pointer; }
+
+.badge-position {
+  position: absolute;
+  left: -7%;
+  font-size: 99%; }
 
 .a-link-color {
   color: black; }
@@ -69,7 +69,7 @@ ul > a {
 /* Seguimiento del scroll de categorias y carrito */
 .scroller_anchor {
   position: absolute;
-  margin-top: -35%;
+  margin-top: -3%;
   height: 0px;
   padding: 0; }
 
