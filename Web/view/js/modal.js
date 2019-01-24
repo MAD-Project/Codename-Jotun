@@ -28,7 +28,6 @@ $('#modalProductos').on('show.bs.modal', function (event) {
     modal.find('.modal-body .nProducto').html("Nombre : "+nombre);
     modal.find('.modal-body .pProducto').html("Precio: "+precio+"€ / "+medida);
 
-    modal.find('.modal-body .nombreProducto').val(nombre);
     modal.find('.modal-body .precioProducto').val(precio);
     modal.find('.modal-body .idProducto').val(id);
 });
