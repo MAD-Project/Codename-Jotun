@@ -1,10 +1,10 @@
 /* Elementos generales */
-/* line 2, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 2, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 * {
   font-family: 'Neuton', sans-serif, arial;
 }
 
-/* line 6, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 6, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 p,
 li,
 strong,
@@ -13,7 +13,7 @@ ul > a {
 }
 
 /* Clases */
-/* line 14, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 14, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .carousel-position {
   position: fixed;
   z-index: -1;
@@ -22,63 +22,57 @@ ul > a {
   padding: 0;
 }
 
-/* line 22, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
-.bg-container {
+/* line 22, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.bg-container-main {
   background-color: white;
   margin-top: 35%;
 }
 
-/* line 27, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
-.list-noborder-t {
-  border-top: none;
+/* line 27, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.bg-container {
+  background-color: white;
 }
 
-/* line 32, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
-.list-noborder-b {
-  border-bottom: none;
-}
-
-/* line 36, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
-.list-noborder {
-  border-top: none;
-  border-bottom: none;
-}
-
-/* line 41, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 31, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .carrito-position {
   margin-left: auto;
   width: 6%;
 }
 
-/* line 46, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 36, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .carrito-position:hover {
   cursor: pointer;
 }
 
-/* line 50, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 40, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .badge-position {
   position: absolute;
   left: -7%;
   font-size: 99%;
 }
 
-/* line 56, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 46, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .a-link-color {
   color: black;
 }
 
-/* line 60, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 50, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .hidden {
   visibility: hidden;
 }
 
-/* line 64, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 54, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .item-separation {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 69, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 59, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.item-separation:hover {
+  cursor: pointer;
+}
+
+/* line 63, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .sub-products-item-separation {
   display: flex;
   justify-content: space-between;
@@ -86,20 +80,20 @@ ul > a {
   align-items: center;
 }
 
-/* line 76, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 70, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .rotate {
   transition: .5s;
   transform: rotate(180deg);
 }
 
-/* line 81, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 75, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .rotate-origin {
   transition: .5s;
   transform: rotate(360deg);
 }
 
 /* Seguimiento del scroll de categorias y carrito */
-/* line 87, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+/* line 81, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/index.scss */
 .scroller_anchor {
   position: absolute;
   margin-top: -3%;
