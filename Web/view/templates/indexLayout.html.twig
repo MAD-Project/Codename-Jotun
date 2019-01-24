@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jotun</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="view/css/custom.css" />
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -48,25 +48,24 @@
         </section>
 
         <section class="container-fluid pt-5 bg-container">
-
+            <div id="scroller" class="p-4 d-none">
+                <h2>Carrito</h2>
+                {% block carrito %}
+                {% endblock carrito %}
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 d-md-inline d-none">
+                    <div class="col-lg-3 d-xl-inline d-none">
                         <div>
                             <img class="img-fluid" src="img/logo-restaurante.png">
                         </div>
 
                         <div class="scroller_anchor"></div>
 
-                        <div id="scroller" class="p-4 col-md-3 d-md-inline d-none cat-position">
-                            <h2>Carrito</h2>
-                            {% block carrito %}
-                            {% endblock carrito %}
-                            
-                        </div>
+                        
                     </div>
 
-                    <div class="p-4 col-md-8">
+                    <div class="p-4">
                         <div>
                             <h1>Normas</h1>
                             <ul class="list-group ">

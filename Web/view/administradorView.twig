@@ -12,45 +12,7 @@
     <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="pedidos" role="tabpanel" aria-labelledby="nav-home-tab">
 
-            <div class="col-12 mt-3">
-                <div class="alert alert-warning justify-content-center text-center" role="alert">
-                    Pedidos Pendientes de aceptar
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span>Arroz 3 delicias</span>
-                        <a class="btn float-right" data-toggle="modal" data-target="#">Detalles del pedido</a>
-                    </li>
-                    <li class="list-group-item">
-                        <span>Pescado</span>
-                        <a class="btn float-right" data-toggle="modal" data-target="#">Detalles del pedido</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-12 mt-5">
-                <div class="alert alert-info justify-content-center text-center" role="alert">
-                    Pedidos aceptados (Preparando)
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span>Carne picada</span>
-                        <a class="btn float-right" data-toggle="modal" data-target="#">Terminar pedido</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-12 mt-5">
-                <div class="alert alert-success justify-content-center text-center" role="alert">
-                    Pedidos hechos
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span>Queso falúc</span>
-                        <a class="btn float-right" data-toggle="modal" data-target="#">Pendiente de entrega</a>
-                    </li>
-                </ul>
-            </div>
+            {% include 'administradorPedidosView.twig' %}
 
         </div>
 

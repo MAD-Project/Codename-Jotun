@@ -19,6 +19,27 @@ class Pedido{
         $this->conexion=$conexion;
     }
 
+    public function getAll(){
+
+        $select = $this->conexion->prepare("SELECT * FROM $this->table ORDER BY ESTADO");
+        $select->execute();
+        $pedidos = $select->fetchAll();
+        for($x = 0 ; $x< count($pedidos); $x++){
+            $pedidos[$x]["productos"]=$this->getProductosPorPedido($pedidos[$x]["ID_PEDIDO"]);
+        }
+        $this->conexion = null;
+        return $pedidos;
+
+    }
+
+    public function getProductosPorPedido($idPedido){
+        $select = $this->conexion->prepare("SELECT prod.nombre as nombre,ppp.cantidad as cantidad FROM productos prod,productos_por_pedido ppp where prod.id_producto=ppp.id_producto AND id_pedido=?");
+        $select->execute([$idPedido]);
+        $productos=$select->fetchAll();
+
+        return $productos;
+
+    }
     public function nuevoPedido(){
 
         $insert = $this->conexion->prepare("INSERT INTO $this->table (NOMBRE, CORREO, TELEFONO) VALUES (:nombre,:correo,:telefono)");
