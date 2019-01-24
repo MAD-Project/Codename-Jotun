@@ -15,7 +15,7 @@
                     <ul class="list-group">
                         {% for producto in productos %}
                             {% if categoria.categoria == producto.CATEGORIA %}
-                                <button type="button" class="p-4 list-group-item list-group-item-action item-separation" data-toggle="modal" data-target="#m{{ producto.ID_PRODUCTO }}">
+                                <button type="button" class="p-4 list-group-item list-group-item-action item-separation" data-toggle="modal" data-target="#modalProductos" data-cantidad="{{ producto.PEDIDO_MIN }}" data-medida="{{ producto.MEDIDA }}" data-precio="{{ producto.PRECIO }}" data-nombre="{{ producto.NOMBRE }}" data-id="{{ producto.ID_PRODUCTO }}">
 
                                     <span>{{ producto.NOMBRE }}</span>
                                     {% if producto.MEDIDA == "R" %}
@@ -27,41 +27,6 @@
                                     {% endif %}
                                 </button>
 
-                                <div class="modal fade" id="m{{ producto.ID_PRODUCTO }}" tabindex="-1" role="dialog" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content bg-white">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title">Datos Producto</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form action="" method="post">
-                                                <span>Nombre : {{ producto.NOMBRE }}</span><br>
-
-                                                {% if producto.MEDIDA == "R" %}
-                                                    <span>Precio ración = {{ producto.PRECIO }} €</span>
-                                                {% elseif producto.MEDIDA == "K" %}
-                                                    <span>Precio kilo = {{ producto.PRECIO }} €</span>
-                                                {% else %}
-                                                    <span>Precio unidad = {{ producto.PRECIO }} €</span>
-                                                {% endif %}
-
-                                                    <div class="form-group">
-                                                        <label for="unidades">Unidades</label>
-                                                        <input type="number" class="form-control" id="unidades" name="unidades" pattern="[0-9]" min="{{ producto.PEDIDO_MIN }}" value="0">
-                                                    </div>
-                                                    <div class="item-separation">
-                                                        <button type="button" class="btn btn-secondary pl-4 pr-4" data-dismiss="modal">Cerrar</button>
-                                                        <button type="submit" class="btn btn-primary">Añadir al carrito</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             {% endif %}            
 
                         {% endfor %}
@@ -71,6 +36,39 @@
             </div>
             <hr class="mb-1">
         {% endfor %}
+
+
+        <div class="modal fade" id="modalProductos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Datos Producto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" onsubmit="return carrito();">
+                            <input type="hidden" name="idProducto" class="idProducto">
+                            <input type="hidden" name="nombreProducto" class="nombreProducto">
+                            <input type="hidden" name="precioProducto" class="precioProducto">
+                            <span class="nProducto"></span><br>
+                            <span class="pProducto"></span><br>
+                            <div class="form-group">
+                                <label for="unidades" class="medidaProducto"></label>
+                                <input type="number" class="form-control" id="unidades" name="unidades" pattern="[0-9]" value="0">
+                            </div>
+                            <div class="item-separation">
+                                <button type="button" class="btn btn-secondary pl-4 pr-4" data-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">Añadir al carrito</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     {% endblock %}
 
     {% block carrito %}
