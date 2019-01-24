@@ -1,21 +1,24 @@
-// This function will be executed when the user scrolls the page.
+//Ejecuciones al cargar el documento
+$(function () {
+    $("#scroller").css("display", "none");
+});
+
+// Al pasar un ancla por la altura de noticias, activa el icono del carrito cuando se agregue un producto a la cesta
 $(window).scroll(function (e) {
-    // Get the position of the location where the scroller starts.
     var scroller_anchor = $(".scroller_anchor").offset().top;
 
-    // Check if the user has scrolled and the current position is after the scroller start location and if its not already fixed at the top      && localStorage.getItem("carritoActivado") != null 
-    if ($(this).scrollTop() >= scroller_anchor && $('#scroller').css('position') != 'fixed' ) { //&& localStorage.getItem("carritoActivado") != null
-        $('#scroller').removeClass("d-none");
-        $('#scroller').addClass("fixed-top carrito-position");
+    if ($(this).scrollTop() >= scroller_anchor && $('#scroller').css('position') != 'fixed' && localStorage.getItem("carritoActivado") != null) {
+        function mostrarCarrito() {
+            $('#scroller').fadeIn("slow");
+            $('#scroller').addClass("fixed-top carrito-position");
+        }
     }
 });
 
 $(window).scroll(function (e) {
-    // Get the position of the location where the scroller starts.
     var scroller_anchor = $("#nav").offset().top;
 
-    // Check if the user has scrolled and the current position is after the scroller start location and if its not already fixed at the top      && localStorage.getItem("carritoActivado") != null 
-    if ($(this).scrollTop() >= scroller_anchor && localStorage.getItem("scrollDone") != 1) { // Change the CSS of the scroller to hilight it and fix it at the top of the screen.
+    if ($(this).scrollTop() >= scroller_anchor && localStorage.getItem("scrollDone") != 1) {
         $('html, body').animate({
             scrollTop: $("#productosDiv").offset().top
         }, 1000);
@@ -23,12 +26,17 @@ $(window).scroll(function (e) {
     }
 });
 
+
+/* ANIMACIONES VISUALES */
+
+// Desplaza la pagina hasta el div del carrito
 function irCarrito() {
     $('html, body').animate({
         scrollTop: $("#carrito").offset().top
     }, 1000);
 }
 
+//Rota la flecha cuando se despliegan o contraen las categorias
 function rotateArrow(id) {
     if ($('#' + id).hasClass("rotate")) {
         $('#' + id).removeClass("rotate");
@@ -40,3 +48,4 @@ function rotateArrow(id) {
         $('#' + id).addClass("rotate");
     }
 }
+/* END ANIMACIONES VISUALES */
