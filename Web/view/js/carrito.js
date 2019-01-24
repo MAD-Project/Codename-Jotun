@@ -1,7 +1,7 @@
 
 function carrito() {
-
-    localStorage.setItem("carritoActivado", 1);
+    $('#scroller').fadeIn("slow");
+    $('#scroller').addClass("fixed-top carrito-position");
 
     alert($('.nombreProducto').val());
     $('#modalProductos').modal('hide');

@@ -16,19 +16,12 @@ ul > a {
   left: 0;
   padding: 0; }
 
-.bg-container {
+.bg-container-main {
   background-color: white;
   margin-top: 35%; }
 
-.list-noborder-t {
-  border-top: none; }
-
-.list-noborder-b {
-  border-bottom: none; }
-
-.list-noborder {
-  border-top: none;
-  border-bottom: none; }
+.bg-container {
+  background-color: white; }
 
 .carrito-position {
   margin-left: auto;
@@ -51,6 +44,9 @@ ul > a {
 .item-separation {
   display: flex;
   justify-content: space-between; }
+
+.item-separation:hover {
+  cursor: pointer; }
 
 .sub-products-item-separation {
   display: flex;
