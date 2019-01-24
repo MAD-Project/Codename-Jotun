@@ -1,6 +1,9 @@
 //Ejecuciones al cargar el documento
 $(function () {
     $("#scroller").css("display", "none");
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
 });
 
 
