@@ -25,12 +25,41 @@
       <file leaf-file-name="indexView.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/view/indexView.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="25" column="348" lean-forward="false" selection-start-line="25" selection-start-column="348" selection-end-line="25" selection-end-column="348" />
+            <state relative-caret-position="317">
+              <caret line="53" column="94" lean-forward="true" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
               <folding>
-                <element signature="e#3272#3279#1#HTML" expanded="true" />
-                <marker date="1548322826262" expanded="true" signature="55:185" ph="{% block carrito ...%}" />
+                <element signature="e#3063#3070#1#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="administradorView.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Web/view/administradorView.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="106" lean-forward="false" selection-start-line="4" selection-start-column="106" selection-end-line="4" selection-end-column="106" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="administradorPedidosView.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/view/administradorPedidosView.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-839">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminLogInView.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/view/adminLogInView.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="73" lean-forward="true" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,17 +68,39 @@
         <entry file="file://$PROJECT_DIR$/Web/view/js/modal.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carrito.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="administradoresController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/controller/administradoresController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="708">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Administrador.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/model/Administrador.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <marker date="1548329411031" expanded="true" signature="353:430" ph="SELECT NOMBR... ${$this-&gt;table}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carrito.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Web/view/js/carrito.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -86,19 +137,21 @@
         <option value="$PROJECT_DIR$/Web/wp-admin/adminView.twig" />
         <option value="$PROJECT_DIR$/Web/wp-admin/index.php" />
         <option value="$PROJECT_DIR$/Web/view/scss/style.scss" />
-        <option value="$PROJECT_DIR$/Web/controller/administradoresController.php" />
         <option value="$PROJECT_DIR$/Web/controller/productosController.php" />
         <option value="$PROJECT_DIR$/Web/model/Producto.php" />
         <option value="$PROJECT_DIR$/Web/view/scss/index.scss" />
         <option value="$PROJECT_DIR$/Web/view/js/index.js" />
         <option value="$PROJECT_DIR$/Web/view/js/indexAdmin.js" />
         <option value="$PROJECT_DIR$/Web/view/templates/adminLayout.twig" />
-        <option value="$PROJECT_DIR$/Web/view/administradorView.twig" />
         <option value="$PROJECT_DIR$/Web/view/js/addons/datatables.js" />
         <option value="$PROJECT_DIR$/Web/view/templates/indexLayout.html.twig" />
         <option value="$PROJECT_DIR$/Web/view/indexView.twig" />
         <option value="$PROJECT_DIR$/Web/view/js/carrito.js" />
         <option value="$PROJECT_DIR$/Web/view/js/modal.js" />
+        <option value="$PROJECT_DIR$/Web/view/adminLogInView.twig" />
+        <option value="$PROJECT_DIR$/Web/controller/administradoresController.php" />
+        <option value="$PROJECT_DIR$/Web/model/Administrador.php" />
+        <option value="$PROJECT_DIR$/Web/view/administradorView.twig" />
       </list>
     </option>
   </component>
@@ -179,13 +232,6 @@
               <item name="Codename-Jotun" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Codename-Jotun" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Codename-Jotun" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -229,12 +275,12 @@
       <updated>1548058689514</updated>
       <workItem from="1548058690723" duration="5620000" />
       <workItem from="1548229032900" duration="14066000" />
-      <workItem from="1548314833490" duration="8284000" />
+      <workItem from="1548314833490" duration="11956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33610000" />
+    <option name="totallyTimeSpent" value="37282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -270,22 +316,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web/config/globalConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -349,8 +379,7 @@
         <state relative-caret-position="85">
           <caret line="5" column="125" lean-forward="false" selection-start-line="5" selection-start-column="125" selection-end-line="5" selection-end-column="125" />
           <folding>
-            <element signature="e#3272#3279#1#HTML" expanded="true" />
-            <marker date="1548322826262" expanded="true" signature="55:185" ph="{% block carrito ...%}" />
+            <element signature="e#3063#3070#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -415,13 +444,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/model/clases/Producto.php" />
     <entry file="file://$PROJECT_DIR$/Web/wp-admin/index.php" />
-    <entry file="file://$PROJECT_DIR$/Web/view/adminLogInView.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/config/globalConfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -440,48 +462,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/view/scss/style.css" />
     <entry file="file://$PROJECT_DIR$/Web/view/scss/style.scss" />
-    <entry file="file://$PROJECT_DIR$/Web/controller/administradoresController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/view/administradorView.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <marker date="1548314803153" expanded="true" signature="44:6787" ph="{% block container ...%}" />
-            <marker date="1548314803153" expanded="true" signature="1108:6646" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="1241:6630" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="1288:1689" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="1313:1660" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="1717:6605" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="1739:6577" ph="{% for producto in productos ...%}" />
-            <marker date="1548314803153" expanded="true" signature="1798:2522" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="2144:2492" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="2660:5374" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="2731:5343" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="2800:5308" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="2861:5269" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="3017:5226" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="3086:3389" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="3458:3776" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="3845:4148" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="4217:4548" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="4617:4942" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="5509:6542" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="5580:6511" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="5684:6476" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="5745:6437" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="5898:6394" ph="..." />
-            <marker date="1548314803153" expanded="true" signature="5967:6120" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/view/css/addons/datatables.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -512,7 +492,7 @@
           <caret line="15283" column="70" lean-forward="false" selection-start-line="15283" selection-start-column="65" selection-end-line="15283" selection-end-column="70" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
-            <marker date="1548243796663" expanded="true" signature="425136:425144" ph="..." />
+            <marker date="1548326284791" expanded="true" signature="425138:425146" ph="..." />
           </folding>
         </state>
       </provider>
@@ -597,29 +577,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/view/indexView.twig">
+    <entry file="file://$PROJECT_DIR$/Web/view/js/carrito.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="25" column="348" lean-forward="false" selection-start-line="25" selection-start-column="348" selection-end-line="25" selection-end-column="348" />
-          <folding>
-            <element signature="e#3272#3279#1#HTML" expanded="true" />
-            <marker date="1548322826262" expanded="true" signature="55:185" ph="{% block carrito ...%}" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/view/js/modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/view/js/carrito.js">
+    <entry file="file://$PROJECT_DIR$/Web/view/indexView.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="317">
+          <caret line="53" column="94" lean-forward="true" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
+          <folding>
+            <element signature="e#3063#3070#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/controller/administradoresController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/model/Administrador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <marker date="1548329411031" expanded="true" signature="353:430" ph="SELECT NOMBR... ${$this-&gt;table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/view/adminLogInView.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="73" lean-forward="true" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/view/administradorPedidosView.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-839">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/view/administradorView.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="106" lean-forward="false" selection-start-line="4" selection-start-column="106" selection-end-line="4" selection-end-column="106" />
           <folding />
         </state>
       </provider>
