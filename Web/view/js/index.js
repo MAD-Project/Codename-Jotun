@@ -3,17 +3,6 @@ $(function () {
     $("#scroller").css("display", "none");
 });
 
-// Al pasar un ancla por la altura de noticias, activa el icono del carrito cuando se agregue un producto a la cesta
-$(window).scroll(function (e) {
-    var scroller_anchor = $(".scroller_anchor").offset().top;
-
-    if ($(this).scrollTop() >= scroller_anchor && $('#scroller').css('position') != 'fixed' && localStorage.getItem("carritoActivado") != null) {
-        function mostrarCarrito() {
-            $('#scroller').fadeIn("slow");
-            $('#scroller').addClass("fixed-top carrito-position");
-        }
-    }
-});
 
 $(window).scroll(function (e) {
     var scroller_anchor = $("#nav").offset().top;

@@ -22,21 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="carrito.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/view/js/carrito.js">
+      <file leaf-file-name="indexView.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/view/indexView.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="711">
+              <caret line="76" column="91" lean-forward="false" selection-start-line="76" selection-start-column="91" selection-end-line="76" selection-end-column="91" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Web/view/js/index.js">
+      <file leaf-file-name="carrito.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Web/view/js/carrito.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+            <state relative-caret-position="136">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -76,18 +76,18 @@
         <option value="$PROJECT_DIR$/Web/controller/productosController.php" />
         <option value="$PROJECT_DIR$/Web/model/Producto.php" />
         <option value="$PROJECT_DIR$/Web/view/scss/index.scss" />
-        <option value="$PROJECT_DIR$/Web/view/js/index.js" />
         <option value="$PROJECT_DIR$/Web/view/js/indexAdmin.js" />
         <option value="$PROJECT_DIR$/Web/view/js/addons/datatables.js" />
-        <option value="$PROJECT_DIR$/Web/view/indexView.twig" />
-        <option value="$PROJECT_DIR$/Web/view/js/carrito.js" />
-        <option value="$PROJECT_DIR$/Web/view/js/modal.js" />
         <option value="$PROJECT_DIR$/Web/view/adminLogInView.twig" />
         <option value="$PROJECT_DIR$/Web/controller/administradoresController.php" />
         <option value="$PROJECT_DIR$/Web/model/Administrador.php" />
         <option value="$PROJECT_DIR$/Web/view/administradorView.twig" />
-        <option value="$PROJECT_DIR$/Web/view/templates/indexLayout.html.twig" />
         <option value="$PROJECT_DIR$/Web/view/templates/adminLayout.twig" />
+        <option value="$PROJECT_DIR$/Web/view/js/modal.js" />
+        <option value="$PROJECT_DIR$/Web/view/templates/indexLayout.html.twig" />
+        <option value="$PROJECT_DIR$/Web/view/js/index.js" />
+        <option value="$PROJECT_DIR$/Web/view/js/carrito.js" />
+        <option value="$PROJECT_DIR$/Web/view/indexView.twig" />
       </list>
     </option>
   </component>
@@ -218,12 +218,12 @@
       <updated>1548058689514</updated>
       <workItem from="1548058690723" duration="5620000" />
       <workItem from="1548229032900" duration="14066000" />
-      <workItem from="1548314833490" duration="13213000" />
+      <workItem from="1548314833490" duration="15109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38539000" />
+    <option name="totallyTimeSpent" value="40435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -321,9 +321,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="125" lean-forward="false" selection-start-line="5" selection-start-column="125" selection-end-line="5" selection-end-column="125" />
-          <folding>
-            <element signature="e#3063#3070#1#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -496,16 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/view/indexView.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="53" column="94" lean-forward="true" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
-          <folding>
-            <element signature="e#3063#3070#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/view/templates/adminLayout.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -522,14 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/view/templates/indexLayout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="101" column="12" lean-forward="false" selection-start-line="101" selection-start-column="12" selection-end-line="106" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Web/view/administradorPedidosView.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-839">
@@ -542,14 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="73" lean-forward="true" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Web/view/js/modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -572,18 +544,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/view/js/carrito.js">
+    <entry file="file://$PROJECT_DIR$/Web/view/js/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="238">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Web/view/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/view/templates/indexLayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/view/indexView.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="76" column="91" lean-forward="false" selection-start-line="76" selection-start-column="91" selection-end-line="76" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/view/js/carrito.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
