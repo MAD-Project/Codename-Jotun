@@ -18,30 +18,13 @@ class administradoresController extends indexController {
 
     public function logIn (){
 
-        $this->render("adminLogIn",array());
-    }
+        if (!isset($_SESSION['login']) || $_SESSION['login'] == 0){
 
-    public function logOut (){
-        $_SESSION = array();
-        session_destroy();
-        header('Location: index.php?controller=administradores&action=logIn');
-    }
+            $this->render("adminLogIn",array());
 
-    public function comprobarDatos(){
-
-        if(!isset($_SESSION["nombreUsuario"]) && (isset($_POST["password"]) && isset($_POST["user"]))){
-            $admin= new Administrador($this->conexion);
-            $admin->setPassword($_POST["password"]);
-            $admin->setUsuario($_POST["user"]);
-            unset($_POST["password"]);
-            unset($_POST["user"]);
-            $nombreUsuario=$admin->comprobarCredenciales();
-        }else{
-            $nombreUsuario["NOMBRE"]=$_SESSION["nombreUsuario"] ?? false;
         }
+        else {
 
-        if($nombreUsuario){
-            $_SESSION["nombreUsuario"]=$nombreUsuario["NOMBRE"];
             $producto = new Producto($this->conexion);
             $productos = $producto->getAll();
 
@@ -49,13 +32,38 @@ class administradoresController extends indexController {
             $pedidos = $pedidos->getAll();
 
             $this->render("administrador",array(
-                "nombreUsuario"=>$nombreUsuario["NOMBRE"],
+                "nombreUsuario"=>$_SESSION["nombreUsuario"],
                 "productos" => $productos,
                 "pedidos" => $pedidos
             ));
-        }else{
-            $this->render("adminLogIn",array("error"=>true));
         }
+    }
+
+    public function logOut (){
+
+        $_SESSION['login'] = null;
+        $_SESSION['nombreUsuario'] = null;
+
+        header('Location: index.php?controller=administradores&action=logIn');
+    }
+
+    public function comprobarDatos(){
+
+        if (!isset($_SESSION['login'])){
+            $_SESSION['login'] = 0;
+        }
+
+        if (isset($_POST['usuarioAdmin'],$_POST['passwordAdmin'])){
+
+            $admin= new Administrador($this->conexion);
+            $admin->setUsuario($_POST["usuarioAdmin"]);
+            $admin->setPassword($_POST["passwordAdmin"]);
+            $_SESSION['login'] = $admin->comprobarCredenciales();
+            $_SESSION["nombreUsuario"]=$admin->getNombre();
+
+        }
+
+        header('Location: index.php?controller=administradores&action=logIn');
 
     }
 }

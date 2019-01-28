@@ -9,11 +9,6 @@ ul > a {
   font-size: 107.5%; }
 
 /* Clases */
-.btn-nav {
-  border: none;
-  background-color: #343a40;
-  color: white; }
-
 .carousel-position {
   position: fixed;
   z-index: -1;
@@ -21,26 +16,24 @@ ul > a {
   left: 0;
   padding: 0; }
 
-.bg-container {
+.bg-container-main {
   background-color: white;
-  margin-top: 30%; }
+  margin-top: 35%; }
 
-.list-noborder-t {
-  border-top: none; }
-
-.list-noborder-b {
-  border-bottom: none; }
-
-.list-noborder {
-  border-top: none;
-  border-bottom: none; }
-
-.cattt {
-  transition: 2s; }
+.bg-container {
+  background-color: white; }
 
 .carrito-position {
   margin-left: auto;
-  width: 15.95%; }
+  width: 6%; }
+
+.carrito-position:hover {
+  cursor: pointer; }
+
+.badge-position {
+  position: absolute;
+  left: -7%;
+  font-size: 99%; }
 
 .a-link-color {
   color: black; }
@@ -51,6 +44,9 @@ ul > a {
 .item-separation {
   display: flex;
   justify-content: space-between; }
+
+.item-separation:hover {
+  cursor: pointer; }
 
 .sub-products-item-separation {
   display: flex;
@@ -69,7 +65,7 @@ ul > a {
 /* Seguimiento del scroll de categorias y carrito */
 .scroller_anchor {
   position: absolute;
-  margin-top: -35%;
+  margin-top: -3%;
   height: 0px;
   padding: 0; }
 
