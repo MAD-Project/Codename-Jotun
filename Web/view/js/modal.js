@@ -32,7 +32,7 @@ $('#modalProductos').on('show.bs.modal', function (event) {
     modal.find('.modal-body .idProducto').val(id);
 });
 
-$('#aceptarPedido').on('show.bs.modal', function (event) {
+$('#tramitarPedido').on('show.bs.modal', function (event) {
 
     var button = $(event.relatedTarget);
     var id = button.data('id');
@@ -41,6 +41,19 @@ $('#aceptarPedido').on('show.bs.modal', function (event) {
 
     var modal = $(this);
     modal.find('.modal-body .pedidoNombre').html("<b>"+nombre+"</b>");
-    modal.find('.modal-body .formularioPedido').attr("onsubmit","aceptarPedido("+id+",'"+correo+"')");
+
+    if(button.data('aceptar')==true){
+
+        modal.find('.modal-body #botonTramitar').html("Aceptar el pedido");
+        modal.find('.modal-body #botonTramitar').attr("class","btn btn-primary");
+        modal.find('.modal-body .formularioPedido').attr("onsubmit","return aceptarPedido("+id+",'"+correo+"','A')");
+
+    }else{
+
+        modal.find('.modal-body #botonTramitar').html("Rechazar el pedido");
+        modal.find('.modal-body #botonTramitar').attr("class","btn btn-danger");
+        modal.find('.modal-body .formularioPedido').attr("onsubmit","rechazarPedido("+id+","+correo+",R)");
+    }
+
 
 });
