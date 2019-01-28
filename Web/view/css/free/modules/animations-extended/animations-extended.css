@@ -33,7 +33,7 @@
   }
 }
 
-/* line 35, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 35, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounce {
   animation-name: bounce;
   transform-origin: center bottom;
@@ -51,7 +51,7 @@
   }
 }
 
-/* line 53, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 53, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .flash {
   animation-name: flash;
 }
@@ -69,7 +69,7 @@
   }
 }
 
-/* line 73, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 73, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .pulse {
   animation-name: pulse;
 }
@@ -98,7 +98,7 @@
   }
 }
 
-/* line 107, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 107, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rubberBand {
   animation-name: rubberBand;
 }
@@ -123,7 +123,7 @@
   }
 }
 
-/* line 133, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 133, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .shake {
   animation-name: shake;
 }
@@ -149,7 +149,7 @@
   }
 }
 
-/* line 163, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 163, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .headShake {
   animation-timing-function: ease-in-out;
   animation-name: headShake;
@@ -173,7 +173,7 @@
   }
 }
 
-/* line 190, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 190, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .swing {
   transform-origin: top center;
   animation-name: swing;
@@ -203,7 +203,7 @@
   }
 }
 
-/* line 223, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 223, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .tada {
   animation-name: tada;
 }
@@ -233,7 +233,7 @@
   }
 }
 
-/* line 259, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 259, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .wobble {
   animation-name: wobble;
 }
@@ -267,7 +267,7 @@
   }
 }
 
-/* line 299, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 299, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .jello {
   animation-name: jello;
   transform-origin: center;
@@ -291,7 +291,7 @@
   }
 }
 
-/* line 326, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 326, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .heartBeat {
   animation-name: heartBeat;
   animation-duration: 1.3s;
@@ -330,7 +330,7 @@
   }
 }
 
-/* line 370, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 370, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounceIn {
   animation-duration: 0.75s;
   animation-name: bounceIn;
@@ -363,7 +363,7 @@
   }
 }
 
-/* line 407, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 407, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounceInDown {
   animation-name: bounceInDown;
 }
@@ -395,7 +395,7 @@
   }
 }
 
-/* line 443, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 443, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounceInLeft {
   animation-name: bounceInLeft;
 }
@@ -427,7 +427,7 @@
   }
 }
 
-/* line 479, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 479, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounceInRight {
   animation-name: bounceInRight;
 }
@@ -459,7 +459,7 @@
   }
 }
 
-/* line 515, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 515, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounceInUp {
   animation-name: bounceInUp;
 }
@@ -479,7 +479,7 @@
   }
 }
 
-/* line 536, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 536, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounceOut {
   animation-duration: 0.75s;
   animation-name: bounceOut;
@@ -500,7 +500,7 @@
   }
 }
 
-/* line 558, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 558, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounceOutDown {
   animation-name: bounceOutDown;
 }
@@ -516,7 +516,7 @@
   }
 }
 
-/* line 574, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 574, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounceOutLeft {
   animation-name: bounceOutLeft;
 }
@@ -532,7 +532,7 @@
   }
 }
 
-/* line 590, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 590, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounceOutRight {
   animation-name: bounceOutRight;
 }
@@ -552,7 +552,7 @@
   }
 }
 
-/* line 611, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 611, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .bounceOutUp {
   animation-name: bounceOutUp;
 }
@@ -568,7 +568,7 @@
   }
 }
 
-/* line 627, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 627, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .fadeInDownBig {
   animation-name: fadeInDownBig;
 }
@@ -584,7 +584,7 @@
   }
 }
 
-/* line 643, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 643, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .fadeInLeftBig {
   animation-name: fadeInLeftBig;
 }
@@ -600,7 +600,7 @@
   }
 }
 
-/* line 659, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 659, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .fadeInRightBig {
   animation-name: fadeInRightBig;
 }
@@ -616,7 +616,7 @@
   }
 }
 
-/* line 675, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 675, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .fadeInUpBig {
   animation-name: fadeInUpBig;
 }
@@ -631,7 +631,7 @@
   }
 }
 
-/* line 690, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 690, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .fadeOutDownBig {
   animation-name: fadeOutDownBig;
 }
@@ -646,7 +646,7 @@
   }
 }
 
-/* line 705, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 705, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .fadeOutLeftBig {
   animation-name: fadeOutLeftBig;
 }
@@ -661,7 +661,7 @@
   }
 }
 
-/* line 720, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 720, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .fadeOutRightBig {
   animation-name: fadeOutRightBig;
 }
@@ -676,7 +676,7 @@
   }
 }
 
-/* line 735, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 735, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .fadeOutUpBig {
   animation-name: fadeOutUpBig;
 }
@@ -704,7 +704,7 @@
   }
 }
 
-/* line 769, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 769, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .flip {
   backface-visibility: visible;
   animation-name: flip;
@@ -732,7 +732,7 @@
   }
 }
 
-/* line 800, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 800, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .flipInX {
   backface-visibility: visible !important;
   animation-name: flipInX;
@@ -760,7 +760,7 @@
   }
 }
 
-/* line 831, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 831, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .flipInY {
   backface-visibility: visible !important;
   animation-name: flipInY;
@@ -780,7 +780,7 @@
   }
 }
 
-/* line 852, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 852, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .flipOutX {
   animation-duration: 0.75s;
   animation-name: flipOutX;
@@ -801,7 +801,7 @@
   }
 }
 
-/* line 874, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 874, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .flipOutY {
   animation-duration: 0.75s;
   backface-visibility: visible !important;
@@ -825,7 +825,7 @@
   }
 }
 
-/* line 900, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 900, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .lightSpeedIn {
   animation-name: lightSpeedIn;
   animation-timing-function: ease-out;
@@ -841,7 +841,7 @@
   }
 }
 
-/* line 916, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 916, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .lightSpeedOut {
   animation-name: lightSpeedOut;
   animation-timing-function: ease-in;
@@ -860,7 +860,7 @@
   }
 }
 
-/* line 935, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 935, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rotateIn {
   animation-name: rotateIn;
 }
@@ -878,7 +878,7 @@
   }
 }
 
-/* line 953, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 953, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rotateInDownLeft {
   animation-name: rotateInDownLeft;
 }
@@ -896,7 +896,7 @@
   }
 }
 
-/* line 971, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 971, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rotateInDownRight {
   animation-name: rotateInDownRight;
 }
@@ -914,7 +914,7 @@
   }
 }
 
-/* line 989, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 989, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rotateInUpLeft {
   animation-name: rotateInUpLeft;
 }
@@ -932,7 +932,7 @@
   }
 }
 
-/* line 1007, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1007, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rotateInUpRight {
   animation-name: rotateInUpRight;
 }
@@ -949,7 +949,7 @@
   }
 }
 
-/* line 1024, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1024, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rotateOut {
   animation-name: rotateOut;
 }
@@ -966,7 +966,7 @@
   }
 }
 
-/* line 1041, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1041, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rotateOutDownLeft {
   animation-name: rotateOutDownLeft;
 }
@@ -983,7 +983,7 @@
   }
 }
 
-/* line 1058, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1058, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rotateOutDownRight {
   animation-name: rotateOutDownRight;
 }
@@ -1000,7 +1000,7 @@
   }
 }
 
-/* line 1075, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1075, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rotateOutUpLeft {
   animation-name: rotateOutUpLeft;
 }
@@ -1017,7 +1017,7 @@
   }
 }
 
-/* line 1092, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1092, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rotateOutUpRight {
   animation-name: rotateOutUpRight;
 }
@@ -1046,7 +1046,7 @@
   }
 }
 
-/* line 1123, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1123, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .hinge {
   animation-duration: 2s;
   animation-name: hinge;
@@ -1070,7 +1070,7 @@
   }
 }
 
-/* line 1149, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1149, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .jackInTheBox {
   animation-name: jackInTheBox;
 }
@@ -1087,7 +1087,7 @@
   }
 }
 
-/* line 1167, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1167, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rollIn {
   animation-name: rollIn;
 }
@@ -1103,7 +1103,7 @@
   }
 }
 
-/* line 1184, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1184, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .rollOut {
   animation-name: rollOut;
 }
@@ -1118,7 +1118,7 @@
   }
 }
 
-/* line 1199, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1199, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .zoomIn {
   animation-name: zoomIn;
 }
@@ -1136,7 +1136,7 @@
   }
 }
 
-/* line 1217, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1217, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .zoomInDown {
   animation-name: zoomInDown;
 }
@@ -1154,7 +1154,7 @@
   }
 }
 
-/* line 1235, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1235, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .zoomInLeft {
   animation-name: zoomInLeft;
 }
@@ -1172,7 +1172,7 @@
   }
 }
 
-/* line 1253, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1253, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .zoomInRight {
   animation-name: zoomInRight;
 }
@@ -1190,7 +1190,7 @@
   }
 }
 
-/* line 1271, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1271, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .zoomInUp {
   animation-name: zoomInUp;
 }
@@ -1208,7 +1208,7 @@
   }
 }
 
-/* line 1290, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1290, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .zoomOut {
   animation-name: zoomOut;
 }
@@ -1227,7 +1227,7 @@
   }
 }
 
-/* line 1309, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1309, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .zoomOutDown {
   animation-name: zoomOutDown;
 }
@@ -1244,7 +1244,7 @@
   }
 }
 
-/* line 1326, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1326, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .zoomOutLeft {
   animation-name: zoomOutLeft;
 }
@@ -1261,7 +1261,7 @@
   }
 }
 
-/* line 1343, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1343, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .zoomOutRight {
   animation-name: zoomOutRight;
 }
@@ -1280,7 +1280,7 @@
   }
 }
 
-/* line 1362, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1362, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .zoomOutUp {
   animation-name: zoomOutUp;
 }
@@ -1295,7 +1295,7 @@
   }
 }
 
-/* line 1377, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1377, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .slideInDown {
   animation-name: slideInDown;
 }
@@ -1310,7 +1310,7 @@
   }
 }
 
-/* line 1392, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1392, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .slideInLeft {
   animation-name: slideInLeft;
 }
@@ -1325,7 +1325,7 @@
   }
 }
 
-/* line 1407, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1407, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .slideInRight {
   animation-name: slideInRight;
 }
@@ -1340,7 +1340,7 @@
   }
 }
 
-/* line 1422, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1422, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .slideInUp {
   animation-name: slideInUp;
 }
@@ -1355,7 +1355,7 @@
   }
 }
 
-/* line 1437, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1437, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .slideOutDown {
   animation-name: slideOutDown;
 }
@@ -1370,7 +1370,7 @@
   }
 }
 
-/* line 1452, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1452, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .slideOutLeft {
   animation-name: slideOutLeft;
 }
@@ -1385,7 +1385,7 @@
   }
 }
 
-/* line 1467, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1467, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .slideOutRight {
   animation-name: slideOutRight;
 }
@@ -1400,7 +1400,7 @@
   }
 }
 
-/* line 1482, C:/Users/alain/Documents/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
+/* line 1482, C:/GitHub/Codename-Jotun/Web/view/scss/free/modules/animations-extended/_module.scss */
 .slideOutUp {
   animation-name: slideOutUp;
 }
