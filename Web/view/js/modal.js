@@ -7,7 +7,11 @@ $('#modalProductos').on('show.bs.modal', function (event) {
     var id = button.data('id');
     var unidad = button.data('cantidad');
 
-    $('#unidades').prop("min",unidad);
+    if (unidad === 0){
+        unidad = 1;
+    }
+
+    $('#unidadesProducto').prop("min",unidad);
 
     switch (medida){
 
@@ -28,9 +32,9 @@ $('#modalProductos').on('show.bs.modal', function (event) {
     modal.find('.modal-body .nProducto').html("Nombre : "+nombre);
     modal.find('.modal-body .pProducto').html("Precio: "+precio+"€ / "+medida);
 
-    modal.find('.modal-body .nombreProducto').val(nombre);
     modal.find('.modal-body .precioProducto').val(precio);
     modal.find('.modal-body .idProducto').val(id);
+    modal.find('.modal-body .nombrePorducto').val(nombre);
 });
 
 $('#aceptarPedido').on('show.bs.modal', function (event) {
