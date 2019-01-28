@@ -31,3 +31,16 @@ $('#modalProductos').on('show.bs.modal', function (event) {
     modal.find('.modal-body .precioProducto').val(precio);
     modal.find('.modal-body .idProducto').val(id);
 });
+
+$('#aceptarPedido').on('show.bs.modal', function (event) {
+
+    var button = $(event.relatedTarget);
+    var id = button.data('id');
+    var correo = button.data('correo');
+    var nombre = button.data('nombre');
+
+    var modal = $(this);
+    modal.find('.modal-body .pedidoNombre').html("<b>"+nombre+"</b>");
+    modal.find('.modal-body .formularioPedido').attr("onsubmit","aceptarPedido("+id+",'"+correo+"')");
+
+});
