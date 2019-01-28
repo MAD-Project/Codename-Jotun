@@ -20,6 +20,8 @@ class pedidosController extends indexController {
     
     public function realizarPedido(){
 
+        die(print_r(json_decode($_POST['productos'])));
+
         $pedido = new Pedido($this->conexion);
 
         $pedido->setCorreo($_POST['email']);
@@ -44,4 +46,5 @@ class pedidosController extends indexController {
 
         mail('mklferreiro@gmail.com', 'Mi título', "prueba de mensaje",$headers);*/
     }
+
 }
