@@ -19,7 +19,7 @@ class Producto{
 
     public function getAll(){
 
-        $select = $this->conexion->prepare("SELECT * FROM $this->table ORDER BY categoria");
+        $select = $this->conexion->prepare("SELECT * FROM $this->table ORDER BY CASE WHEN categoria = 'entrantes' THEN 1 WHEN CATEGORIA like '%TARTAS%' THEN 3 WHEN CATEGORIA='variedades' THEN 4 ELSE 2 END");
         $select->execute();
         $result = $select->fetchAll();
 
@@ -28,7 +28,7 @@ class Producto{
 
     public function categorias(){
 
-        $select = $this->conexion->prepare("SELECT DISTINCT categoria FROM $this->table ORDER BY categoria");
+        $select = $this->conexion->prepare("SELECT DISTINCT categoria FROM $this->table ORDER BY CASE WHEN categoria = 'entrantes' THEN 1 WHEN CATEGORIA like '%TARTAS%' THEN 3 WHEN CATEGORIA='variedades' THEN 4 ELSE 2 END");
         $select->execute();
         $result = $select->fetchAll();
         $this->conexion = null;
@@ -61,6 +61,21 @@ class Producto{
 
         $this->conexion = null;
 
+    }
+
+    public function anadir(){
+
+        $insert = $this->conexion->prepare("INSERT INTO productos(nombre,categoria,medida,precio,pedido_min) VALUES(:nombre,:categoria,:medida,:precio,:pedido_min)");
+
+        $insert->execute(array(
+           "nombre" => $this->nombre,
+           "categoria" => $this->categoria,
+           "medida" => $this->medida,
+           "precio" => $this->precio,
+           "predido_min" => $this->pedidoMin
+        ));
+
+        $this->conexion = null;
     }
 
     /**
