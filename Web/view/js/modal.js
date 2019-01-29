@@ -47,18 +47,35 @@ $('#tramitarPedido').on('show.bs.modal', function (event) {
     var modal = $(this);
     modal.find('.modal-body .pedidoNombre').html("<b>"+nombre+"</b>");
 
-    if(button.data('aceptar')==true){
+    var boton=modal.find('.modal-body #botonTramitar');
+    var form=modal.find('.modal-body .formularioPedido');
+    switch (button.data('estado')){
+        case 'A':
+            boton.html("Aceptar el pedido");
+            boton.attr("class","btn btn-primary");
+            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','A')");
+            break;
 
-        modal.find('.modal-body #botonTramitar').html("Aceptar el pedido");
-        modal.find('.modal-body #botonTramitar').attr("class","btn btn-primary");
-        modal.find('.modal-body .formularioPedido').attr("onsubmit","return aceptarPedido("+id+",'"+correo+"','A')");
+        case 'R':
+            boton.html("Rechazar el pedido");
+            boton.attr("class","btn btn-danger");
+            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','R')");
+            break;
 
-    }else{
+        case 'N':
+            boton.html("Pedido preparado");
+            boton.attr("class","btn btn-success");
+            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','N')");
+            break;
 
-        modal.find('.modal-body #botonTramitar').html("Rechazar el pedido");
-        modal.find('.modal-body #botonTramitar').attr("class","btn btn-danger");
-        modal.find('.modal-body .formularioPedido').attr("onsubmit","rechazarPedido("+id+","+correo+",R)");
+        case 'E':
+            boton.html("Pedido entregado");
+            boton.attr("class","btn btn-success");
+            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','E')");
+            break;
+
     }
+
 
 
 });

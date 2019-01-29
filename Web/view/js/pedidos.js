@@ -1,22 +1,23 @@
-function aceptarPedido(idPedido, email,nuevoEstado) {
+function tramitarPedido(idPedido, email,nuevoEstado) {
 
     //aqui el mailto
-debugger;
+
     $.ajax({
         type: "POST",
         url: "index.php?controller=pedidos&action=tramitarPedido",
         data: { idPedido: idPedido,
                 nuevoEstado: nuevoEstado},
     success: function (data) {
-       if(data===1){
-           alert("ouch");
+
+       if(data==1){
+
            location.reload();
        }else{
-           alert("hey");
+
            $("#tramitarPedido").modal("hide");
-           $("<h3 style='color:red'>Ha ocurrido un error</h3>" ).insertBefore($( "#accordionPendientes" ));
-           
-           return false;
+           $("<p style='color:red'>Ha ocurrido un error, intentalo de nuevo en unos minutos</p>" ).insertBefore($( "#accordionPendientes" ));
+
+
        }
     },
     error: function (data) {
@@ -25,4 +26,6 @@ debugger;
 
     });
 
+    return false;
 }
+
