@@ -15,9 +15,13 @@
     </head>
 
     <body data-spy="scroll" data-target="#categorias" data-offset="0">
-        <div id="nav" class="navbar">
-            
-        </div>
+        <nav id="nav" class="navbar navbar-light bg-light">
+            <div class="ml-auto mr-auto">
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-brand" height="40" src="img/logo-restaurante.png">
+                </a>
+            </div>
+        </nav>
 
         <section class="container-fluid carousel-position">
             <div class="carousel slide" data-ride="carousel">
@@ -74,7 +78,8 @@
                             {% block productos %}
                             {% endblock productos %}
                         </div>
-                        <div id="carrito" class="row mt-5 card">
+                        <div id="carrito" class="row mt-5">
+                            <h1>Carrito</h1>
                             {% block carrito %}
                             {% endblock carrito %}
                         </div>

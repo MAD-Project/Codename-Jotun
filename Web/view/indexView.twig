@@ -73,11 +73,11 @@
 
     {% block carrito %}
         <!--<div id="carritoProductos" class="col-12 mt-4 nada">No has añadido productos</div>-->
-        <ul id="carritoLista" class="list-group">
-            <li class="p-4 list-group-item item-separation" style="border: none !important;">Producto<span>X Unidades</span></li>
+        <ul id="carritoLista" class="col-12 list-group">
+            <li id="noProductos" class="p-4 list-group-item item-separation" style="border: none !important;">No tienes ningun producto</li>
         </ul>
-        <div class="mb-4 ml-auto mr-auto">
-            <a id="carritobtn" class="btn btn-primary mt-3" onclick="localStorage.clear(); terminarPedido();">Tramitar pedido</a>
+        <div class="mt-4 mb-3 ml-auto mr-auto">
+            <button id="carritobtn" class="btn btn-primary pl-4 pr-4 pt-2 pb-2" onclick="localStorage.clear(); terminarPedido();"><span class="h4">Tramitar pedido</span></button>
         </div>
     {% endblock %}
 
