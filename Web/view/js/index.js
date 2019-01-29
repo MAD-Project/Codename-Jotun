@@ -1,8 +1,9 @@
 //Ejecuciones al cargar el documento
 $(function () {
+    goTop();
     $("#scroller").css("display", "none");
     $("#scroller2").css("display", "none").addClass("fixed-bottom flecha-position");
-    goTop();
+    $("#carritobtn").hide();
 });
 
 

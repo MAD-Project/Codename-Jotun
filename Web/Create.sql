@@ -51,9 +51,9 @@ INSERT INTO administradores(NOMBRE, USUARIO, PASSWORD) VALUES ('administrador de
 
 -- Insert de productos
 
-INSERT INTO productos(NOMBRE, CATEGORIA, MEDIDA, PRECIO, PEDIDO_MIN) VALUES ('Croquetas de hongos - 12 unidades','FRITOS','R',5,2);
-INSERT INTO productos(NOMBRE, CATEGORIA, MEDIDA, PRECIO, PEDIDO_MIN) VALUES ('Croquetas de jamón ibérico - 12 unidades','FRITOS','R',5,2);
-INSERT INTO productos(NOMBRE, CATEGORIA, MEDIDA, PRECIO, PEDIDO_MIN) VALUES ('Tigres (mejillones rellenos) - 12 unidades','FRITOS','R',5.3,2);
+INSERT INTO productos(NOMBRE, CATEGORIA, MEDIDA, PRECIO, PEDIDO_MIN) VALUES ('Croquetas de hongos - Pack de 12','FRITOS','R',5,2);
+INSERT INTO productos(NOMBRE, CATEGORIA, MEDIDA, PRECIO, PEDIDO_MIN) VALUES ('Croquetas de jamón ibérico - Pack de 12','FRITOS','R',5,2);
+INSERT INTO productos(NOMBRE, CATEGORIA, MEDIDA, PRECIO, PEDIDO_MIN) VALUES ('Tigres (mejillones rellenos) - Pack de 12','FRITOS','R',5.3,2);
 
 INSERT INTO productos(NOMBRE, CATEGORIA, MEDIDA, PRECIO, PEDIDO_MIN) VALUES ('Escalibada de verduras con ventresca de atún','ENTRANTES','R',6.4,2);
 INSERT INTO productos(NOMBRE, CATEGORIA, MEDIDA, PRECIO, PEDIDO_MIN) VALUES ('Ensalada César con virutas de pavo braseado','ENTRANTES','R',3.5,2);

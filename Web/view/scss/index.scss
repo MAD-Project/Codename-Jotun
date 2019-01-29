@@ -10,7 +10,6 @@ ul>a {
     font-size: 107.5%;
 }
 
-/* Clases */
 .carousel-position {
     position: fixed;
     z-index: -1;
@@ -19,37 +18,20 @@ ul>a {
     padding: 0;
 }
 
-.bg-container-main {
-    background-color: white;
-    margin-top: 35%;
-}
-
-.bg-container {
-    background-color: white;
-}
-
 .carrito-position {
     margin-left: auto;
     width: 6%;
 }
 
-.carrito-position:hover {
-    cursor: pointer;
-}
-
 .badge-position {
     position: absolute;
-    left: -7%;
+    left: -12%;
     font-size: 99%;
 }
 
 .flecha-position {
     margin-left: auto;
     width: 6%;
-}
-
-.flecha-position:hover {
-    cursor: pointer;
 }
 
 .a-link-color {
@@ -63,10 +45,6 @@ ul>a {
 .item-separation {
     display: flex;
     justify-content: space-between;
-}
-
-.item-separation:hover {
-    cursor: pointer;
 }
 
 .sub-products-item-separation {
@@ -94,6 +72,11 @@ ul>a {
 }
 
 /* FIN Seguimiento del scroll de categorias y carrito */
+
+#hoverItem:hover,
+.hoverItem:hover {
+    cursor: pointer;
+}
 
 @media (max-width: 1000px) {
     .carrito-position {
