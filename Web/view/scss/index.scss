@@ -43,6 +43,15 @@ ul>a {
     font-size: 99%;
 }
 
+.flecha-position {
+    margin-left: auto;
+    width: 6%;
+}
+
+.flecha-position:hover {
+    cursor: pointer;
+}
+
 .a-link-color {
     color: black;
 }
@@ -80,9 +89,28 @@ ul>a {
 /* Seguimiento del scroll de categorias y carrito */
 .scroller_anchor {
     position: absolute;
-    margin-top: -3%;
     height: 0px;
     padding: 0;
 }
 
 /* FIN Seguimiento del scroll de categorias y carrito */
+
+@media (max-width: 1000px) {
+    .carrito-position {
+        width: 12%;
+    }
+
+    .flecha-position {
+        width: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .carrito-position {
+        width: 20%;
+    }
+
+    .flecha-position {
+        width: 20%;
+    }
+}
