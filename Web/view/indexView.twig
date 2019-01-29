@@ -48,7 +48,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form id="formProductos" method="post" onsubmit="return carrito();">
+                        <form id="formProductos" onsubmit="return annadirCarrito(this);">
                             <input type="hidden" name="idProducto" class="idProducto">
                             <input type="hidden" name="precioProducto" class="precioProducto">
                             <input type="hidden" name="nombreProducto" class="nombrePorducto">
@@ -59,8 +59,8 @@
                                 <input type="number" class="form-control" id="unidadesProducto" name="unidadesProducto" pattern="[0-9]" value="0">
                             </div>
                             <div class="item-separation">
-                                <button type="button" class="btn btn-secondary pl-4 pr-4" data-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="btn btn-primary">Añadir al carrito</button>
+                                <button type="button" id="closemodal" class="btn btn-secondary pl-4 pr-4" data-dismiss="modal">Cerrar</button>
+                                <button class="btn btn-primary">Añadir al carrito</button>
                             </div>
                         </form>
                     </div>
@@ -72,9 +72,12 @@
     {% endblock %}
 
     {% block carrito %}
-        <div id="carritoProductos" class="col-12 mt-4 nada">No has añadido productos</div>
-        <div class="offset-5 col-7 mb-4">
-            <a id="carritobtn" class="color-egibide-bg btn btn-primary mt-5 w-25" onclick="localStorage.clear(); terminarPedido();">Tramitar pedido</a>
+        <!--<div id="carritoProductos" class="col-12 mt-4 nada">No has añadido productos</div>-->
+        <ul id="carritoLista" class="col-12 list-group">
+            <li id="noProductos" class="p-4 list-group-item item-separation" style="border: none !important;">No tienes ningun producto</li>
+        </ul>
+        <div class="mt-4 mb-3 ml-auto mr-auto">
+            <button id="carritobtn" class="btn btn-primary pl-4 pr-4 pt-2 pb-2" onclick="localStorage.clear(); terminarPedido();"><span class="h4">Tramitar pedido</span></button>
         </div>
     {% endblock %}
 
