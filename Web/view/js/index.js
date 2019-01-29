@@ -29,6 +29,7 @@ function irCarrito() {
 }
 
 //Rota la flecha cuando se despliegan o contraen las categorias
+
 function rotateArrow(id) {
     if ($('#' + id).hasClass("rotate")) {
         $('#' + id).removeClass("rotate");
@@ -40,4 +41,5 @@ function rotateArrow(id) {
         $('#' + id).addClass("rotate");
     }
 }
+
 /* END ANIMACIONES VISUALES */
