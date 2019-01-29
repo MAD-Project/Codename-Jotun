@@ -70,8 +70,10 @@ class Pedido{
             ));
 
             if($update->rowCount()!=1){
+                $this->conexion = null;
                 return false;
             }else{
+                $this->conexion = null;
                 return true;
             }
 
@@ -79,6 +81,7 @@ class Pedido{
             $this->conexion = null;
             $update->rollback();
             //devuelve false si ha ocurrido un error
+            $this->conexion = null;
             return false;
         }
     }

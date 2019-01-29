@@ -53,7 +53,7 @@ class pedidosController extends indexController {
         $pedido->setId($_POST["idPedido"]);
         $pedido->setEstado($_POST["nuevoEstado"]);
 
-        die(0);
+        die($pedido->tramitarPedido());
 
     }
 
