@@ -20,6 +20,8 @@ class pedidosController extends indexController {
     
     public function realizarPedido(){
 
+        die(print_r(json_decode($_POST['productos'])));
+
         $pedido = new Pedido($this->conexion);
 
         $pedido->setCorreo($_POST['email']);
@@ -54,4 +56,5 @@ class pedidosController extends indexController {
         die(0);
 
     }
+
 }
