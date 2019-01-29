@@ -22,8 +22,8 @@
                 {% endfor %}
                 </ul>
                 <div class="col-2 offset-2 d-flex flex-column justify-content-around align-items-around">
-                    <button class="row btn btn-outline-primary" data-toggle="modal" data-target="#aceptarPedido" data-id="{{ pedido.ID_PEDIDO }}" data-correo="{{ pedido.CORREO }}" data-nombre="{{ pedido.NOMBRE }}">Aceptar</button>
-                    <button class="row btn btn-outline-danger" data-toggle="modal" data-target="#rechazarPedido">Rechazar</button>
+                    <button class="row btn btn-outline-primary" data-toggle="modal" data-target="#tramitarPedido" data-id="{{ pedido.ID_PEDIDO }}" data-correo="{{ pedido.CORREO }}" data-nombre="{{ pedido.NOMBRE }}" data-aceptar="true">Aceptar</button>
+                    <button class="row btn btn-outline-danger" data-toggle="modal" data-target="#tramitarPedido" data-id="{{ pedido.ID_PEDIDO }}" data-correo="{{ pedido.CORREO }}" data-nombre="{{ pedido.NOMBRE }}" data-aceptar="false">Rechazar</button>
                 </div>
             </div>
         {% else %}
@@ -33,7 +33,7 @@
     </div>
 </div>
 
-    <div class="modal fade" id="aceptarPedido" tabindex="-1" role="dialog">
+    <div class="modal fade" id="tramitarPedido" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -49,7 +49,7 @@
                         <span class="pedidoNombre"></span>
                         <div class="item-separation mt-4">
 
-                            <button type="submit" class="btn btn-primary">Aceptar el pedido</button>
+                            <button type="submit" id="botonTramitar">Aceptar el pedido</button>
                             <button type="button" class="btn btn-secondary pl-4 pr-4 float-right" data-dismiss="modal">Cerrar</button>
 
                         </div>
@@ -101,7 +101,7 @@
     </a>
     <div id="collapsePreparados" class="collapse" data-parent="#accordionPreparados">
         <div class="list-group">
-            {% for pedido in pedidos if pedido.ESTADO == 'A'%}
+            {% for pedido in pedidos if pedido.ESTADO == 'E' or pedido.ESTADO == 'N' %}
                 <a class="list-group-item collapsed" data-toggle="collapse" data-target="#collapsePreparados{{ pedido.ID_PEDIDO }}">
                     <span>{{ pedido.NOMBRE }}</span>
                 </a>
