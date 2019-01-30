@@ -20,14 +20,18 @@ class pedidosController extends indexController {
     
     public function realizarPedido(){
 
-        die(print_r(json_decode($_POST['productos'])));
+        $pedidos = json_decode($_POST['pedidos']);
 
         $pedido = new Pedido($this->conexion);
 
-        $pedido->setCorreo($_POST['email']);
-        $pedido->setNombre($_POST['nombre']);
-        $pedido->setTelefono($_POST['telefono']);
-        $pedido->setComentario($_POST['comentario']);
+        $pedido->setCorreo($pedidos[0]->correo);
+        $pedido->setNombre($pedidos[0]->nombre);
+        $pedido->setTelefono($pedidos[0]->telefono);
+        $pedido->setComentario($pedidos[0]->comentario);
+
+        for ($i=1;$i<count($pedidos);$i++){
+            die(var_dump($pedidos[$i]->id));
+        }
 
         if($pedido->nuevoPedido()){
             $mensaje="todo bien";
