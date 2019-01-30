@@ -1,3 +1,25 @@
+/* line 9, C:/GitHub/Codename-Jotun/Web/view/scss/custom.scss */
+.navbar-light {
+  background-color: rgba(248, 249, 250, 0.91) !important;
+}
+
+/* line 13, C:/GitHub/Codename-Jotun/Web/view/scss/custom.scss */
+.bg-light {
+  background-color: white;
+  margin-top: 35%;
+}
+
+/* line 19, C:/GitHub/Codename-Jotun/Web/view/scss/custom.scss */
+.modal {
+  overflow-y: scroll !important;
+}
+
+/* line 24, C:/GitHub/Codename-Jotun/Web/view/scss/custom.scss */
+h5 {
+  margin-bottom: -20px !important;
+  font-size: 1.5em !important;
+}
+
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -4197,7 +4219,7 @@ tbody.collapse.show {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0 0;
 }
 
 /* line 28, C:/GitHub/Codename-Jotun/Web/view/bootstrap/_navbar.scss */
@@ -4214,7 +4236,7 @@ tbody.collapse.show {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 0;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
