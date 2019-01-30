@@ -21,6 +21,7 @@ function annadirCarrito(form) {
     } else {
         $("#errorMsg").text("Ponga un número de productos válido.");
     }
+
     return false;
 
 }
