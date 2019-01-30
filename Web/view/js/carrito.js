@@ -54,3 +54,29 @@ function cambiarUnidades(id, what, howmuch, min) {
         $("#numeroProductosCarrito").replaceWith("<span id='numeroProductosCarrito' class='badge badge-dark badge-pill badge-position'>" + totalProductos + "</span>");
     }
 }
+
+//Recoge el id y la cantidad de los elementos de la lista de carrito y los envia al controlador de PHP para hacer el pedido
+function tramitarPedido() {
+    var arrayProductos = [];
+
+    $("#carritoLista").children().each(function () {
+        console.log("Cantidad: " + $(this).children().find("span").text());
+        console.log("ID: " + $(this).children().find("span").attr("id").slice(7));
+        var Producto = new ProductosCarrito($(this).children().find("span").attr("id").slice(7), $(this).children().find("span").text());
+        arrayProductos.push(Producto);
+    });
+
+    var productosJSON = "productos=" + JSON.stringify(arrayProductos);
+
+    $.ajax({
+        data: productosJSON,
+        url: 'index.php?controller=pedidos&action=realizarPedido',
+        type: 'post',
+        success: function (data) {
+            alert("Bien. Data: " + data);
+        },
+        error: function (data) {
+            alert("Error. Data: " + data);
+        }
+    });
+}
