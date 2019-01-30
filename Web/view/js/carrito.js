@@ -58,26 +58,31 @@ function cambiarUnidades(id, what, howmuch, min) {
 
 //Recoge el id y la cantidad de los elementos de la lista de carrito y los envia al controlador de PHP para hacer el pedido
 function tramitarPedido() {
-    var arrayProductos = [];
+    var arrayPedido = [];
+
+    var c1 = new Cliente($('#nombreCliente').val(),$('#correoCliente').val(),$('#telefonoCliente').val(),$('#cometarioCliente').val());
+
+    arrayPedido.push(c1);
 
     $("#carritoLista").children().each(function () {
-        console.log("Cantidad: " + $(this).children().find("span").text());
-        console.log("ID: " + $(this).children().find("span").attr("id").slice(7));
         var Producto = new ProductosCarrito($(this).children().find("span").attr("id").slice(7), $(this).children().find("span").text());
-        arrayProductos.push(Producto);
+        arrayPedido.push(Producto);
     });
 
-    var productosJSON = "productos=" + JSON.stringify(arrayProductos);
+    var pedidosJSON = "pedidos="+JSON.stringify(arrayPedido);
 
     $.ajax({
-        data: productosJSON,
+        data: pedidosJSON,
         url: 'index.php?controller=pedidos&action=realizarPedido',
         type: 'post',
         success: function (data) {
+            debugger;
             alert("Bien. Data: " + data);
         },
         error: function (data) {
             alert("Error. Data: " + data);
         }
     });
+
+    return false;
 }
