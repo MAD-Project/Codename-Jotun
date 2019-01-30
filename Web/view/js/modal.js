@@ -40,7 +40,7 @@ $('#modalProductos').on('show.bs.modal', function (event) {
     modal.find('#unidadesProducto').attr("placeholder", "Mínimo " + unidad + " unidades.")
 });
 
-$('#aceptarPedido').on('show.bs.modal', function (event) {
+$('#tramitarPedido').on('show.bs.modal', function (event) {
 
     var button = $(event.relatedTarget);
     var id = button.data('id');
@@ -50,5 +50,36 @@ $('#aceptarPedido').on('show.bs.modal', function (event) {
     var modal = $(this);
     modal.find('.modal-body .pedidoNombre').html("<b>" + nombre + "</b>");
     modal.find('.modal-body .formularioPedido').attr("onsubmit", "aceptarPedido(" + id + ",'" + correo + "')");
+
+    var boton=modal.find('.modal-body #botonTramitar');
+    var form=modal.find('.modal-body .formularioPedido');
+    switch (button.data('estado')){
+        case 'A':
+            boton.html("Aceptar el pedido");
+            boton.attr("class","btn btn-primary");
+            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','A')");
+            break;
+
+        case 'R':
+            boton.html("Rechazar el pedido");
+            boton.attr("class","btn btn-danger");
+            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','R')");
+            break;
+
+        case 'N':
+            boton.html("Pedido preparado");
+            boton.attr("class","btn btn-success");
+            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','N')");
+            break;
+
+        case 'E':
+            boton.html("Pedido entregado");
+            boton.attr("class","btn btn-success");
+            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','E')");
+            break;
+
+    }
+
+
 
 });

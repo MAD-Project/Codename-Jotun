@@ -60,6 +60,33 @@ class Pedido{
         return true;
     }
 
+    public function tramitarPedido(){
+        $update= $this->conexion->prepare("UPDATE pedidos SET ESTADO=:estado WHERE ID_PEDIDO=:idPedido");
+        try{
+
+            $update->execute(array(
+                "estado" => $this->estado,
+                "idPedido" => $this->id
+            ));
+
+            if($update->rowCount()!=1){
+                $this->conexion = null;
+                return false;
+            }else{
+                $this->conexion = null;
+                return true;
+            }
+
+        } catch (PDOException $e) {
+            $this->conexion = null;
+            $update->rollback();
+            //devuelve false si ha ocurrido un error
+            $this->conexion = null;
+            return false;
+        }
+    }
+
+
     /**
      * @return mixed
      */

@@ -16,6 +16,8 @@ function annadirCarrito(form) {
         $("#carritobtn").show();
     }
 
+    $('#modalProductos').modal('hide');
+
     return false;
 }
 

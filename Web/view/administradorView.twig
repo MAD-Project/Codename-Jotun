@@ -17,7 +17,45 @@
 
         </div>
 
-        <div class="tab-pane fade" id="productos" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="tab-pane fade justify-content-center" id="productos" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+            <!--Añadir producto-->
+                <button class="btn btn-outline-primary mt-2" data-toggle="modal" data-target="#anadirProducto">Añadir producto</button>
+
+                <div class="modal fade" id="anadirProducto" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content bg-white">
+                            <div class="modal-body">
+                                <form action="index.php?controller=productos&action=anadirProducto" method="post">
+                                    <div class="form-group">
+                                        <label for="nombreProducto">Nombre</label>
+                                        <input type="text" class="form-control" id="nombreProducto" name="nombreProducto">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="categoriaProducto">Categoria</label>
+                                        <input type="text" class="form-control" id="categoriaProducto" name="categoriaProducto">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="medidaProducto">Medida</label>
+                                        <input type="text" class="form-control" id="medidaProducto" name="medidaProducto">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="precioProducto">Precio</label>
+                                        <input type="text" class="form-control" id="precioProducto" name="precioProducto" pattern="^\d*(\.\d{0,2})?$">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pedidoMinProducto">Pedido Minimo</label>
+                                        <input type="number" class="form-control" id="pedidoMinProducto" name="pedidoMinProducto">
+                                    </div>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="submit" class="btn btn-primary">Añadir</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--Fin de añadir producto-->
+
                 <table id="tablaProductosAdmin" class="table table-striped table-bordered text-center" cellspacing="0" width="100%">
                     <thead class="thead-dark">
                     <tr>
@@ -98,6 +136,8 @@
 
         </div>
 
-        <div class="tab-pane fade" id="estadisticas" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+        <div class="tab-pane fade" id="estadisticas" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <canvas id="pieChart"></canvas>
+        </div>
     </div>
 {% endblock %}
