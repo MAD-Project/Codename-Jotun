@@ -4,7 +4,7 @@
 
         {% for categoria in categorias %}
             <div id="accordion{{ categoria.categoria|replace({' ': ''}) }}">
-                <a class="producto collapsed" data-toggle="collapse" data-target="#collapse{{ categoria.categoria|replace({' ': ''}) }}"
+                <a id="hoverItem" class="producto collapsed" data-toggle="collapse" data-target="#collapse{{ categoria.categoria|replace({' ': ''}) }}"
                     aria-expanded="false" aria-controls="collapse{{ categoria.categoria|replace({' ': ''}) }}">
                     <div id="heading{{ categoria.categoria|replace({' ': ''}) }}" class="item-separation" onclick="rotateArrow('arrow{{ categoria.categoria|replace({' ': ''}) }}');">
                         <h2 id="{{ categoria.categoria|replace({' ': ''}) }}">{{ categoria.categoria|capitalize }}</h2>
@@ -15,7 +15,7 @@
                     <ul class="list-group">
                         {% for producto in productos %}
                             {% if categoria.categoria == producto.CATEGORIA %}
-                                <button type="button" class="p-4 list-group-item list-group-item-action item-separation" data-toggle="modal" data-target="#modalProductos" data-cantidad="{{ producto.PEDIDO_MIN }}" data-medida="{{ producto.MEDIDA }}" data-precio="{{ producto.PRECIO }}" data-nombre="{{ producto.NOMBRE }}" data-id="{{ producto.ID_PRODUCTO }}">
+                                <button id="hoverItem" type="button" class="p-4 list-group-item list-group-item-action item-separation" data-toggle="modal" data-target="#modalProductos" data-cantidad="{{ producto.PEDIDO_MIN }}" data-medida="{{ producto.MEDIDA }}" data-precio="{{ producto.PRECIO }}" data-nombre="{{ producto.NOMBRE }}" data-id="{{ producto.ID_PRODUCTO }}">
 
                                     <span>{{ producto.NOMBRE }}</span>
                                     {% if producto.MEDIDA == "R" %}
@@ -41,22 +41,17 @@
         <div class="modal fade" id="modalProductos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Datos Producto</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
                     <div class="modal-body">
                         <form id="formProductos" onsubmit="return annadirCarrito(this);">
                             <input type="hidden" name="idProducto" class="idProducto">
                             <input type="hidden" name="precioProducto" class="precioProducto">
                             <input type="hidden" name="nombreProducto" class="nombrePorducto">
+                            <input type="hidden" name="minProducto" class="minProducto">
                             <span class="nProducto"></span><br>
                             <span class="pProducto"></span><br>
                             <div class="form-group">
                                 <label for="unidadesProducto" class="medidaProducto"></label>
-                                <input type="number" class="form-control" id="unidadesProducto" name="unidadesProducto" pattern="[0-9]" value="0">
+                                <input type="number" class="form-control" id="unidadesProducto" name="unidadesProducto" pattern="[0-9]">
                             </div>
                             <div class="item-separation">
                                 <button type="button" id="closemodal" class="btn btn-secondary pl-4 pr-4" data-dismiss="modal">Cerrar</button>
@@ -73,7 +68,7 @@
 
     {% block carrito %}
         <!--<div id="carritoProductos" class="col-12 mt-4 nada">No has añadido productos</div>-->
-        <ul id="carritoLista" class="col-12 list-group">
+        <ul id="carritoLista" class="list-group card">
             <li id="noProductos" class="p-4 list-group-item item-separation" style="border: none !important;">No tienes ningun producto</li>
         </ul>
         <div class="mt-4 mb-3 ml-auto mr-auto">
