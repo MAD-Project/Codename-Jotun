@@ -66,4 +66,5 @@ class administradoresController extends indexController {
         header('Location: index.php?controller=administradores&action=logIn');
 
     }
+
 }

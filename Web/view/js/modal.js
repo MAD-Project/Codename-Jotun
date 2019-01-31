@@ -1,5 +1,5 @@
 $('#modalProductos').on('show.bs.modal', function (event) {
-
+    
     var button = $(event.relatedTarget);
     var precio = button.data('precio');
     var nombre = button.data('nombre');
@@ -7,13 +7,13 @@ $('#modalProductos').on('show.bs.modal', function (event) {
     var id = button.data('id');
     var unidad = button.data('cantidad');
 
-    if (unidad === 0){
+    if (unidad === 0) {
         unidad = 1;
     }
 
-    $('#unidadesProducto').prop("min",unidad);
+    $('#unidadesProducto').prop("min", unidad);
 
-    switch (medida){
+    switch (medida) {
 
         case "R":
             medida = "Ración";
@@ -29,12 +29,20 @@ $('#modalProductos').on('show.bs.modal', function (event) {
     }
 
     var modal = $(this);
-    modal.find('.modal-body .nProducto').html("Nombre : "+nombre);
-    modal.find('.modal-body .pProducto').html("Precio: "+precio+"€ / "+medida);
+    modal.find('.modal-body .nProducto').html("<h5>" + nombre + "</h5>");
+    modal.find('.modal-body .pProducto').html("Precio: " + precio + "€ / " + medida);
 
     modal.find('.modal-body .precioProducto').val(precio);
     modal.find('.modal-body .idProducto').val(id);
     modal.find('.modal-body .nombrePorducto').val(nombre);
+    modal.find('.modal-body .minProducto').val(unidad);
+    modal.find('#unidadesProducto').val(null);
+    modal.find('#unidadesProducto').attr("placeholder", "Mínimo " + unidad + " unidades.")
+});
+
+$("#modalProductos").on('hidden.bs.modal', function(){
+
+    $('#errorMsg').html("");
 });
 
 $('#tramitarPedido').on('show.bs.modal', function (event) {
@@ -45,7 +53,8 @@ $('#tramitarPedido').on('show.bs.modal', function (event) {
     var nombre = button.data('nombre');
 
     var modal = $(this);
-    modal.find('.modal-body .pedidoNombre').html("<b>"+nombre+"</b>");
+    modal.find('.modal-body .pedidoNombre').html("<b>" + nombre + "</b>");
+    modal.find('.modal-body .formularioPedido').attr("onsubmit", "aceptarPedido(" + id + ",'" + correo + "')");
 
     var boton=modal.find('.modal-body #botonTramitar');
     var form=modal.find('.modal-body .formularioPedido');

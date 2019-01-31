@@ -40,6 +40,7 @@ class Pedido{
         return $productos;
 
     }
+
     public function nuevoPedido(){
 
         $insert = $this->conexion->prepare("INSERT INTO $this->table (NOMBRE, CORREO, TELEFONO) VALUES (:nombre,:correo,:telefono)");

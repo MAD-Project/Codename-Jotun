@@ -5,36 +5,23 @@
         <title>Jotun</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="view/css/custom.css" />
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
-        <link rel="stylesheet" href="view/css/index.css">
+        <script src="view/js/jquery-3.3.1.min.js"></script>
+        <script src="view/js/popper.min.js"></script>
+        <script src="view/js/bootstrap.min.js"></script>
+        <script src="view/js/clasesJS/ProductosCarrito.js"></script>
+        <script src="view/js/clasesJS/Cliente.js"></script>
         <script src="view/js/index.js"></script>
         <script src="view/js/carrito.js"></script>
-
+        <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+        <link rel="stylesheet" href="view/css/index.css">
     </head>
 
     <body data-spy="scroll" data-target="#categorias" data-offset="0">
-        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img class="navbar-brand" height="40" src="img/logo-restaurante.png">
-                Codename Jotun
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navigationContent">
-               <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-right" href="#">Volver</a>
-                    </li>
-                </ul>
+        <nav id="nav" class="navbar navbar-light">
+            <div class="ml-auto mr-auto">
+                <a class="navbar-brand" href="https://www.egibide.org/escuela-de-hosteleria/">
+                    <img height="55" src="img/logo-restaurante.png">
+                </a>
             </div>
         </nav>
 
@@ -57,7 +44,7 @@
             </div>
         </section>
 
-        <section id="productosDiv" class="container-fluid pt-1 bg-container-main">
+        <section id="productosDiv" class="container-fluid pt-1 bg-light">
             <div class="container">
                 <div class="row">
 
@@ -65,7 +52,7 @@
 
                     <div class="p-4 mt-0">
                         <div>
-                            <h1>Normas</h1>
+                            <h1>Normas de pedido</h1>
                             <div class="card p-4">
                                 <p>Los pedidos se realizarán con un mínimo de
                                     <strong>4 días
@@ -93,7 +80,8 @@
                             {% block productos %}
                             {% endblock productos %}
                         </div>
-                        <div id="carrito" class="row mt-5 card">
+                        <div id="carrito" class="mt-5">
+                            <h1>Carrito</h1>
                             {% block carrito %}
                             {% endblock carrito %}
                         </div>
@@ -102,15 +90,16 @@
             </div>
 
             <div id="scroller" class="p-2" onclick="irCarrito();">
-                    <span id="numeroProductosCarrito" class="badge badge-dark badge-pill badge-position">0</span>
-                    <img height="50" src="img/cart.png">    
+                <span id="numeroProductosCarrito" class="badge badge-dark badge-pill badge-position">0</span>
+                <img height="50" src="img/cart.png">    
             </div>
 
-            <footer class="container-fluid pt-5 pb-3" style="background-color: white;">
-                <div class="p-4 row">
-                    <img class="offset-7 mt-3" height="30" src="img/MAD.jpeg">
-                    <p class="col-3 mt-3">Hecho con <img src="img/heart.svg" height="18"> desde Vitoria-Gasteiz.</p>
-                </div>
+            <div id="scroller2" class="p-2" onclick="goTop();">
+                <img height="50" src="img/arrow-up.png">   
+            </div>
+
+            <footer class="container-fluid pt-5 pb-4">
+                <span class="pl-sm-5 ml-sm-5">MAD Project 2019. </span><span class="float-sm-right pr-sm-5 mr-sm-5">Hecho con <img src="img/heart.svg" height="18"> desde Vitoria-Gasteiz.</span>
             </footer>
         </section>
 

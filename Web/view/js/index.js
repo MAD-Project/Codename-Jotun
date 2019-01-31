@@ -1,20 +1,31 @@
 //Ejecuciones al cargar el documento
 $(function () {
+    goTop();
     $("#scroller").css("display", "none");
-    $('html, body').animate({
-        scrollTop: 0
-    }, 1000);
+    $("#scroller2").css("display", "none").addClass("fixed-bottom flecha-position");
+    $("#carritobtn").hide();
 });
 
 
-$(window).scroll(function (e) {
-    var scroller_anchor = $("#nav").offset().top;
+function goTop() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
+}
 
-    if ($(this).scrollTop() >= scroller_anchor && localStorage.getItem("scrollDone") != 1) {
+//Dos funciones que ocultan y muestran el carrito y la flecha para ir a tope dependiendo del scrolling y de si se ha seleccionado un producto
+$(window).scroll(function (e) {
+    if ($(this).scrollTop() >= $("#nav").offset().top && localStorage.getItem("scrollDone") != 1) {
         $('html, body').animate({
             scrollTop: $("#productosDiv").offset().top
         }, 1000);
         localStorage.setItem("scrollDone", 1);
+    }
+
+    if ($(this).scrollTop() >= $(".scroller_anchor").offset().top) {
+        $('#scroller2').fadeIn();
+    } else if ($(this).scrollTop() < $(".scroller_anchor").offset().top) {
+        $('#scroller2').fadeOut();
     }
 });
 

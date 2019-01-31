@@ -51,4 +51,17 @@ class productosController extends indexController {
         header('Location: index.php?controller=administradores&action=comprobarDatos');
 
     }
+
+    public function anadirProducto(){
+
+        $producto = new Producto($this->conexion);
+        $producto->setNombre($_POST['nombreProducto']);
+        $producto->setCategoria($_POST['categoriaProducto']);
+        $producto->setMedida($_POST['medidaProducto']);
+        $producto->setPrecio($_POST['precioProducto']);
+        $producto->setPedidoMin($_POST['pedidoMinProducto']);
+        $producto->anadir();
+
+        header('Location: index.php?controller=administradores&action=comprobarDatos');
+    }
 }

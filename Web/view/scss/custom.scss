@@ -1,7 +1,30 @@
 // Custom.scss
-// Edits
+
+//Edicion de colores para el diseño
 $primary: #82005d;
 $link-hover-color: $primary;
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+
+.navbar-light {
+    background-color: rgba(248, 249, 250, .91) !important;
+}
+
+.bg-light {
+    background-color: white;
+    margin-top: 35%;
+}
+
+//Evitar que la modal oculte la scroll bar
+.modal {
+    overflow-y: scroll !important;
+}
+
+//H5 para los detalles del producto en la modal
+h5 {
+    margin-bottom: -20px !important;
+    font-size: 1.5em !important;
+}
 
 //Import bootstrap
 @import "../bootstrap/bootstrap";
