@@ -20,11 +20,27 @@ class productosController extends indexController {
         $producto = new Producto($this->conexion);
         $productos = $producto->getAll();
         $categorias = $producto->categorias();
-
+        $carrito=$this->llenarCarrito($productos);
         $this->render("index", array(
             "productos" => $productos,
-            "categorias" => $categorias
+            "categorias" => $categorias,
+            "carrito" => $carrito
         ));
+    }
+
+    public function llenarCarrito($productos){
+        $cookie = json_decode($_COOKIE['productosCarrito'],true);
+        for ($x=0;$x<count($cookie);$x++){
+            foreach ($productos as $producto) {
+                if($cookie[$x]["id"]==$producto["ID_PRODUCTO"]){
+                    $cookie[$x]["nombre"]=$producto["NOMBRE"];
+                    $cookie[$x]["nombre"]=$producto["NOMBRE"];
+                    
+                }
+            }
+        }
+        return $cookie;
+
     }
 
     public function modificar(){

@@ -70,6 +70,9 @@
     {% block carrito %}
         <!--<div id="carritoProductos" class="col-12 mt-4 nada">No has añadido productos</div>-->
         <ul id="carritoLista" class="list-group card">
+            {% for producto in carrito %}
+                <li id='eliminar{{ producto.id }}' class='p-4 list-group-item item-separation'>{{ producto.nombre }}<span><img id='hoverItem' class='mr-2' src='img/minus.svg' height='25' onclick='cambiarUnidades({{ producto.id }},0,1,{{ producto.cantidad }})'><img id='hoverItem' class='mr-3 mt-0' src='img/plus.svg' height='25' onclick='cambiarUnidades({{ producto.id }},1,1,{{ producto.cantidad }})'><span id='cambiar" + form.elements[0].value + "'>" + form.elements[4].value + "</span> Unidades</span></li>
+            {% endfor %}
             <li id="noProductos" class="p-4 list-group-item item-separation" style="border: none !important;">No tienes ningun producto</li>
         </ul>
         <div class="mt-4 mb-3 ml-auto mr-auto">
