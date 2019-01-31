@@ -1,4 +1,3 @@
-var productosCarrito = [];
 //Añade productos al carrito del fondo de la pagina, muestra el simbolo del carrito
 function annadirCarrito(form) {
     if (form.elements[4].value != "") {
@@ -64,7 +63,6 @@ function tramitarPedido() {
     var arrayPedido = [];
     var fechaActual = new Date();
     var fecha = new Date($('#fechaEntregaCliente').val());
-
     fecha.setDate(fecha.getDate() - 4);
 
     if (fecha.getTime()<=fechaActual.getTime()){
@@ -78,8 +76,9 @@ function tramitarPedido() {
         arrayPedido.push(c1);
 
         $("span[id^='cambiar']").each(function () {
-            let Producto = new ProductosCarrito($(this).attr("id").slice(7), $(this).text());
-            arrayPedido.push(Producto);
+            let producto = new ProductosCarrito($(this).attr("id").slice(7).trim(), $(this).text().trim());
+            arrayPedido.push(producto);
+            alert(producto.cantidad);
         });
 
         var pedidosJSON = "pedidos="+JSON.stringify(arrayPedido);
@@ -102,7 +101,7 @@ function tramitarPedido() {
 }
 
 function actualizarCookie(){
-    productosCarrito = [];
+    let productosCarrito = [];
     $("span[id^='cambiar']").each(function () {
         let Producto = new ProductosCarrito($(this).attr("id").slice(7), $(this).text());
         productosCarrito.push(Producto);
