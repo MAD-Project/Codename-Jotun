@@ -60,29 +60,41 @@ function cambiarUnidades(id, what, howmuch, min) {
 function tramitarPedido() {
     var arrayPedido = [];
 
-    var c1 = new Cliente($('#nombreCliente').val(),$('#correoCliente').val(),$('#telefonoCliente').val(),$('#cometarioCliente').val());
+    var fechaActual = new Date();
+    var fecha = new Date($('#fechaEntregaCliente').val());
 
-    arrayPedido.push(c1);
+    fecha.setDate(fecha.getDate() - 4);
 
-    $("#carritoLista").children().each(function () {
-        var Producto = new ProductosCarrito($(this).children().find("span").attr("id").slice(7), $(this).children().find("span").text());
-        arrayPedido.push(Producto);
-    });
+    if (fecha.getTime()<=fechaActual.getTime()){
+        alert("Los pedidos se realizarán con un mínimo de 4 días lectivos de antelación");
+        return false;
+    }
+    else {
 
-    var pedidosJSON = "pedidos="+JSON.stringify(arrayPedido);
+        var c1 = new Cliente($('#nombreCliente').val(),$('#correoCliente').val(),$('#telefonoCliente').val(),$('#cometarioCliente').val(),fechaActual,$('#fechaEntregaCliente').val(),'P');
 
-    $.ajax({
-        data: pedidosJSON,
-        url: 'index.php?controller=pedidos&action=realizarPedido',
-        type: 'post',
-        success: function (data) {
-            debugger;
-            alert("Bien. Data: " + data);
-        },
-        error: function (data) {
-            alert("Error. Data: " + data);
-        }
-    });
+        arrayPedido.push(c1);
 
-    return false;
+        $("#carritoLista").children().each(function () {
+            var Producto = new ProductosCarrito($(this).children().find("span").attr("id").slice(7), $(this).children().find("span").text());
+            arrayPedido.push(Producto);
+        });
+
+        var pedidosJSON = "pedidos="+JSON.stringify(arrayPedido);
+
+        $.ajax({
+            data: pedidosJSON,
+            url: 'index.php?controller=pedidos&action=realizarPedido',
+            type: 'post',
+            success: function (data) {
+                debugger;
+                alert("Bien. Data: " + data);
+            },
+            error: function (data) {
+                alert("Error. Data: " + data);
+            }
+        });
+
+        return false;
+    }
 }
