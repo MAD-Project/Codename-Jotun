@@ -11,7 +11,7 @@ function annadirCarrito(form) {
             cambiarUnidades(form.elements[0].value, 1, form.elements[4].value, form.elements[3].value);
             $('#modalProductos').modal("hide");
         } else {
-            totalProductos = Number.parseInt($('#numeroProductosCarrito').text(), 10) + Number.parseInt(form.elements[4].value, 10);
+            let totalProductos = Number.parseInt($('#numeroProductosCarrito').text(), 10) + Number.parseInt(form.elements[4].value, 10);
             $("#numeroProductosCarrito").replaceWith("<span id='numeroProductosCarrito' class='badge badge-dark badge-pill badge-position'>" + totalProductos + "</span>");
             $("#carritoLista").append("<li id='eliminar" + form.elements[0].value + "' class='p-4 list-group-item item-separation'>" + form.elements[2].value + "<span><img id='hoverItem' class='mr-2' src='img/minus.svg' height='25' onclick='cambiarUnidades(" + form.elements[0].value + ",0,1," + form.elements[3].value + ")'><img id='hoverItem' class='mr-3 mt-0' src='img/plus.svg' height='25' onclick='cambiarUnidades(" + form.elements[0].value + ",1,1," + form.elements[3].value + ")'><span id='cambiar" + form.elements[0].value + "'>" + form.elements[4].value + "</span> Unidades</span></li>");
             $('#modalProductos').modal("hide");
@@ -66,10 +66,8 @@ function tramitarPedido() {
     var c1 = new Cliente($('#nombreCliente').val(),$('#correoCliente').val(),$('#telefonoCliente').val(),$('#cometarioCliente').val());
 
     arrayPedido.push(c1);+
-
-
-        $("#carritoLista").children().each(function () {
-            let Producto = new ProductosCarrito($(this).children().find("span").attr("id").slice(7), $(this).children().find("span").text());
+        $("span[id^='cambiar']").each(function () {
+            let Producto = new ProductosCarrito($(this).attr("id").slice(7), $(this).text());
             arrayPedido.push(Producto);
         });
 
@@ -93,29 +91,22 @@ function tramitarPedido() {
 
 function actualizarCookie(){
     productosCarrito = [];
-    $("#carritoLista").children().each(function () {
-        debugger;
-        let Producto = new ProductosCarrito($(this).children().find("span").attr("id").slice(7), $(this).children().find("span").text());
+    $("span[id^='cambiar']").each(function () {
+        let Producto = new ProductosCarrito($(this).attr("id").slice(7), $(this).text());
         productosCarrito.push(Producto);
     });
+    debugger;
     document.cookie="productosCarrito="+JSON.stringify(productosCarrito)+";expires="+ new Date(new Date().getTime()+60*60*1000*24).toGMTString()+";";
 }
 
-function leerCookieCarrito() {
-    var nombre = "productosCarrito=";
-    var cookies = decodeURIComponent(document.cookie).split(';');
-    debugger;
-    for(var i = 0; i <cookies.length; i++) {
-        let c = cookies[i];
-        while (c.charAt(0) === ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(nombre) == 0) {
-
-            let carrito=JSON.parse(c.substring(nombre.length, c.length));
-            debugger;
-            return  carrito;
-        }
+//funcion para mostrar el icono del carrito cuando este se llena mediante las cookies
+$(function() {
+    if($("#noProductos").length==0){
+        $('#scroller').fadeIn("slow");
+        $('#scroller').addClass("fixed-top carrito-position hoverItem");
+        $("#noProductos").remove();
+        $("#carritoLista").removeClass("card");
+        $("#numeroProductosCarrito").text($("#unidadesCarrito").val());
+        $("#carritobtn").show();
     }
-    return [];
-}
+});

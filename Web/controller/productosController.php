@@ -20,7 +20,7 @@ class productosController extends indexController {
         $producto = new Producto($this->conexion);
         $productos = $producto->getAll();
         $categorias = $producto->categorias();
-        $carrito=$this->llenarCarrito($productos);
+        $carrito=isset($_COOKIE['productosCarrito'])?$this->llenarCarrito($productos):"";
         $this->render("index", array(
             "productos" => $productos,
             "categorias" => $categorias,
@@ -34,7 +34,7 @@ class productosController extends indexController {
             foreach ($productos as $producto) {
                 if($cookie[$x]["id"]==$producto["ID_PRODUCTO"]){
                     $cookie[$x]["nombre"]=$producto["NOMBRE"];
-                    $cookie[$x]["nombre"]=$producto["NOMBRE"];
+                    $cookie[$x]["min"]=$producto["PEDIDO_MIN"];
                     
                 }
             }
