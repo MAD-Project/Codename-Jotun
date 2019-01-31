@@ -62,31 +62,43 @@ function cambiarUnidades(id, what, howmuch, min) {
 //Recoge el id y la cantidad de los elemen  tos de la lista de carrito y los envia al controlador de PHP para hacer el pedido
 function tramitarPedido() {
     var arrayPedido = [];
+    var fechaActual = new Date();
+    var fecha = new Date($('#fechaEntregaCliente').val());
 
-    var c1 = new Cliente($('#nombreCliente').val(),$('#correoCliente').val(),$('#telefonoCliente').val(),$('#cometarioCliente').val());
+    fecha.setDate(fecha.getDate() - 4);
 
-    arrayPedido.push(c1);+
+    if (fecha.getTime()<=fechaActual.getTime()){
+        alert("Los pedidos se realizarán con un mínimo de 4 días lectivos de antelación");
+        return false;
+    }
+    else {
+
+        var c1 = new Cliente($('#nombreCliente').val(),$('#correoCliente').val(),$('#telefonoCliente').val(),$('#cometarioCliente').val(),fechaActual,$('#fechaEntregaCliente').val(),'P');
+
+        arrayPedido.push(c1);
+
         $("span[id^='cambiar']").each(function () {
             let Producto = new ProductosCarrito($(this).attr("id").slice(7), $(this).text());
             arrayPedido.push(Producto);
         });
 
-    var pedidosJSON = "pedidos="+JSON.stringify(arrayPedido);
+        var pedidosJSON = "pedidos="+JSON.stringify(arrayPedido);
 
-    $.ajax({
-        data: pedidosJSON,
-        url: 'index.php?controller=pedidos&action=realizarPedido',
-        type: 'post',
-        success: function (data) {
-            debugger;
-            alert("Bien. Data: " + data);
-        },
-        error: function (data) {
-            alert("Error. Data: " + data);
-        }
-    });
+        $.ajax({
+            data: pedidosJSON,
+            url: 'index.php?controller=pedidos&action=realizarPedido',
+            type: 'post',
+            success: function (data) {
+                debugger;
+                alert("Bien. Data: " + data);
+            },
+            error: function (data) {
+                alert("Error. Data: " + data);
+            }
+        });
 
-    return false;
+        return false;
+    }
 }
 
 function actualizarCookie(){
@@ -95,7 +107,6 @@ function actualizarCookie(){
         let Producto = new ProductosCarrito($(this).attr("id").slice(7), $(this).text());
         productosCarrito.push(Producto);
     });
-    debugger;
     document.cookie="productosCarrito="+JSON.stringify(productosCarrito)+";expires="+ new Date(new Date().getTime()+60*60*1000*24).toGMTString()+";";
 }
 
@@ -110,3 +121,4 @@ $(function() {
         $("#carritobtn").show();
     }
 });
+

@@ -24,22 +24,23 @@ class pedidosController extends indexController {
 
         $pedido = new Pedido($this->conexion);
 
-        $pedido->setCorreo($pedidos[0]->correo);
         $pedido->setNombre($pedidos[0]->nombre);
+        $pedido->setCorreo($pedidos[0]->correo);
         $pedido->setTelefono($pedidos[0]->telefono);
+        $pedido->setFecha($pedidos[0]->fecha);
+        $pedido->setFechaEntrega($pedidos[0]->fechaEntrega);
         $pedido->setComentario($pedidos[0]->comentario);
+        $pedido->setEstado($pedidos[0]->estado);
 
-        for ($i=1;$i<count($pedidos);$i++){
-            die(var_dump($pedidos[$i]->id));
+        $pedido->setProductos($pedidos);
+
+        if ($pedido->nuevoPedido()){
+            die("bien");
+        }
+        else {
+            die("mal");
         }
 
-        if($pedido->nuevoPedido()){
-            $mensaje="todo bien";
-        }else{
-            $mensaje="todo mal";
-        }
-
-        $this->render("formularioPedido",array("mensaje"=>$mensaje));
     }
 
     public function enviarMail(){

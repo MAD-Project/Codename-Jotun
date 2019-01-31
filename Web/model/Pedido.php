@@ -43,14 +43,45 @@ class Pedido{
 
     public function nuevoPedido(){
 
-        $insert = $this->conexion->prepare("INSERT INTO $this->table (NOMBRE, CORREO, TELEFONO) VALUES (:nombre,:correo,:telefono)");
+        $insert = $this->conexion->prepare("INSERT INTO $this->table (NOMBRE, CORREO, TELEFONO, COMENTARIO, FECHA, FECHA_ENTREGA, ESTADO) VALUES (:nombre,:correo,:telefono,:comentario,:fecha,:fechaEntrega,:estado)");
 
         try{
             $insert->execute(array(
                 "nombre" => $this->nombre,
                 "correo" => $this->correo,
-                "telefono" => $this->telefono
+                "telefono" => $this->telefono,
+                "comentario" => $this->comentario,
+                "fecha" => $this->fecha,
+                "fechaEntrega" => $this->fechaEntrega,
+                "estado" => $this->estado
             ));
+
+            $id = $this->conexion->lastInsertId();
+
+            try {
+
+                $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                $this->conexion->beginTransaction();
+
+                for ($x=1;$x<count($this->productos);$x++){
+
+                    $insert = $this->conexion->prepare("INSERT INTO productos_por_pedido(id_pedido,id_producto,cantidad) VALUES(:idPedido,:idProducto,:cantidad)");
+                    $insert->execute(array(
+                        "idPedido" => $id,
+                       "idProducto" =>  $this->productos[$x]->id,
+                        "cantidad" => $this->productos[$x]->cantidad
+                    ));
+
+                }
+
+                $this->conexion->commit();
+
+            } catch (Exception $e) {
+                $this->conexion->rollBack();
+                echo "Fallo: " . $e->getMessage();
+            }
+
         } catch (PDOException $e) {
             $this->conexion = null;
             //devuelve false si ha ocurrido un error
