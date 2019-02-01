@@ -129,6 +129,16 @@ class Pedido{
         return $result;
     }
 
+    public  function estadisticasProductos(){
+
+        $select = $this->conexion->prepare("select po.nombre, sum(pp.CANTIDAD) as cantidad from productos po, pedidos pe, productos_por_pedido pp WHERE pp.ID_PEDIDO = pe.ID_PEDIDO and po.ID_PRODUCTO = pp.ID_PRODUCTO and pe.ESTADO = 'E' GROUP by po.NOMBRE");
+        $select->execute();
+        $result = $select->fetchAll();
+
+        $this->conexion = null;
+
+        return $result;
+    }
 
     /**
      * @return mixed
