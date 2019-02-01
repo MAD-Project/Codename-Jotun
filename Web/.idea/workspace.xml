@@ -31,35 +31,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="administradoresController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="administradoresController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/administradoresController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="72" column="54" lean-forward="false" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+            <state relative-caret-position="759">
+              <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pedido.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Pedido.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/Pedido.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="122" column="588" lean-forward="false" selection-start-line="122" selection-start-column="588" selection-end-line="122" selection-end-column="588" />
+            <state relative-caret-position="672">
+              <caret line="142" column="7" lean-forward="true" selection-start-line="142" selection-start-column="7" selection-end-line="142" selection-end-column="7" />
               <folding>
-                <marker date="1549019629603" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
-                <marker date="1549019629603" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
-                <marker date="1549019629603" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
-                <marker date="1549019629603" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
-                <marker date="1549019629603" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
-                <marker date="1549019629603" expanded="true" signature="3738:3864" ph="SELECT COUNT... pedidos" />
-                <marker date="1549019629603" expanded="true" signature="3738:4282" ph="SELECT COUNT... " />
-                <marker date="1549019629603" expanded="true" signature="3796:3863" ph="select CORRE... pedidos" />
-                <marker date="1549019629603" expanded="true" signature="3875:4120" ph="SELECT COUNT... pedidos" />
-                <marker date="1549019629603" expanded="true" signature="3948:4025" ph="select DISTI... pedidos" />
-                <marker date="1549019629603" expanded="true" signature="4042:4119" ph="SELECT DISTI... pedidos" />
-                <marker date="1549019629603" expanded="true" signature="4131:4282" ph="SELECT COUNT... pedidos" />
-                <marker date="1549019629603" expanded="true" signature="4204:4281" ph="select DISTI... pedidos" />
+                <marker date="1549026616738" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
+                <marker date="1549026616738" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
+                <marker date="1549026616738" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
+                <marker date="1549026616738" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
+                <marker date="1549026616738" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
+                <marker date="1549026616738" expanded="true" signature="3738:3864" ph="SELECT COUNT... pedidos" />
+                <marker date="1549026616738" expanded="true" signature="3738:4282" ph="SELECT COUNT... " />
+                <marker date="1549026616738" expanded="true" signature="3796:3863" ph="select CORRE... pedidos" />
+                <marker date="1549026616738" expanded="true" signature="3875:4120" ph="SELECT COUNT... pedidos" />
+                <marker date="1549026616738" expanded="true" signature="3948:4025" ph="select DISTI... pedidos" />
+                <marker date="1549026616738" expanded="true" signature="4042:4119" ph="SELECT DISTI... pedidos" />
+                <marker date="1549026616738" expanded="true" signature="4131:4282" ph="SELECT COUNT... pedidos" />
+                <marker date="1549026616738" expanded="true" signature="4204:4281" ph="select DISTI... pedidos" />
+                <marker date="1549026616738" expanded="true" signature="4509:4719" ph="select po.no... productos" />
               </folding>
             </state>
           </provider>
@@ -110,8 +111,8 @@
       <file leaf-file-name="estadisticas.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/js/estadisticas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="289">
+              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -145,11 +146,11 @@
         <option value="$PROJECT_DIR$/view/js/carrito.js" />
         <option value="$PROJECT_DIR$/view/bootstrap/_reboot.scss" />
         <option value="$PROJECT_DIR$/controller/pedidosController.php" />
-        <option value="$PROJECT_DIR$/model/Pedido.php" />
         <option value="$PROJECT_DIR$/controller/administradoresController.php" />
         <option value="$PROJECT_DIR$/view/administradorView.twig" />
         <option value="$PROJECT_DIR$/view/js/estadisticas.js" />
         <option value="$PROJECT_DIR$/view/indexView.twig" />
+        <option value="$PROJECT_DIR$/model/Pedido.php" />
       </list>
     </option>
   </component>
@@ -271,12 +272,12 @@
       <workItem from="1548832834954" duration="5597000" />
       <workItem from="1548841495455" duration="5881000" />
       <workItem from="1548919193701" duration="11107000" />
-      <workItem from="1549006042752" duration="14130000" />
+      <workItem from="1549006042752" duration="14862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44071000" />
+    <option name="totallyTimeSpent" value="44803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -319,19 +320,20 @@
         <state relative-caret-position="935">
           <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
           <folding>
-            <marker date="1549019629603" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1549019629603" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
-            <marker date="1549019629603" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
-            <marker date="1549019629603" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
-            <marker date="1549019629603" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
-            <marker date="1549019629603" expanded="true" signature="3738:3864" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3738:4282" ph="SELECT COUNT... " />
-            <marker date="1549019629603" expanded="true" signature="3796:3863" ph="select CORRE... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3875:4120" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3948:4025" ph="select DISTI... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4042:4119" ph="SELECT DISTI... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4131:4282" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4204:4281" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549026616738" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
+            <marker date="1549026616738" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
+            <marker date="1549026616738" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
+            <marker date="1549026616738" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
+            <marker date="1549026616738" expanded="true" signature="3738:3864" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3738:4282" ph="SELECT COUNT... " />
+            <marker date="1549026616738" expanded="true" signature="3796:3863" ph="select CORRE... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3875:4120" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3948:4025" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4042:4119" ph="SELECT DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4131:4282" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4204:4281" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4509:4719" ph="select po.no... productos" />
           </folding>
         </state>
       </provider>
@@ -391,19 +393,20 @@
         <state relative-caret-position="697">
           <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
-            <marker date="1549019629603" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1549019629603" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
-            <marker date="1549019629603" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
-            <marker date="1549019629603" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
-            <marker date="1549019629603" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
-            <marker date="1549019629603" expanded="true" signature="3738:3864" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3738:4282" ph="SELECT COUNT... " />
-            <marker date="1549019629603" expanded="true" signature="3796:3863" ph="select CORRE... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3875:4120" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3948:4025" ph="select DISTI... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4042:4119" ph="SELECT DISTI... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4131:4282" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4204:4281" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549026616738" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
+            <marker date="1549026616738" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
+            <marker date="1549026616738" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
+            <marker date="1549026616738" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
+            <marker date="1549026616738" expanded="true" signature="3738:3864" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3738:4282" ph="SELECT COUNT... " />
+            <marker date="1549026616738" expanded="true" signature="3796:3863" ph="select CORRE... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3875:4120" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3948:4025" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4042:4119" ph="SELECT DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4131:4282" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4204:4281" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4509:4719" ph="select po.no... productos" />
           </folding>
         </state>
       </provider>
@@ -479,19 +482,20 @@
         <state relative-caret-position="850">
           <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
           <folding>
-            <marker date="1549019629603" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1549019629603" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
-            <marker date="1549019629603" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
-            <marker date="1549019629603" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
-            <marker date="1549019629603" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
-            <marker date="1549019629603" expanded="true" signature="3738:3864" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3738:4282" ph="SELECT COUNT... " />
-            <marker date="1549019629603" expanded="true" signature="3796:3863" ph="select CORRE... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3875:4120" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3948:4025" ph="select DISTI... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4042:4119" ph="SELECT DISTI... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4131:4282" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4204:4281" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549026616738" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
+            <marker date="1549026616738" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
+            <marker date="1549026616738" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
+            <marker date="1549026616738" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
+            <marker date="1549026616738" expanded="true" signature="3738:3864" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3738:4282" ph="SELECT COUNT... " />
+            <marker date="1549026616738" expanded="true" signature="3796:3863" ph="select CORRE... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3875:4120" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3948:4025" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4042:4119" ph="SELECT DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4131:4282" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4204:4281" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4509:4719" ph="select po.no... productos" />
           </folding>
         </state>
       </provider>
@@ -769,41 +773,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Pedido.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="122" column="588" lean-forward="false" selection-start-line="122" selection-start-column="588" selection-end-line="122" selection-end-column="588" />
-          <folding>
-            <marker date="1549019629603" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1549019629603" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
-            <marker date="1549019629603" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
-            <marker date="1549019629603" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
-            <marker date="1549019629603" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
-            <marker date="1549019629603" expanded="true" signature="3738:3864" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3738:4282" ph="SELECT COUNT... " />
-            <marker date="1549019629603" expanded="true" signature="3796:3863" ph="select CORRE... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3875:4120" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="3948:4025" ph="select DISTI... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4042:4119" ph="SELECT DISTI... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4131:4282" ph="SELECT COUNT... pedidos" />
-            <marker date="1549019629603" expanded="true" signature="4204:4281" ph="select DISTI... pedidos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/js/estadisticas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="289">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/administradoresController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="72" column="54" lean-forward="false" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+        <state relative-caret-position="759">
+          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Pedido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="142" column="7" lean-forward="true" selection-start-line="142" selection-start-column="7" selection-end-line="142" selection-end-column="7" />
+          <folding>
+            <marker date="1549026616738" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549026616738" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
+            <marker date="1549026616738" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
+            <marker date="1549026616738" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
+            <marker date="1549026616738" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
+            <marker date="1549026616738" expanded="true" signature="3738:3864" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3738:4282" ph="SELECT COUNT... " />
+            <marker date="1549026616738" expanded="true" signature="3796:3863" ph="select CORRE... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3875:4120" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="3948:4025" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4042:4119" ph="SELECT DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4131:4282" ph="SELECT COUNT... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4204:4281" ph="select DISTI... pedidos" />
+            <marker date="1549026616738" expanded="true" signature="4509:4719" ph="select po.no... productos" />
+          </folding>
         </state>
       </provider>
     </entry>
