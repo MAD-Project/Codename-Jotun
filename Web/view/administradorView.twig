@@ -136,8 +136,14 @@
 
         </div>
 
-        <div class="tab-pane fade" id="estadisticas" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <div class="tab-pane fade text-center justify-content-center" id="estadisticas" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <h3>Estadísticas de clientes</h3>
+            <button id="estaClientes" class="btn btn-primary float-right">Actualizar</button>
             <canvas id="pieChart"></canvas>
+            <hr>
+            <h3>Estadísticas de productos comprados</h3>
+            <button id="estaProductos" class="btn btn-primary float-right">Actualizar</button>
+            <canvas id="horizontalBar"></canvas>
         </div>
     </div>
 {% endblock %}

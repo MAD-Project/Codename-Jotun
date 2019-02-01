@@ -118,6 +118,17 @@ class Pedido{
         }
     }
 
+    public function estadisticasClientes(){
+
+        $select = $this->conexion->prepare("SELECT COUNT(*) as clientes FROM pedidos WHERE CORREO IN (select CORREO from pedidos GROUP by CORREO HAVING COUNT(CORREO) = 1) UNION ALL SELECT COUNT(DISTINCT(CORREO)) as clientes FROM pedidos WHERE CORREO IN (select DISTINCT(CORREO) from pedidos GROUP by CORREO HAVING COUNT(CORREO) > 1) AND CORREO IN (SELECT DISTINCT(CORREO) from pedidos GROUP BY CORREO HAVING COUNT(CORREO) < 5) UNION ALL SELECT COUNT(DISTINCT(CORREO)) as clientes FROM pedidos WHERE CORREO IN (select DISTINCT(CORREO) from pedidos GROUP by CORREO HAVING COUNT(CORREO) > 5)");
+        $select->execute();
+        $result = $select->fetchAll();
+
+        $this->conexion = null;
+
+        return $result;
+    }
+
 
     /**
      * @return mixed
