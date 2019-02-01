@@ -70,7 +70,25 @@
     {% block carrito %}
         <!--<div id="carritoProductos" class="col-12 mt-4 nada">No has añadido productos</div>-->
         <ul id="carritoLista" class="list-group card">
-            <li id="noProductos" class="p-4 list-group-item item-separation" style="border: none !important;">No tienes ningun producto</li>
+            {%  if (carrito) %}
+                {% set unidades=0 %}
+                {% for producto in carrito %}
+                    <li id='eliminar{{ producto.id }}' class='p-4 list-group-item item-separation'>
+                        {{ producto.nombre }}
+                        <span>
+                            <img id='hoverItem' class='mr-2' src='img/minus.svg' height='25' onclick='cambiarUnidades({{ producto.id }},0,1,{{ producto.min }})'>
+                            <img id='hoverItem' class='mr-3 mt-0' src='img/plus.svg' height='25' onclick='cambiarUnidades({{ producto.id }},1,1,{{ producto.min }})'>
+                            <span id='cambiar{{ producto.id }}'>
+                                {{ producto.cantidad }}
+                            </span> Unidades
+                        </span>
+                    </li>
+                    {% set unidades = unidades + producto.cantidad|number_format %}
+                {% endfor %}
+                <input type="hidden" id="unidadesCarrito" value="{{ unidades }}">
+            {% else %}
+                <li id="noProductos" class="p-4 list-group-item item-separation" style="border: none !important;">No tienes ningun producto</li>
+            {% endif %}
         </ul>
         <div class="mt-4 mb-3 ml-auto mr-auto">
             <button id="carritobtn" class="btn btn-primary pl-4 pr-4 pt-2 pb-2" data-toggle="modal" data-target="#modalPedido"><span class="h4">Tramitar pedido</span></button>
@@ -115,4 +133,3 @@
         </div>
 
     {% endblock %}
-
