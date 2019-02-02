@@ -51,7 +51,7 @@
                             <span class="pProducto"></span><br>
                             <div class="form-group">
                                 <label for="unidadesProducto" class="medidaProducto"></label>
-                                <input type="number" class="form-control" id="unidadesProducto" name="unidadesProducto" pattern="[0-9]">
+                                <input type="number" class="form-control" id="unidadesProducto" name="unidadesProducto" pattern="[0-9]" max="100">
                             </div>
                             <p id="errorMsg" class="text-danger mt-0"></p>
                             <div class="item-separation">
@@ -129,6 +129,31 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-notify modal-success" role="document">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <p class="heading lead">Datos Actualizados con exito</p>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <span id="pedidoRealizado"></span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <a type="button" id="actualizarPagina" class="btn btn-primary" data-dismiss="modal">✔</a>
+                    </div>
+                </div>
+
             </div>
         </div>
 

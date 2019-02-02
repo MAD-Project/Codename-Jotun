@@ -118,6 +118,27 @@ class Pedido{
         }
     }
 
+    public function estadisticasClientes(){
+
+        $select = $this->conexion->prepare("SELECT COUNT(*) as clientes FROM pedidos WHERE CORREO IN (select CORREO from pedidos GROUP by CORREO HAVING COUNT(CORREO) = 1) UNION ALL SELECT COUNT(DISTINCT(CORREO)) as clientes FROM pedidos WHERE CORREO IN (select DISTINCT(CORREO) from pedidos GROUP by CORREO HAVING COUNT(CORREO) > 1) AND CORREO IN (SELECT DISTINCT(CORREO) from pedidos GROUP BY CORREO HAVING COUNT(CORREO) < 5) UNION ALL SELECT COUNT(DISTINCT(CORREO)) as clientes FROM pedidos WHERE CORREO IN (select DISTINCT(CORREO) from pedidos GROUP by CORREO HAVING COUNT(CORREO) > 5)");
+        $select->execute();
+        $result = $select->fetchAll();
+
+        $this->conexion = null;
+
+        return $result;
+    }
+
+    public  function estadisticasProductos(){
+
+        $select = $this->conexion->prepare("select po.nombre, sum(pp.CANTIDAD) as cantidad from productos po, pedidos pe, productos_por_pedido pp WHERE pp.ID_PEDIDO = pe.ID_PEDIDO and po.ID_PRODUCTO = pp.ID_PRODUCTO and pe.ESTADO = 'E' GROUP by po.NOMBRE");
+        $select->execute();
+        $result = $select->fetchAll();
+
+        $this->conexion = null;
+
+        return $result;
+    }
 
     /**
      * @return mixed

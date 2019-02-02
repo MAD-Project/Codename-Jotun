@@ -1,3 +1,13 @@
+$(document).ready(function () {
+
+    $('#actualizarPagina').click(function () {
+        setTimeout (function () {
+            location.reload();
+        },500);
+    });
+});
+
+
 //Añade productos al carrito del fondo de la pagina, muestra el simbolo del carrito
 function annadirCarrito(form) {
     if (form.elements[4].value != "") {
@@ -78,7 +88,6 @@ function tramitarPedido() {
         $("span[id^='cambiar']").each(function () {
             let producto = new ProductosCarrito($(this).attr("id").slice(7).trim(), $(this).text().trim());
             arrayPedido.push(producto);
-            alert(producto.cantidad);
         });
 
         var pedidosJSON = "pedidos="+JSON.stringify(arrayPedido);
@@ -88,11 +97,21 @@ function tramitarPedido() {
             url: 'index.php?controller=pedidos&action=realizarPedido',
             type: 'post',
             success: function (data) {
-                debugger;
-                alert("Bien. Data: " + data);
+
+                if (data === "bien"){
+
+                    $("#modalPedido").modal('hide');
+                    $('#pedidoRealizado').html("Pedido realizado con éxito.");
+                    document.cookie = "productosCarrito=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+                    $("#centralModalSuccess").modal('show');
+                }
+                else {
+
+                    alert("Error al realizar el pedido vuevla a intentarlo.");
+                }
             },
             error: function (data) {
-                alert("Error. Data: " + data);
+                alert(data);
             }
         });
 
