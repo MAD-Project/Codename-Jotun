@@ -110,7 +110,6 @@ class Pedido{
             }
 
         } catch (PDOException $e) {
-            $this->conexion = null;
             $update->rollback();
             //devuelve false si ha ocurrido un error
             $this->conexion = null;
