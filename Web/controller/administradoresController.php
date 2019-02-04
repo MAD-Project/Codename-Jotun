@@ -75,4 +75,12 @@ class AdministradoresController extends IndexController {
         die(json_encode($estadisticasClientes));
     }
 
+    public function estadisticasProductos(){
+
+        $pedido = new Pedido($this->conexion);
+        $estadisticasProductos = $pedido->estadisticasProductos();
+
+        die(json_encode($estadisticasProductos));
+    }
+
 }
