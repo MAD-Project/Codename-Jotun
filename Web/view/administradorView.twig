@@ -28,7 +28,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content bg-white">
                             <div class="modal-body">
-                                <form action="index.php?controller=productos&action=anadirProducto" method="post">
+                                <form action="index.php?controller=Productos&action=anadirProducto" method="post">
                                     <div class="form-group">
                                         <label for="nombreProducto">Nombre</label>
                                         <input type="text" class="form-control" id="nombreProducto" name="nombreProducto">
@@ -87,7 +87,7 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content bg-white">
                                     <div class="modal-body">
-                                        <form action="index.php?controller=productos&action=modificar&idProducto={{ producto.ID_PRODUCTO }}" method="post">
+                                        <form action="index.php?controller=Productos&action=modificar&idProducto={{ producto.ID_PRODUCTO }}" method="post">
                                             <div class="form-group">
                                                 <label for="nombreProducto">Nombre</label>
                                                 <input type="text" class="form-control" id="nombreProducto" name="nombreProducto" value="{{ producto.NOMBRE }}">
@@ -120,7 +120,7 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content bg-white justify-content-center text-center">
                                     <div class="modal-body">
-                                        <form action="index.php?controller=productos&action=borrar&idProducto={{ producto.ID_PRODUCTO }}" method="post">
+                                        <form action="index.php?controller=Productos&action=borrar&idProducto={{ producto.ID_PRODUCTO }}" method="post">
                                             <div class="form-group">
                                                 <span>¿Seguro que deseas borrar este producto?</span>
                                             </div>

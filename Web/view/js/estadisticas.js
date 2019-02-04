@@ -20,7 +20,7 @@ function estadisticasClientes() {
 
     $.ajax({
         type: 'GET',
-        url: 'index.php?controller=administradores&action=estadisticasClientes',
+        url: 'index.php?controller=Administradores&action=estadisticasClientes',
         dataType:"json",
         success: function (data) {
 
