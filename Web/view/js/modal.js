@@ -40,6 +40,11 @@ $('#modalProductos').on('show.bs.modal', function (event) {
     modal.find('#unidadesProducto').attr("placeholder", "Mínimo " + unidad + " unidades.")
 });
 
+$("#modalProductos").on('hidden.bs.modal', function(){
+
+    $('#errorMsg').html("");
+});
+
 $('#tramitarPedido').on('show.bs.modal', function (event) {
 
     var button = $(event.relatedTarget);

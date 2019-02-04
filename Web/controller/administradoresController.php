@@ -2,7 +2,7 @@
 
 require_once 'IndexController.php';
 
-class administradoresController extends indexController {
+class AdministradoresController extends IndexController {
     private $conectar;
     private $conexion;
 
@@ -44,7 +44,7 @@ class administradoresController extends indexController {
         $_SESSION['login'] = null;
         $_SESSION['nombreUsuario'] = null;
 
-        header('Location: index.php?controller=administradores&action=logIn');
+        header('Location: index.php?controller=Administradores&action=logIn');
     }
 
     public function comprobarDatos(){
@@ -63,8 +63,16 @@ class administradoresController extends indexController {
 
         }
 
-        header('Location: index.php?controller=administradores&action=logIn');
+        header('Location: index.php?controller=Administradores&action=logIn');
 
+    }
+
+    public function estadisticasClientes(){
+
+        $pedido = new Pedido($this->conexion);
+        $estadisticasClientes = $pedido->estadisticasClientes();
+
+        die(json_encode($estadisticasClientes));
     }
 
 }

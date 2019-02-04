@@ -1,8 +1,8 @@
 <?php
 
-require_once 'indexController.php';
+require_once 'IndexController.php';
 
-class pedidosController extends indexController {
+class PedidosController extends IndexController {
     private $conectar;
     private $conexion;
 
@@ -20,22 +20,27 @@ class pedidosController extends indexController {
     
     public function realizarPedido(){
 
-        die(print_r(json_decode($_POST['productos'])));
+        $pedidos = json_decode($_POST['pedidos']);
 
         $pedido = new Pedido($this->conexion);
 
-        $pedido->setCorreo($_POST['email']);
-        $pedido->setNombre($_POST['nombre']);
-        $pedido->setTelefono($_POST['telefono']);
-        $pedido->setComentario($_POST['comentario']);
+        $pedido->setNombre($pedidos[0]->nombre);
+        $pedido->setCorreo($pedidos[0]->correo);
+        $pedido->setTelefono($pedidos[0]->telefono);
+        $pedido->setFecha($pedidos[0]->fecha);
+        $pedido->setFechaEntrega($pedidos[0]->fechaEntrega);
+        $pedido->setComentario($pedidos[0]->comentario);
+        $pedido->setEstado($pedidos[0]->estado);
 
-        if($pedido->nuevoPedido()){
-            $mensaje="todo bien";
-        }else{
-            $mensaje="todo mal";
+        $pedido->setProductos($pedidos);
+
+        if ($pedido->nuevoPedido()){
+            die("bien");
+        }
+        else {
+            die("mal");
         }
 
-        $this->render("formularioPedido",array("mensaje"=>$mensaje));
     }
 
     public function enviarMail(){
