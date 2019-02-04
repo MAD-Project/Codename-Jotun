@@ -17,7 +17,7 @@
                     <a class="btn btn-outline-info" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}">Ver comentario</a>
                 {% endif %}
             </span>
-            <div id="collapsePendientes{{ pedido.ID_PEDIDO }}" class="collapse row mt-2" >
+            <div id="collapsePendientes{{ pedido.ID_PEDIDO }}" class="row collapse mt-2" >
                 <ul class="list-group list-group-flush col-5 offset-1">
                 {% for producto in pedido.productos %}
                     <li class="list-group-item list-group-item-warning">
