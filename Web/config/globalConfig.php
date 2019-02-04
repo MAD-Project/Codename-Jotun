@@ -1,6 +1,6 @@
 <?php
 
-define("controladorDefecto","productos");
+define("controladorDefecto","Productos");
 define("accionDefecto","index");
-define("controladorAdmin","administradores");
+define("controladorAdmin","Administradores");
 define("accionAdmin","logIn");

@@ -4,7 +4,7 @@ function tramitarPedido(idPedido, email,nuevoEstado) {
 
     $.ajax({
         type: "POST",
-        url: "index.php?controller=pedidos&action=tramitarPedido",
+        url: "index.php?controller=Pedidos&action=tramitarPedido",
         data: { idPedido: idPedido,
                 nuevoEstado: nuevoEstado},
     success: function (data) {

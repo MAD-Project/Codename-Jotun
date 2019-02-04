@@ -2,7 +2,7 @@
 
 require_once 'IndexController.php';
 
-class productosController extends indexController {
+class ProductosController extends IndexController {
     private $conectar;
     private $conexion;
 
@@ -54,7 +54,7 @@ class productosController extends indexController {
         $producto->setPedidoMin($_POST['pedidoMinProducto']);
         $producto->update();
 
-        header('Location: index.php?controller=administradores&action=comprobarDatos');
+        header('Location: index.php?controller=Administradores&action=comprobarDatos');
 
     }
 
@@ -64,7 +64,7 @@ class productosController extends indexController {
         $producto->setId($_GET['idProducto']);
         $producto->del();
 
-        header('Location: index.php?controller=administradores&action=comprobarDatos');
+        header('Location: index.php?controller=Administradores&action=comprobarDatos');
 
     }
 
@@ -78,6 +78,6 @@ class productosController extends indexController {
         $producto->setPedidoMin($_POST['pedidoMinProducto']);
         $producto->anadir();
 
-        header('Location: index.php?controller=administradores&action=comprobarDatos');
+        header('Location: index.php?controller=Administradores&action=comprobarDatos');
     }
 }
