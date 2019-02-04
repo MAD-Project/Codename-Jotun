@@ -31,6 +31,7 @@
                     <div class="col-md-2 col-4 offset-4 offset-md-2 d-flex flex-md-column justify-content-around align-items-around">
                         <button class="row-md btn btn-outline-primary" data-toggle="modal" data-target="#tramitarPedido" data-id="{{ pedido.ID_PEDIDO }}" data-correo="{{ pedido.CORREO }}" data-nombre="{{ pedido.NOMBRE }}" data-estado="A">Aceptar</button>
                         <button class="row-md btn btn-outline-danger" data-toggle="modal" data-target="#tramitarPedido" data-id="{{ pedido.ID_PEDIDO }}" data-correo="{{ pedido.CORREO }}" data-nombre="{{ pedido.NOMBRE }}" data-estado="R">Rechazar</button>
+                    </div>
                 </div>
             </div>
         {% else %}
