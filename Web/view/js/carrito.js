@@ -10,6 +10,7 @@ $(document).ready(function () {
 
 //Añade productos al carrito del fondo de la pagina, muestra el simbolo del carrito
 function annadirCarrito(form) {
+
     if (form.elements[4].value != "") {
         $('#scroller').fadeIn("slow");
         $('#scroller').addClass("fixed-top carrito-position hoverItem");
