@@ -44,12 +44,7 @@ class pedidosController extends IndexController {
     }
 
     public function enviarMail(){
-        /*Hacer esto una vez en el server, con servidor de correo
-         * $headers =  'MIME-Version: 1.0' . "\r\n";
-        $headers .= 'From: Mikel <mklferreiro@gmail.com>' . "\r\n";
-        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-
-        mail('mklferreiro@gmail.com', 'Mi título', "prueba de mensaje",$headers);*/
+        exec("echo '<h1>Egibide - Escuela de hosteleria</h1><br><h2>Su pedido ha sido confirmado.</h2> Puede pasar a recogerlo dentro de 4 días laborables.<br>' | mail -s 'This is the subject\nContent-Type: text/html' " . $_POST['email'] ."");
     }
 
     public function tramitarPedido(){
@@ -58,7 +53,11 @@ class pedidosController extends IndexController {
         $pedido->setId($_POST["idPedido"]);
         $pedido->setEstado($_POST["nuevoEstado"]);
 
-        die($pedido->tramitarPedido());
+        if($pedido->tramitarPedido()){
+            enviarMail();
+            return true;
+        }
+        return false;
 
     }
 
