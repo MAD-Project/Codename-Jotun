@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="indexView.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/indexView.twig">
+      <file leaf-file-name="administradoresController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/administradoresController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="26" lean-forward="false" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+            <state relative-caret-position="742">
+              <caret line="82" column="49" lean-forward="false" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -24,43 +24,80 @@
       <file leaf-file-name="indexLayout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/templates/indexLayout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            <state relative-caret-position="221">
+              <caret line="21" column="73" lean-forward="true" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="administradoresController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/administradoresController.php">
+      <file leaf-file-name="adminLayout.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/templates/adminLayout.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="793">
-              <caret line="82" column="49" lean-forward="true" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+            <state relative-caret-position="544">
+              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pedido.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Pedido.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/Pedido.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="133" column="27" lean-forward="true" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
+            <state relative-caret-position="68">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
               <folding>
-                <marker date="1549264924969" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
-                <marker date="1549264924969" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
-                <marker date="1549264924969" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
-                <marker date="1549264924969" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
-                <marker date="1549264924969" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
-                <marker date="1549264924969" expanded="true" signature="3702:3828" ph="SELECT COUNT... pedidos" />
-                <marker date="1549264924969" expanded="true" signature="3702:4246" ph="SELECT COUNT... " />
-                <marker date="1549264924969" expanded="true" signature="3760:3827" ph="select CORRE... pedidos" />
-                <marker date="1549264924969" expanded="true" signature="3839:4084" ph="SELECT COUNT... pedidos" />
-                <marker date="1549264924969" expanded="true" signature="3912:3989" ph="select DISTI... pedidos" />
-                <marker date="1549264924969" expanded="true" signature="4006:4083" ph="SELECT DISTI... pedidos" />
-                <marker date="1549264924969" expanded="true" signature="4095:4246" ph="SELECT COUNT... pedidos" />
-                <marker date="1549264924969" expanded="true" signature="4168:4245" ph="select DISTI... pedidos" />
-                <marker date="1549264924969" expanded="true" signature="4473:4683" ph="select po.no... productos" />
+                <marker date="1549278740322" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
+                <marker date="1549278740322" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
+                <marker date="1549278740322" expanded="true" signature="1377:1546" ph="INSERT INTO ${$this-&gt;table}... " />
+                <marker date="1549278740322" expanded="true" signature="2086:2190" ph="INSERT INTO productos_por_pedido... " />
+                <marker date="1549278740322" expanded="true" signature="2769:2828" ph="UPDATE pedid... " />
+                <marker date="1549278740322" expanded="true" signature="3485:3611" ph="SELECT COUNT... pedidos" />
+                <marker date="1549278740322" expanded="true" signature="3485:4029" ph="SELECT COUNT... " />
+                <marker date="1549278740322" expanded="true" signature="3543:3610" ph="select CORRE... pedidos" />
+                <marker date="1549278740322" expanded="true" signature="3622:3867" ph="SELECT COUNT... pedidos" />
+                <marker date="1549278740322" expanded="true" signature="3695:3772" ph="select DISTI... pedidos" />
+                <marker date="1549278740322" expanded="true" signature="3789:3866" ph="SELECT DISTI... pedidos" />
+                <marker date="1549278740322" expanded="true" signature="3878:4029" ph="SELECT COUNT... pedidos" />
+                <marker date="1549278740322" expanded="true" signature="3951:4028" ph="select DISTI... pedidos" />
+                <marker date="1549278740322" expanded="true" signature="4256:4466" ph="select po.no... productos" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pedidosController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/pedidosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productosController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/productosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Producto.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Producto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+              <folding>
+                <marker date="1549277531280" expanded="true" signature="394:470" ph="SELECT * FRO... ${$this-&gt;table}" />
+                <marker date="1549277531280" expanded="true" signature="394:554" ph="SELECT * FRO... ${$this-&gt;table}" />
+                <marker date="1549277531280" expanded="true" signature="736:913" ph="SELECT DISTI... ${$this-&gt;table}" />
+                <marker date="1549277531280" expanded="true" signature="1123:1267" ph="UPDATE produ... " />
+                <marker date="1549277531280" expanded="true" signature="1673:1726" ph="DELETE FROM " />
+                <marker date="1549277531280" expanded="true" signature="1927:2046" ph="INSERT INTO productos... " />
               </folding>
             </state>
           </provider>
@@ -69,16 +106,16 @@
       <file leaf-file-name="carrito.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/js/carrito.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="90" column="11" lean-forward="false" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
+            <state relative-caret-position="582">
+              <caret line="96" column="39" lean-forward="true" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="40" />
               <folding>
-                <marker date="1549007886195" expanded="true" signature="3219:3242" ph="..." />
+                <marker date="1549279412826" expanded="true" signature="3219:3242" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="administradorPedidosView.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="administradorPedidosView.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/administradorPedidosView.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
@@ -96,26 +133,6 @@
               <folding>
                 <element signature="e#126#144#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cliente.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/js/clasesJS/Cliente.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="69" lean-forward="false" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="estadisticas.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/js/estadisticas.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="38" column="78" lean-forward="false" selection-start-line="38" selection-start-column="78" selection-end-line="38" selection-end-column="78" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -139,21 +156,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/controller/productosController.php" />
-        <option value="$PROJECT_DIR$/model/Producto.php" />
         <option value="$PROJECT_DIR$/view/js/modal.js" />
         <option value="$PROJECT_DIR$/view/js/clasesJS/Cliente.js" />
         <option value="$PROJECT_DIR$/view/templates/adminLayout.twig" />
         <option value="$PROJECT_DIR$/Create.sql" />
-        <option value="$PROJECT_DIR$/view/js/carrito.js" />
         <option value="$PROJECT_DIR$/view/bootstrap/_reboot.scss" />
         <option value="$PROJECT_DIR$/controller/pedidosController.php" />
         <option value="$PROJECT_DIR$/view/indexView.twig" />
-        <option value="$PROJECT_DIR$/model/Pedido.php" />
         <option value="$PROJECT_DIR$/controller/administradoresController.php" />
         <option value="$PROJECT_DIR$/view/js/estadisticas.js" />
-        <option value="$PROJECT_DIR$/view/templates/indexLayout.html.twig" />
         <option value="$PROJECT_DIR$/view/administradorView.twig" />
         <option value="$PROJECT_DIR$/view/administradorPedidosView.twig" />
+        <option value="$PROJECT_DIR$/model/Producto.php" />
+        <option value="$PROJECT_DIR$/model/Pedido.php" />
+        <option value="$PROJECT_DIR$/view/js/carrito.js" />
+        <option value="$PROJECT_DIR$/view/templates/indexLayout.html.twig" />
       </list>
     </option>
   </component>
@@ -205,13 +222,12 @@
             <path>
               <item name="Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Web" type="b2602c69:ProjectViewProjectNode" />
@@ -283,12 +299,12 @@
       <workItem from="1548841495455" duration="5881000" />
       <workItem from="1548919193701" duration="11107000" />
       <workItem from="1549006042752" duration="14913000" />
-      <workItem from="1549264990972" duration="5870000" />
+      <workItem from="1549264990972" duration="10604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50724000" />
+    <option name="totallyTimeSpent" value="55458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -326,29 +342,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/model/Pedido.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-          <folding>
-            <marker date="1549264924969" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1549264924969" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
-            <marker date="1549264924969" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
-            <marker date="1549264924969" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
-            <marker date="1549264924969" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
-            <marker date="1549264924969" expanded="true" signature="3702:3828" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3702:4246" ph="SELECT COUNT... " />
-            <marker date="1549264924969" expanded="true" signature="3760:3827" ph="select CORRE... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3839:4084" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3912:3989" ph="select DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4006:4083" ph="SELECT DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4095:4246" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4168:4245" ph="select DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4473:4683" ph="select po.no... productos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/indexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -377,7 +370,7 @@
         <state relative-caret-position="1105">
           <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
           <folding>
-            <marker date="1549007886195" expanded="true" signature="3219:3242" ph="..." />
+            <marker date="1549279412826" expanded="true" signature="3219:3242" ph="..." />
           </folding>
         </state>
       </provider>
@@ -403,20 +396,20 @@
         <state relative-caret-position="697">
           <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
-            <marker date="1549264924969" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1549264924969" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
-            <marker date="1549264924969" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
-            <marker date="1549264924969" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
-            <marker date="1549264924969" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
-            <marker date="1549264924969" expanded="true" signature="3702:3828" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3702:4246" ph="SELECT COUNT... " />
-            <marker date="1549264924969" expanded="true" signature="3760:3827" ph="select CORRE... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3839:4084" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3912:3989" ph="select DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4006:4083" ph="SELECT DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4095:4246" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4168:4245" ph="select DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4473:4683" ph="select po.no... productos" />
+            <marker date="1549278740322" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549278740322" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
+            <marker date="1549278740322" expanded="true" signature="1377:1546" ph="INSERT INTO ${$this-&gt;table}... " />
+            <marker date="1549278740322" expanded="true" signature="2086:2190" ph="INSERT INTO productos_por_pedido... " />
+            <marker date="1549278740322" expanded="true" signature="2769:2828" ph="UPDATE pedid... " />
+            <marker date="1549278740322" expanded="true" signature="3485:3611" ph="SELECT COUNT... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3485:4029" ph="SELECT COUNT... " />
+            <marker date="1549278740322" expanded="true" signature="3543:3610" ph="select CORRE... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3622:3867" ph="SELECT COUNT... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3695:3772" ph="select DISTI... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3789:3866" ph="SELECT DISTI... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3878:4029" ph="SELECT COUNT... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3951:4028" ph="select DISTI... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="4256:4466" ph="select po.no... productos" />
           </folding>
         </state>
       </provider>
@@ -426,7 +419,7 @@
         <state relative-caret-position="1088">
           <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
           <folding>
-            <marker date="1549007886195" expanded="true" signature="3219:3242" ph="..." />
+            <marker date="1549279412826" expanded="true" signature="3219:3242" ph="..." />
           </folding>
         </state>
       </provider>
@@ -491,20 +484,20 @@
         <state relative-caret-position="850">
           <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
           <folding>
-            <marker date="1549264924969" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1549264924969" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
-            <marker date="1549264924969" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
-            <marker date="1549264924969" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
-            <marker date="1549264924969" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
-            <marker date="1549264924969" expanded="true" signature="3702:3828" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3702:4246" ph="SELECT COUNT... " />
-            <marker date="1549264924969" expanded="true" signature="3760:3827" ph="select CORRE... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3839:4084" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3912:3989" ph="select DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4006:4083" ph="SELECT DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4095:4246" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4168:4245" ph="select DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4473:4683" ph="select po.no... productos" />
+            <marker date="1549278740322" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549278740322" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
+            <marker date="1549278740322" expanded="true" signature="1377:1546" ph="INSERT INTO ${$this-&gt;table}... " />
+            <marker date="1549278740322" expanded="true" signature="2086:2190" ph="INSERT INTO productos_por_pedido... " />
+            <marker date="1549278740322" expanded="true" signature="2769:2828" ph="UPDATE pedid... " />
+            <marker date="1549278740322" expanded="true" signature="3485:3611" ph="SELECT COUNT... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3485:4029" ph="SELECT COUNT... " />
+            <marker date="1549278740322" expanded="true" signature="3543:3610" ph="select CORRE... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3622:3867" ph="SELECT COUNT... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3695:3772" ph="select DISTI... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3789:3866" ph="SELECT DISTI... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3878:4029" ph="SELECT COUNT... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3951:4028" ph="select DISTI... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="4256:4466" ph="select po.no... productos" />
           </folding>
         </state>
       </provider>
@@ -514,7 +507,7 @@
         <state relative-caret-position="1309">
           <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
           <folding>
-            <marker date="1549007886195" expanded="true" signature="3219:3242" ph="..." />
+            <marker date="1549279412826" expanded="true" signature="3219:3242" ph="..." />
           </folding>
         </state>
       </provider>
@@ -540,12 +533,12 @@
         <state relative-caret-position="510">
           <caret line="30" column="210" lean-forward="false" selection-start-line="30" selection-start-column="210" selection-end-line="30" selection-end-column="210" />
           <folding>
-            <marker date="1548766658078" expanded="true" signature="394:470" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1548766658078" expanded="true" signature="394:554" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1548766658078" expanded="true" signature="736:913" ph="SELECT DISTI... ${$this-&gt;table}" />
-            <marker date="1548766658078" expanded="true" signature="1123:1267" ph="UPDATE produ... " />
-            <marker date="1548766658078" expanded="true" signature="1673:1726" ph="DELETE FROM " />
-            <marker date="1548766658078" expanded="true" signature="1927:2046" ph="INSERT INTO productos... " />
+            <marker date="1549277531280" expanded="true" signature="394:470" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="394:554" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="736:913" ph="SELECT DISTI... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="1123:1267" ph="UPDATE produ... " />
+            <marker date="1549277531280" expanded="true" signature="1673:1726" ph="DELETE FROM " />
+            <marker date="1549277531280" expanded="true" signature="1927:2046" ph="INSERT INTO productos... " />
           </folding>
         </state>
       </provider>
@@ -571,7 +564,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1549007886195" expanded="true" signature="3219:3242" ph="..." />
+            <marker date="1549279412826" expanded="true" signature="3219:3242" ph="..." />
           </folding>
         </state>
       </provider>
@@ -589,12 +582,12 @@
         <state relative-caret-position="510">
           <caret line="30" column="210" lean-forward="true" selection-start-line="30" selection-start-column="210" selection-end-line="30" selection-end-column="210" />
           <folding>
-            <marker date="1548766658078" expanded="true" signature="394:470" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1548766658078" expanded="true" signature="394:554" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1548766658078" expanded="true" signature="736:913" ph="SELECT DISTI... ${$this-&gt;table}" />
-            <marker date="1548766658078" expanded="true" signature="1123:1267" ph="UPDATE produ... " />
-            <marker date="1548766658078" expanded="true" signature="1673:1726" ph="DELETE FROM " />
-            <marker date="1548766658078" expanded="true" signature="1927:2046" ph="INSERT INTO productos... " />
+            <marker date="1549277531280" expanded="true" signature="394:470" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="394:554" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="736:913" ph="SELECT DISTI... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="1123:1267" ph="UPDATE produ... " />
+            <marker date="1549277531280" expanded="true" signature="1673:1726" ph="DELETE FROM " />
+            <marker date="1549277531280" expanded="true" signature="1927:2046" ph="INSERT INTO productos... " />
           </folding>
         </state>
       </provider>
@@ -613,21 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="210" lean-forward="false" selection-start-line="30" selection-start-column="210" selection-end-line="30" selection-end-column="210" />
-          <folding>
-            <marker date="1548766658078" expanded="true" signature="394:470" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1548766658078" expanded="true" signature="394:554" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1548766658078" expanded="true" signature="736:913" ph="SELECT DISTI... ${$this-&gt;table}" />
-            <marker date="1548766658078" expanded="true" signature="1123:1267" ph="UPDATE produ... " />
-            <marker date="1548766658078" expanded="true" signature="1673:1726" ph="DELETE FROM " />
-            <marker date="1548766658078" expanded="true" signature="1927:2046" ph="INSERT INTO productos... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/js/modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -636,25 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/productosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="87" lean-forward="false" selection-start-line="64" selection-start-column="87" selection-end-line="64" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/js/clasesJS/ProductosCarrito.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/templates/adminLayout.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="205" lean-forward="false" selection-start-line="16" selection-start-column="205" selection-end-line="16" selection-end-column="205" />
         </state>
       </provider>
     </entry>
@@ -714,24 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/pedidosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/js/carrito.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="11" lean-forward="false" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
-          <folding>
-            <marker date="1549007886195" expanded="true" signature="3219:3242" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Create.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -740,33 +685,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Pedido.php">
+    <entry file="file://$PROJECT_DIR$/view/indexView.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="133" column="27" lean-forward="true" selection-start-line="133" selection-start-column="27" selection-end-line="133" selection-end-column="27" />
-          <folding>
-            <marker date="1549264924969" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1549264924969" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
-            <marker date="1549264924969" expanded="true" signature="1222:1391" ph="INSERT INTO ${$this-&gt;table}... " />
-            <marker date="1549264924969" expanded="true" signature="2117:2221" ph="INSERT INTO productos_por_pedido... " />
-            <marker date="1549264924969" expanded="true" signature="2986:3045" ph="UPDATE pedid... " />
-            <marker date="1549264924969" expanded="true" signature="3702:3828" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3702:4246" ph="SELECT COUNT... " />
-            <marker date="1549264924969" expanded="true" signature="3760:3827" ph="select CORRE... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3839:4084" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="3912:3989" ph="select DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4006:4083" ph="SELECT DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4095:4246" ph="SELECT COUNT... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4168:4245" ph="select DISTI... pedidos" />
-            <marker date="1549264924969" expanded="true" signature="4473:4683" ph="select po.no... productos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/administradoresController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="82" column="49" lean-forward="true" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+        <state relative-caret-position="1037">
+          <caret line="61" column="26" lean-forward="false" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -787,18 +709,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/indexView.twig">
+    <entry file="file://$PROJECT_DIR$/view/administradorPedidosView.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="26" lean-forward="false" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/templates/indexLayout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        <state relative-caret-position="612">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -813,11 +727,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/administradorPedidosView.twig">
+    <entry file="file://$PROJECT_DIR$/controller/administradoresController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="742">
+          <caret line="82" column="49" lean-forward="false" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BBDD/Create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+          <folding>
+            <marker date="1549277531280" expanded="true" signature="394:470" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="394:554" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="736:913" ph="SELECT DISTI... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="1123:1267" ph="UPDATE produ... " />
+            <marker date="1549277531280" expanded="true" signature="1673:1726" ph="DELETE FROM " />
+            <marker date="1549277531280" expanded="true" signature="1927:2046" ph="INSERT INTO productos... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/templates/adminLayout.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/templates/indexLayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="73" lean-forward="true" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/js/carrito.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="96" column="39" lean-forward="true" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="40" />
+          <folding>
+            <marker date="1549279412826" expanded="true" signature="3219:3242" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/productosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/pedidosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Pedido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <marker date="1549278740322" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549278740322" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
+            <marker date="1549278740322" expanded="true" signature="1377:1546" ph="INSERT INTO ${$this-&gt;table}... " />
+            <marker date="1549278740322" expanded="true" signature="2086:2190" ph="INSERT INTO productos_por_pedido... " />
+            <marker date="1549278740322" expanded="true" signature="2769:2828" ph="UPDATE pedid... " />
+            <marker date="1549278740322" expanded="true" signature="3485:3611" ph="SELECT COUNT... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3485:4029" ph="SELECT COUNT... " />
+            <marker date="1549278740322" expanded="true" signature="3543:3610" ph="select CORRE... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3622:3867" ph="SELECT COUNT... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3695:3772" ph="select DISTI... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3789:3866" ph="SELECT DISTI... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3878:4029" ph="SELECT COUNT... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="3951:4028" ph="select DISTI... pedidos" />
+            <marker date="1549278740322" expanded="true" signature="4256:4466" ph="select po.no... productos" />
+          </folding>
         </state>
       </provider>
     </entry>

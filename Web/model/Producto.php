@@ -72,7 +72,7 @@ class Producto{
            "categoria" => $this->categoria,
            "medida" => $this->medida,
            "precio" => $this->precio,
-           "predido_min" => $this->pedidoMin
+           "pedido_min" => $this->pedidoMin
         ));
 
         $this->conexion = null;
