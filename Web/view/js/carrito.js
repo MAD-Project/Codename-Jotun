@@ -103,7 +103,7 @@ function tramitarPedido() {
 
         $.ajax({
             data: pedidosJSON,
-            url: 'index.php?controller=pedidos&action=realizarPedido',
+            url: 'index.php?controller=Pedidos&action=realizarPedido',
             type: 'post',
             success: function (data) {
 
