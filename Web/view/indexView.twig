@@ -74,7 +74,7 @@
                 {% set unidades=0 %}
                 {% for producto in carrito %}
                     <li id='eliminar{{ producto.id }}' class='p-4 list-group-item item-separation'>
-                        {{ producto.nombre }}
+                        <span class="nombreProductoCarrito">{{ producto.nombre }}</span>
                         <span>
                             <img id='hoverItem' class='mr-2' src='img/minus.svg' height='25' onclick='cambiarUnidades({{ producto.id }},0,1,{{ producto.min }})'>
                             <img id='hoverItem' class='mr-3 mt-0' src='img/plus.svg' height='25' onclick='cambiarUnidades({{ producto.id }},1,1,{{ producto.min }})'>
@@ -92,9 +92,9 @@
             {% endif %}
         </ul>
         <div class="mt-4 mb-3 ml-auto mr-auto">
-            <button id="carritobtn" class="btn btn-primary pl-4 pr-4 pt-2 pb-2" data-toggle="modal" data-target="#modalPedido"><span class="h4">Tramitar pedido</span></button>
+            <button id="carritobtn" class="btn btn-primary pl-4 pr-4 pt-2 pb-2" data-toggle="modal" data-target="#modalPedido" {{ pedidosHabilitado?:"disabled" }}><span class="h4">Tramitar pedido</span></button>
         </div>
-
+        {% if (pedidosHabilitado) %}
         <div class="modal fade" id="modalPedido" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -133,6 +133,7 @@
                 </div>
             </div>
         </div>
+        {% endif %}
 
 
 
@@ -152,7 +153,7 @@
                     </div>
 
                     <div class="modal-footer justify-content-center">
-                        <a type="button" id="actualizarPagina" class="btn btn-primary" data-dismiss="modal">✔</a>
+                        <a type="button" id="actualizarPagina" class="btn btn-primary" data-dismiss="modal">Aceptar</a>
                     </div>
                 </div>
 

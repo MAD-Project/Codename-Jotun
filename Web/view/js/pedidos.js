@@ -1,7 +1,5 @@
 function tramitarPedido(nombre, idPedido, email, nuevoEstado, fechaentrega) {
 
-    //aqui el mailto
-
     $.ajax({
         type: "POST",
         url: "index.php?controller=Pedidos&action=tramitarPedido",

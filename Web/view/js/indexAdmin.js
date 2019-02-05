@@ -23,3 +23,20 @@ $('.popover-dismiss').popover({
     trigger: 'focus'
 });
 //FIN tabla productos admin
+
+//Habilitar / deshabilitar la tramatitación de pedidos
+
+function habilitarPedidos(nombreAdmin) {
+
+    $.ajax({
+        type: "POST",
+        url: "index.php?controller=Administradores&action=habilitarPedidos",
+        data: { nombreAdmin: nombreAdmin,
+            habilitar: $('#pedidosActivo').prop('checked')},
+
+        error: function (data) {
+            alert("Error"+data);
+        }
+
+    });
+}
