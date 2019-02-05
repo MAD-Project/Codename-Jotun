@@ -15,7 +15,7 @@ Necesitaremos XAMPP para su despliegue.
 **Lo segundo:** Configuramos la carpeta htdocs en XAMPP para redireccionar a donde se encuentra el proyecto. Iniciamos el módulo de apache y nos metemos en /localhost.
 
 ## Capturas de pantalla  
-![Inicio](Media/Inicio.PNG)
+![Inicio](Media/Inicio.png)
 <h6 align="center">Pantalla de inicio</h6>
 
 ## Documentación
@@ -25,4 +25,4 @@ Necesitaremos XAMPP para su despliegue.
 
 <img src="Media/Logo.jpeg" height="50" width="100" alt="Logo"/> 
 
-###### Realizado por MAD project bajo licencia [MIT](LICENSE). 2018.
+###### Realizado por MAD project bajo licencia [MIT](LICENSE). 2019.
