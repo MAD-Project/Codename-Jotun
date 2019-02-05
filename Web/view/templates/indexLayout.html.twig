@@ -46,11 +46,21 @@
 
         <section id="productosDiv" class="container-fluid pt-1 bg-light">
             <div class="container">
+                
                 <div class="row">
 
                     <div class="scroller_anchor"></div>
 
                     <div class="p-4 mt-0">
+                        {% if desabilitado == 1 %}
+                            <div class="mb-4">
+                                <h1 class="text-danger">Pedidos deshabilitados</h1>
+                                <div class="card p-4 border-danger">
+                                    <p><strong>Debido a la gran demanda no se aceptan nuevos pedidos. Disculpe las molestias.</strong></p>
+                                </div>
+                            </div>
+                        {% endif %}
+
                         <div>
                             <h1>Normas de pedido</h1>
                             <div class="card p-4">
@@ -75,16 +85,19 @@
                                         email.</strong></p>
                             </div>
                         </div>
+
                         <div id="productos" class="mt-5">
                             <h1>Productos</h1>
                             {% block productos %}
                             {% endblock productos %}
                         </div>
-                        <div id="carrito" class="mt-5 d-flex flex-column">
-                            <h1>Carrito</h1>
-                            {% block carrito %}
-                            {% endblock carrito %}
-                        </div>
+                        {% if desabilitado == 0 %}
+                            <div id="carrito" class="mt-5 d-flex flex-column">
+                                <h1>Carrito</h1>
+                                {% block carrito %}
+                                {% endblock carrito %}
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -94,7 +107,7 @@
                 <img height="50" src="img/cart.png">    
             </div>
 
-            <div id="scroller2" class="p-2" onclick="goTop();">
+            <div id="scroller2" class="p-2 hoverItem" onclick="goTop();">
                 <img height="50" src="img/arrow-up.png">   
             </div>
 
