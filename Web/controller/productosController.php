@@ -1,8 +1,8 @@
 <?php
 
-require_once 'IndexController.php';
+require_once 'indexController.php';
 
-class ProductosController extends IndexController {
+class productosController extends IndexController {
     private $conectar;
     private $conexion;
 

@@ -6,7 +6,8 @@ function tramitarPedido(idPedido, email,nuevoEstado) {
         type: "POST",
         url: "index.php?controller=Pedidos&action=tramitarPedido",
         data: { idPedido: idPedido,
-                nuevoEstado: nuevoEstado},
+                nuevoEstado: nuevoEstado,
+                email: email},
     success: function (data) {
 
        if(data==1){

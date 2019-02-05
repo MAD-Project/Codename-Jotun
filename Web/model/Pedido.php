@@ -43,9 +43,14 @@ class Pedido{
 
     public function nuevoPedido(){
 
-        $insert = $this->conexion->prepare("INSERT INTO $this->table (NOMBRE, CORREO, TELEFONO, COMENTARIO, FECHA, FECHA_ENTREGA, ESTADO) VALUES (:nombre,:correo,:telefono,:comentario,:fecha,:fechaEntrega,:estado)");
-
         try{
+
+            $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            $this->conexion->beginTransaction();
+
+            $insert = $this->conexion->prepare("INSERT INTO $this->table (NOMBRE, CORREO, TELEFONO, COMENTARIO, FECHA, FECHA_ENTREGA, ESTADO) VALUES (:nombre,:correo,:telefono,:comentario,:fecha,:fechaEntrega,:estado)");
+
             $insert->execute(array(
                 "nombre" => $this->nombre,
                 "correo" => $this->correo,
@@ -58,35 +63,24 @@ class Pedido{
 
             $id = $this->conexion->lastInsertId();
 
-            try {
-
-                $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-                $this->conexion->beginTransaction();
-
-                for ($x=1;$x<count($this->productos);$x++){
-
-                    $insert = $this->conexion->prepare("INSERT INTO productos_por_pedido(id_pedido,id_producto,cantidad) VALUES(:idPedido,:idProducto,:cantidad)");
-                    $insert->execute(array(
-                        "idPedido" => $id,
-                       "idProducto" =>  $this->productos[$x]->id,
-                        "cantidad" => $this->productos[$x]->cantidad
-                    ));
-
-                }
-
-                $this->conexion->commit();
-
-            } catch (Exception $e) {
-                $this->conexion->rollBack();
-                echo "Fallo: " . $e->getMessage();
+            for ($x=1;$x<count($this->productos);$x++){
+                $insert = $this->conexion->prepare("INSERT INTO productos_por_pedido(id_pedido,id_producto,cantidad) VALUES(:idPedido,:idProducto,:cantidad)");
+                $insert->execute(array(
+                    "idPedido" => $id,
+                    "idProducto" =>  $this->productos[$x]->id,
+                    "cantidad" => $this->productos[$x]->cantidad
+                ));
             }
 
+            $this->conexion->commit();
+
         } catch (PDOException $e) {
+
+            $this->conexion->rollBack();
             $this->conexion = null;
-            //devuelve false si ha ocurrido un error
             return false;
         }
+
         $this->conexion = null;
 
         return true;
