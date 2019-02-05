@@ -1,0 +1,24 @@
+{% extends "templates/adminLayout.twig" %}
+
+{% block container %}
+
+    <div style="height: 90vh;" class="d-flex align-items-center justify-content-center w-100">
+        <form class="text-center border border-light p-5 w-100" method="POST" action="index.php?controller=Administradores&action=comprobarDatos">
+
+            <p class="h4 mb-4"><h3>Acceso administrador</h3></p>
+
+            <!-- Email -->
+            <label for="usuarioAdmin"></label>
+            <input type="text" class="form-control col-6 ml-auto mr-auto" id="usuarioAdmin" name="usuarioAdmin" placeholder="Usuario" REQUIRED>
+
+            <!-- Password -->
+            <label for="passwordAdmin"></label>
+            <input type="password" class="form-control col-6 ml-auto mr-auto" id="passwordAdmin" name="passwordAdmin" placeholder="Contraseña" REQUIRED>
+
+            <!-- Sign in button -->
+            <button class="btn btn-primary btn-block my-4 col-6 ml-auto mr-auto" type="submit">Iniciar sesión</button>
+
+        </form>
+    </div>
+
+{% endblock %}

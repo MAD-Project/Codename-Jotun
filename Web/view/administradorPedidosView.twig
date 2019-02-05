@@ -1,0 +1,195 @@
+{% if(pedidos) %}
+<div id="accordionPendientes" class="col-12 mt-3">
+    <a class="producto collapsed" data-toggle="collapse" data-target="#collapsePendientes">
+        <div id="headingPendientes" class="alert alert-warning justify-content-center text-center" onclick="rotateArrow('arrowPendientes');">
+            Pedidos pendientes de aceptar
+            <img id="arrowPendientes" class="img-fluid float-right" src="../img/arrow-down.svg">
+        </div>
+    </a>
+    <div id="collapsePendientes" class="collapse" data-parent="#accordionPendientes">
+        <div class="list-group mx-4">
+        {% for pedido in pedidos if pedido.ESTADO == 'P'%}
+            <span class="list-group-item list-group-item-action collapsed d-flex justify-content-around" data-toggle="collapse" data-target="#collapsePendientes{{ pedido.ID_PEDIDO }}">
+                <span><i class="fas fa-user mr-2"></i>{{ pedido.NOMBRE }}</span>
+                <span><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA }}</span>
+                <span><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA }}</span>
+                {%  if (pedido.COMENTARIO) %}
+                    <a class="btn btn-outline-info d-none d-md-block btn-sm" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}">Ver comentario</a>
+                    <a class="d-md-none" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}"><i class="fas fa-comment text-info"></i></a>
+                {% endif %}
+            </span>
+            <div id="collapsePendientes{{ pedido.ID_PEDIDO }}" class="collapse mt-2" >
+                <div class="d-flex row">
+                    <ul class="list-group list-group-flush col-md-5 col-10 offset-1">
+                    {% for producto in pedido.productos %}
+                        <li class="list-group-item list-group-item-warning">
+                            <span>{{ producto.nombre }}</span>
+                            <span class="badge badge-primary badge-pill ">{{ producto.cantidad }} </span>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                    <div class="col-md-2 col-4 offset-4 offset-md-2 d-flex flex-md-column justify-content-around align-items-around">
+                        <button class="row-md btn btn-outline-primary" data-toggle="modal" data-target="#tramitarPedido" data-id="{{ pedido.ID_PEDIDO }}" data-correo="{{ pedido.CORREO }}" data-nombre="{{ pedido.NOMBRE }}" data-estado="A">Aceptar</button>
+                        <button class="row-md btn btn-outline-danger" data-toggle="modal" data-target="#tramitarPedido" data-id="{{ pedido.ID_PEDIDO }}" data-correo="{{ pedido.CORREO }}" data-nombre="{{ pedido.NOMBRE }}" data-estado="R">Rechazar</button>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            No hay ningún pedido pendiente de aceptar.
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div id="accordionAceptados" class="col-12 mt-3">
+    <a class="producto collapsed" data-toggle="collapse" data-target="#collapseAceptados">
+        <div id="headingAceptados" class="alert alert-primary justify-content-center text-center" onclick="rotateArrow('arrowAceptados');">
+            Pedidos Aceptados (Preparando)
+            <img id="arrowAceptados" class="img-fluid float-right" src="../img/arrow-down.svg">
+        </div>
+    </a>
+    <div id="collapseAceptados" class="collapse" data-parent="#accordionAceptados">
+        <div class="list-group mx-4">
+            {% for pedido in pedidos if pedido.ESTADO == 'A'%}
+                <span class="list-group-item list-group-item-action collapsed d-flex justify-content-around" data-toggle="collapse" data-target="#collapseAceptados{{ pedido.ID_PEDIDO }}">
+                    <span><i class="fas fa-user mr-2"></i>{{ pedido.NOMBRE }}</span>
+                    <span><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA }}</span>
+                    <span><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA }}</span>
+                    {%  if (pedido.COMENTARIO) %}
+                        <a class="btn btn-outline-info d-none d-md-block btn-sm" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}">Ver comentario</a>
+                        <a class="d-md-none" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}"><i class="fas fa-comment text-info"></i></a>
+                    {% endif %}
+                </span>
+                <div id="collapseAceptados{{ pedido.ID_PEDIDO }}" class="collapse mt-2" >
+                    <div class="d-flex row">
+                        <ul class="list-group list-group-flush col-md-5 col-10 offset-1">
+                            {% for producto in pedido.productos %}
+                                <li class="list-group-item list-group-item-primary">
+                                    <span>{{ producto.nombre }}</span>
+                                    <span class="badge badge-primary badge-pill">{{ producto.cantidad }} </span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <div class="col-md-2 col-4 offset-4 offset-md-2 d-flex flex-md-column justify-content-around align-items-around">
+                            <button class="row btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#tramitarPedido" data-id="{{ pedido.ID_PEDIDO }}" data-correo="{{ pedido.CORREO }}" data-nombre="{{ pedido.NOMBRE }}" data-estado="N" data-fechaentrega="{{ pedido.FECHA_ENTREGA }}">Preparado</button>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                No hay ningún pedido preparandose.
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+<div id="accordionPreparados" class="col-12 mt-3">
+    <a class="producto collapsed" data-toggle="collapse" data-target="#collapsePreparados">
+        <div id="headingPreparados" class="alert alert-success justify-content-center text-center" onclick="rotateArrow('arrowPreparados');">
+            Pedidos terminados (pendientes de recoger)
+            <img id="arrowPreparados" class="img-fluid float-right" src="../img/arrow-down.svg">
+        </div>
+    </a>
+    <div id="collapsePreparados" class="collapse" data-parent="#accordionPreparados">
+        <div class="list-group mx-4">
+            {% for pedido in pedidos if  pedido.ESTADO == 'N' %}
+                <span class="list-group-item list-group-item-action collapsed d-flex justify-content-around" data-toggle="collapse" data-target="#collapsePreparados{{ pedido.ID_PEDIDO }}">
+                    <span><i class="fas fa-user mr-2"></i>{{ pedido.NOMBRE }}</span>
+                    <span><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA }}</span>
+                    <span><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA }}</span>
+                    {%  if (pedido.COMENTARIO) %}
+                        <a class="btn btn-outline-info d-none d-md-block btn-sm" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}">Ver comentario</a>
+                        <a class="d-md-none" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}"><i class="fas fa-comment text-info"></i></a>
+                    {% endif %}
+                </span>
+                <div id="collapsePreparados{{ pedido.ID_PEDIDO }}" class="collapse mt-2" >
+                    <div class="d-flex row">
+                        <ul class="list-group list-group-flush col-md-5 col-10 offset-1">
+                            {% for producto in pedido.productos %}
+                                <li class="list-group-item list-group-item-success">
+                                    <span>{{ producto.nombre }}</span>
+                                    <span class="badge badge-primary badge-pill">{{ producto.cantidad }} </span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <div class="col-md-2 col-4 offset-4 offset-md-2 d-flex flex-md-column justify-content-around align-items-around">
+                            <button class="row btn btn-outline-primary" data-toggle="modal" data-target="#tramitarPedido" data-id="{{ pedido.ID_PEDIDO }}" data-correo="{{ pedido.CORREO }}" data-nombre="{{ pedido.NOMBRE }}" data-estado="E">Entregado</button>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                No hay ningún pedido terminado.
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+<div id="accordionHistoricos" class="col-12 mt-3">
+    <a class="producto collapsed" data-toggle="collapse" data-target="#collapseHistoricos">
+        <div id="headingHistoricos" class="alert alert-info justify-content-center text-center" onclick="rotateArrow('arrowHistoricos');">
+            Pedidos Historicos
+            <img id="arrowHistoricos" class="img-fluid float-right" src="../img/arrow-down.svg">
+        </div>
+    </a>
+    <div id="collapseHistoricos" class="collapse" data-parent="#accordionHistoricos">
+        <div class="list-group mx-4">
+            {% for pedido in pedidos if pedido.ESTADO == 'R' or pedido.ESTADO == 'E'%}
+                <span class="list-group-item list-group-item-action collapsed {{ pedido.ESTADO == 'R'?"list-group-item-danger":"list-group-item-success" }} d-flex justify-content-around" data-toggle="collapse" data-target="#collapseHistoricos{{ pedido.ID_PEDIDO }}">
+                    <span><i class="fas fa-user mr-2"></i>{{ pedido.NOMBRE }}</span>
+                    <span><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA }}</span>
+                    <span><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA }}</span>
+                    {%  if (pedido.COMENTARIO) %}
+                        <a class="btn btn-outline-info d-none d-md-block btn-sm" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}">Ver comentario</a>
+                        <a class="d-md-none" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}"><i class="fas fa-comment text-info"></i></a>
+                    {% endif %}
+                    <span>{{ pedido.ESTADO == 'R'?"RECHAZADO":"ENTREGADO" }}</span>
+                </span>
+                <div id="collapseHistoricos{{ pedido.ID_PEDIDO }}" class="collapse" >
+                    <ul class="list-group list-group-flush list-group-item-action">
+                        {% for producto in pedido.productos %}
+                            <li class="list-group-item">
+                                <span>{{ producto.nombre }}</span>
+                                <span class="badge badge-primary badge-pill">{{ producto.cantidad }} </span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% else %}
+               No hay ningún pedido rechazado ni entregado.
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="modal fade" id="tramitarPedido" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirmación</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" class="formularioPedido">
+
+                        <span>¿Seguro que quieres aceptar el pedido? <br/> Se notificara via correo electrónico a</span>
+                        <span class="pedidoNombre"></span>
+                        <div class="item-separation mt-4">
+
+                            <button type="submit" id="botonTramitar"></button>
+                            <button type="button" class="btn btn-secondary pl-4 pr-4 float-right" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% else %}
+Aún no hay ningún pedido.
+{%  endif %}

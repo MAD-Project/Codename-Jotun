@@ -1,0 +1,118 @@
+/* Elementos generales */
+/* line 2, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+* {
+  font-family: 'Neuton', sans-serif, arial;
+}
+
+/* line 6, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+p,
+li,
+strong,
+ul > a {
+  font-size: 107.5%;
+}
+
+/* Clases */
+/* line 14, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.carousel-position {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+
+/* line 22, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.carrito-position {
+  margin-left: auto;
+  width: 6%;
+}
+
+/* line 27, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.badge-position {
+  position: absolute;
+  left: -12%;
+  font-size: 99%;
+}
+
+/* line 33, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.flecha-position {
+  margin-left: auto;
+  width: 6%;
+}
+
+/* line 38, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.hidden {
+  visibility: hidden;
+}
+
+/* line 42, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.item-separation {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 47, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.sub-products-item-separation {
+  display: flex;
+  justify-content: space-between;
+  width: 27%;
+  align-items: center;
+}
+
+/* line 54, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.rotate {
+  transition: .5s;
+  transform: rotate(180deg);
+}
+
+/* line 59, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.rotate-origin {
+  transition: .5s;
+  transform: rotate(360deg);
+}
+
+/* Seguimiento del scroll de categorias */
+/* line 65, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+.scroller_anchor {
+  position: absolute;
+  height: 0px;
+  padding: 0;
+}
+
+/* FIN Seguimiento del scroll de categorias y carrito */
+/* line 73, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+#hoverItem:hover,
+.hoverItem:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  /* line 79, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+  .carrito-position {
+    width: 12%;
+  }
+  /* line 83, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+  .flecha-position {
+    width: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 89, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+  .carrito-position {
+    width: 20%;
+  }
+  /* line 93, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+  .flecha-position {
+    width: 20%;
+  }
+  /* line 97, C:/GitHub/Codename-Jotun/Web/view/scss/index.scss */
+  .nombreProductoCarrito {
+    width: 16%;
+    overflow: hidden;
+    height: 22px;
+  }
+}
+
+/*# sourceMappingURL=../css/index.map */
