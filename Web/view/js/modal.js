@@ -45,6 +45,11 @@ $("#modalProductos").on('hidden.bs.modal', function(){
     $('#errorMsg').html("");
 });
 
+$("#modalPedido").on('hidden.bs.modal', function () {
+
+    $('#errorFecha').html("");
+});
+
 $('#tramitarPedido').on('show.bs.modal', function (event) {
 
     var button = $(event.relatedTarget);

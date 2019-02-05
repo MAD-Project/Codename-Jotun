@@ -72,12 +72,20 @@ function cambiarUnidades(id, what, howmuch, min) {
 //Recoge el id y la cantidad de los elemen  tos de la lista de carrito y los envia al controlador de PHP para hacer el pedido
 function tramitarPedido() {
     var arrayPedido = [];
+
     var fechaActual = new Date();
     var fecha = new Date($('#fechaEntregaCliente').val());
+
+    var diaSemana = fecha.getDay();
+
     fecha.setDate(fecha.getDate() - 4);
 
-    if (fecha.getTime()<=fechaActual.getTime()){
-        alert("Los pedidos se realizarán con un mínimo de 4 días lectivos de antelación");
+    if (fecha.getTime()<=fechaActual.getTime() || (diaSemana==1 || diaSemana==2 || diaSemana==0)){
+
+        $('#errorFecha').text("Los pedidos se realizarán con un mínimo de 4 días lectivos de antelación."
+            +"\nY solo se podran recoger los Miércoles, Jueves, Viernes y Sábados."
+            +"\nPor favor elija otra fecha.");
+
         return false;
     }
     else {
