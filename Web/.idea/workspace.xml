@@ -14,8 +14,8 @@
       <file leaf-file-name="indexView.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/indexView.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="147" column="49" lean-forward="true" selection-start-line="147" selection-start-column="49" selection-end-line="147" selection-end-column="49" />
+            <state relative-caret-position="368">
+              <caret line="103" column="24" lean-forward="true" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -34,8 +34,8 @@
       <file leaf-file-name="indexLayout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/templates/indexLayout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="68" lean-forward="false" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+            <state relative-caret-position="221">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -51,21 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminLayout.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/templates/adminLayout.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Pedido.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Pedido.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="740">
+              <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
               <folding>
                 <marker date="1549278740322" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
                 <marker date="1549278740322" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
@@ -86,38 +76,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cliente.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/js/clasesJS/Cliente.js">
+      <file leaf-file-name="estadisticas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/js/estadisticas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="120">
+              <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Producto.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/Producto.php">
+      <file leaf-file-name="adminLogInView.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/view/adminLogInView.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+            <state relative-caret-position="391">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
-                <marker date="1549277531280" expanded="true" signature="394:470" ph="SELECT * FRO... ${$this-&gt;table}" />
-                <marker date="1549277531280" expanded="true" signature="394:554" ph="SELECT * FRO... ${$this-&gt;table}" />
-                <marker date="1549277531280" expanded="true" signature="736:913" ph="SELECT DISTI... ${$this-&gt;table}" />
-                <marker date="1549277531280" expanded="true" signature="1123:1267" ph="UPDATE produ... " />
-                <marker date="1549277531280" expanded="true" signature="1673:1726" ph="DELETE FROM " />
-                <marker date="1549277531280" expanded="true" signature="1927:2046" ph="INSERT INTO productos... " />
+                <element signature="e#76#97#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carrito.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="carrito.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/js/carrito.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="94" column="29" lean-forward="true" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+            <state relative-caret-position="378">
+              <caret line="90" column="4" lean-forward="true" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="10" />
               <folding>
                 <marker date="1549354387838" expanded="true" signature="3220:3243" ph="..." />
               </folding>
@@ -128,8 +113,8 @@
       <file leaf-file-name="pedidosController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/pedidosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="521">
+              <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
               <folding>
                 <marker date="1549280264512" expanded="true" signature="1260:1269" ph="..." />
                 <marker date="1549280264512" expanded="true" signature="1814:1821" ph="..." />
@@ -169,11 +154,13 @@
         <option value="$PROJECT_DIR$/view/administradorPedidosView.twig" />
         <option value="$PROJECT_DIR$/model/Producto.php" />
         <option value="$PROJECT_DIR$/model/Pedido.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/carrito.js" />
         <option value="$PROJECT_DIR$/view/templates/indexLayout.html.twig" />
         <option value="$PROJECT_DIR$/view/js/modal.js" />
         <option value="$PROJECT_DIR$/view/indexView.twig" />
         <option value="$PROJECT_DIR$/view/js/carrito.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/Pedido.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/carrito.js" />
+        <option value="$PROJECT_DIR$/view/adminLogInView.twig" />
       </list>
     </option>
   </component>
@@ -184,7 +171,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -302,15 +289,15 @@
       <workItem from="1548919193701" duration="11107000" />
       <workItem from="1549006042752" duration="14913000" />
       <workItem from="1549264990972" duration="15995000" />
-      <workItem from="1549351538699" duration="2837000" />
+      <workItem from="1549351538699" duration="5945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63686000" />
+    <option name="totallyTimeSpent" value="66794000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -345,21 +332,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view/js/clasesJS/Cliente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="69" lean-forward="true" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/js/clasesJS/ProductosCarrito.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/js/carrito.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
@@ -611,6 +583,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -662,13 +635,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Create.sql" />
-    <entry file="file://$PROJECT_DIR$/view/js/estadisticas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="38" column="78" lean-forward="false" selection-start-line="38" selection-start-column="78" selection-end-line="38" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/administradorView.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -717,25 +683,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/carrito.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="73" column="35" lean-forward="true" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/templates/indexLayout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="68" lean-forward="false" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/js/clasesJS/ProductosCarrito.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="37" lean-forward="false" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+          <folding>
+            <marker date="1549277531280" expanded="true" signature="394:470" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="394:554" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="736:913" ph="SELECT DISTI... ${$this-&gt;table}" />
+            <marker date="1549277531280" expanded="true" signature="1123:1267" ph="UPDATE produ... " />
+            <marker date="1549277531280" expanded="true" signature="1673:1726" ph="DELETE FROM " />
+            <marker date="1549277531280" expanded="true" signature="1927:2046" ph="INSERT INTO productos... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -749,8 +715,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/pedidosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="521">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding>
             <marker date="1549280264512" expanded="true" signature="1260:1269" ph="..." />
             <marker date="1549280264512" expanded="true" signature="1814:1821" ph="..." />
@@ -758,25 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Producto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
-          <folding>
-            <marker date="1549277531280" expanded="true" signature="394:470" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1549277531280" expanded="true" signature="394:554" ph="SELECT * FRO... ${$this-&gt;table}" />
-            <marker date="1549277531280" expanded="true" signature="736:913" ph="SELECT DISTI... ${$this-&gt;table}" />
-            <marker date="1549277531280" expanded="true" signature="1123:1267" ph="UPDATE produ... " />
-            <marker date="1549277531280" expanded="true" signature="1673:1726" ph="DELETE FROM " />
-            <marker date="1549277531280" expanded="true" signature="1927:2046" ph="INSERT INTO productos... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/Pedido.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="740">
+          <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
           <folding>
             <marker date="1549278740322" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
             <marker date="1549278740322" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
@@ -796,11 +747,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/indexView.twig">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/Pedido.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="147" column="49" lean-forward="true" selection-start-line="147" selection-start-column="49" selection-end-line="147" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+          <folding>
+            <marker date="1549355035136" expanded="true" signature="439:481" ph="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1549355035136" expanded="true" signature="870:1023" ph="SELECT prod.... productos" />
+            <marker date="1549355035136" expanded="true" signature="1377:1546" ph="INSERT INTO ${$this-&gt;table}... " />
+            <marker date="1549355035136" expanded="true" signature="2086:2190" ph="INSERT INTO productos_por_pedido... " />
+            <marker date="1549355035136" expanded="true" signature="2769:2828" ph="UPDATE pedid... " />
+            <marker date="1549355035136" expanded="true" signature="3485:3611" ph="SELECT COUNT... pedidos" />
+            <marker date="1549355035136" expanded="true" signature="3485:4029" ph="SELECT COUNT... " />
+            <marker date="1549355035136" expanded="true" signature="3543:3610" ph="select CORRE... pedidos" />
+            <marker date="1549355035136" expanded="true" signature="3622:3867" ph="SELECT COUNT... pedidos" />
+            <marker date="1549355035136" expanded="true" signature="3695:3772" ph="select DISTI... pedidos" />
+            <marker date="1549355035136" expanded="true" signature="3789:3866" ph="SELECT DISTI... pedidos" />
+            <marker date="1549355035136" expanded="true" signature="3878:4029" ph="SELECT COUNT... pedidos" />
+            <marker date="1549355035136" expanded="true" signature="3951:4028" ph="select DISTI... pedidos" />
+            <marker date="1549355035136" expanded="true" signature="4256:4466" ph="select po.no... productos" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -812,12 +778,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/view/templates/indexLayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/indexView.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="103" column="24" lean-forward="true" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/js/carrito.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="94" column="29" lean-forward="true" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+        <state relative-caret-position="378">
+          <caret line="90" column="4" lean-forward="true" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="10" />
           <folding>
             <marker date="1549354387838" expanded="true" signature="3220:3243" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/carrito.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="163" column="37" lean-forward="true" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/js/estadisticas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/adminLogInView.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="e#76#97#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
