@@ -53,7 +53,7 @@
                     <div class="scroller_anchor"></div>
 
                     <div class="p-4 mt-0">
-                        {% if desabilitado == 1 %}
+                        {% if not (pedidosHabilitado) %}
                             <div class="mb-4">
                                 <h1 class="text-danger">Pedidos deshabilitados</h1>
                                 <div class="card p-4 border-danger">
@@ -92,13 +92,11 @@
                             {% block productos %}
                             {% endblock productos %}
                         </div>
-                        {% if desabilitado == 0 %}
                             <div id="carrito" class="mt-5 d-flex flex-column">
                                 <h1>Carrito</h1>
                                 {% block carrito %}
                                 {% endblock carrito %}
                             </div>
-                        {% endif %}
                     </div>
                 </div>
             </div>

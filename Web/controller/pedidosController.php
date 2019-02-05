@@ -54,11 +54,14 @@ class pedidosController extends IndexController {
         $pedido->setEstado($_POST["nuevoEstado"]);
 
         if($pedido->tramitarPedido()){
-            enviarMail();
+            if ($_POST["nuevoEstado"] != "E") {
+                enviarMail();
+            }
             return true;
         }
         return false;
 
     }
+
 
 }
