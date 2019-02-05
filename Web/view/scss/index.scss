@@ -10,6 +10,7 @@ ul>a {
     font-size: 107.5%;
 }
 
+/* Clases */
 .carousel-position {
     position: fixed;
     z-index: -1;
@@ -32,10 +33,6 @@ ul>a {
 .flecha-position {
     margin-left: auto;
     width: 6%;
-}
-
-.a-link-color {
-    color: black;
 }
 
 .hidden {
@@ -64,7 +61,7 @@ ul>a {
     transform: rotate(360deg);
 }
 
-/* Seguimiento del scroll de categorias y carrito */
+/* Seguimiento del scroll de categorias */
 .scroller_anchor {
     position: absolute;
     height: 0px;

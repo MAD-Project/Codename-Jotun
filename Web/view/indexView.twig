@@ -81,6 +81,7 @@
                             <span id='cambiar{{ producto.id }}'>
                                 {{ producto.cantidad }}
                             </span> Unidades
+                            &nbsp;&nbsp;&nbsp; <img id='hoverItem' class='mr-2' src='img/delete.svg' height='25' onclick='cambiarUnidades({{ producto.id }},0,1,999)'>
                         </span>
                     </li>
                     {% set unidades = unidades + producto.cantidad|number_format %}
