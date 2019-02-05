@@ -1,8 +1,8 @@
 <?php
 
-require_once 'IndexController.php';
+require_once 'indexController.php';
 
-class AdministradoresController extends IndexController {
+class administradoresController extends IndexController {
     private $conectar;
     private $conexion;
 
