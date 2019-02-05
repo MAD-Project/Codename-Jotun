@@ -92,9 +92,9 @@
             {% endif %}
         </ul>
         <div class="mt-4 mb-3 ml-auto mr-auto">
-            <button id="carritobtn" class="btn btn-primary pl-4 pr-4 pt-2 pb-2" data-toggle="modal" data-target="#modalPedido"><span class="h4">Tramitar pedido</span></button>
+            <button id="carritobtn" class="btn btn-primary pl-4 pr-4 pt-2 pb-2" data-toggle="modal" data-target="#modalPedido" {{ pedidosHabilitado?:"disabled" }}><span class="h4">Tramitar pedido</span></button>
         </div>
-
+        {% if (pedidosHabilitado) %}
         <div class="modal fade" id="modalPedido" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -133,6 +133,7 @@
                 </div>
             </div>
         </div>
+        {% endif %}
 
 
 

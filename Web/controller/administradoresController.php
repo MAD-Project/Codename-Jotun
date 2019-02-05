@@ -31,10 +31,14 @@ class administradoresController extends IndexController {
             $pedidos = new Pedido($this->conexion);
             $pedidos = $pedidos->getAll();
 
+            $administrador=new Administrador($this->conexion);
+            $pedidosHabilitado=$administrador->isPedidosHabilitado();
+
             $this->render("administrador",array(
                 "nombreUsuario"=>$_SESSION["nombreUsuario"],
                 "productos" => $productos,
-                "pedidos" => $pedidos
+                "pedidos" => $pedidos,
+                "pedidosHabilitado" => $pedidosHabilitado
             ));
         }
     }
@@ -83,4 +87,16 @@ class administradoresController extends IndexController {
         die(json_encode($estadisticasProductos));
     }
 
+    public function habilitarPedidos(){
+
+        $administrador=new Administrador($this->conexion);
+        $administrador->setNombre($_POST["nombreAdmin"]);
+
+        if($_POST["habilitar"] == 'true'){
+            $administrador->habilitarPedidos();
+        }else{
+
+            $administrador->deshabilitarPedidos();
+        }
+    }
 }

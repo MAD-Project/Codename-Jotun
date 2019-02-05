@@ -10,6 +10,7 @@ class productosController extends IndexController {
         require_once __DIR__ . '/../model/Conexion.php';
         require_once __DIR__ . '/../model/Producto.php';
         require_once __DIR__ . '/../model/Pedido.php';
+        require_once __DIR__ . '/../model/Administrador.php';
 
         $this->conectar = new Conexion();
         $this->conexion = $this->conectar->conexion();
@@ -21,10 +22,15 @@ class productosController extends IndexController {
         $productos = $producto->getAll();
         $categorias = $producto->categorias();
         $carrito=isset($_COOKIE['productosCarrito'])?$this->llenarCarrito($productos):"";
+
+        $administrador=new Administrador($this->conexion);
+        $pedidosHabilitado=$administrador->isPedidosHabilitado();
+
         $this->render("index", array(
             "productos" => $productos,
             "categorias" => $categorias,
-            "carrito" => $carrito
+            "carrito" => $carrito,
+            "pedidosHabilitado" => $pedidosHabilitado
         ));
     }
 

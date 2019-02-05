@@ -10,6 +10,7 @@
             <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#pedidos" role="tab" aria-controls="nav-home" aria-selected="true">Pedidos</a>
             <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#productos" role="tab" aria-controls="nav-profile" aria-selected="false">Productos</a>
             <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#estadisticas" role="tab" aria-controls="nav-contact" aria-selected="false">Estadísticas</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#deshabilitar" role="tab" aria-controls="nav-contact" aria-selected="false">Deshabilitar pedidos</a>
         </div>
     </nav>
     <div class="tab-content" id="nav-tabContent">
@@ -147,5 +148,10 @@
             <button id="estaProductos" class="btn btn-primary float-right">Actualizar</button>
             <canvas id="horizontalBar" class="mb-5"></canvas>
         </div>
-    </div>
+
+        <div class="tab-pane fade justify-content-center" id="deshabilitar" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="container">
+                    <input type="checkbox" id="pedidosActivo" onchange="habilitarPedidos('{{ nombreUsuario }}')" {{ pedidosHabilitado?"checked" }} data-toggle="toggle" data-on="Pedidos activos" data-off="Pedidos desactivados" data-onstyle="success" data-offstyle="danger" data-width="200" data-height="40">
+            </div>
+        </div>
 {% endblock %}
