@@ -23,7 +23,7 @@ function annadirCarrito(form) {
         } else {
             let totalProductos = Number.parseInt($('#numeroProductosCarrito').text(), 10) + Number.parseInt(form.elements[4].value, 10);
             $("#numeroProductosCarrito").replaceWith("<span id='numeroProductosCarrito' class='badge badge-dark badge-pill badge-position'>" + totalProductos + "</span>");
-            $("#carritoLista").append("<li id='eliminar" + form.elements[0].value + "' class='p-4 list-group-item item-separation'>" + form.elements[2].value + "<span><img id='hoverItem' class='mr-2' src='img/minus.svg' height='25' onclick='cambiarUnidades(" + form.elements[0].value + ",0,1," + form.elements[3].value + ")'><img id='hoverItem' class='mr-3 mt-0' src='img/plus.svg' height='25' onclick='cambiarUnidades(" + form.elements[0].value + ",1,1," + form.elements[3].value + ")'><span id='cambiar" + form.elements[0].value + "'>" + form.elements[4].value + "</span> Unidades</span></li>");
+            $("#carritoLista").append("<li id='eliminar" + form.elements[0].value + "' class='p-4 list-group-item item-separation'><span class='nombreProductoCarrito'>" + form.elements[2].value + "</span><span><img id='hoverItem' class='mr-2' src='img/minus.svg' height='25' onclick='cambiarUnidades(" + form.elements[0].value + ",0,1," + form.elements[3].value + ")'><img id='hoverItem' class='mr-3 mt-0' src='img/plus.svg' height='25' onclick='cambiarUnidades(" + form.elements[0].value + ",1,1," + form.elements[3].value + ")'><span id='cambiar" + form.elements[0].value + "'>" + form.elements[4].value + "</span> Unidades&nbsp;&nbsp;&nbsp;<img id='hoverItem' class='mr-2' src='img/delete.svg' height='25' onclick='cambiarUnidades(" + form.elements[0].value + ",0,1,999)'></span></li>");
             $('#modalProductos').modal("hide");
             $("#carritobtn").show();
             actualizarCookie();
@@ -72,12 +72,20 @@ function cambiarUnidades(id, what, howmuch, min) {
 //Recoge el id y la cantidad de los elemen  tos de la lista de carrito y los envia al controlador de PHP para hacer el pedido
 function tramitarPedido() {
     var arrayPedido = [];
+
     var fechaActual = new Date();
     var fecha = new Date($('#fechaEntregaCliente').val());
+
+    var diaSemana = fecha.getDay();
+
     fecha.setDate(fecha.getDate() - 4);
 
-    if (fecha.getTime()<=fechaActual.getTime()){
-        alert("Los pedidos se realizarán con un mínimo de 4 días lectivos de antelación");
+    if (fecha.getTime()<=fechaActual.getTime() || (diaSemana==1 || diaSemana==2 || diaSemana==0)){
+
+        $('#errorFecha').text("Los pedidos se realizarán con un mínimo de 4 días lectivos de antelación."
+            +"\nY solo se podran recoger los Miércoles, Jueves, Viernes y Sábados."
+            +"\nPor favor elija otra fecha.");
+
         return false;
     }
     else {
@@ -95,7 +103,7 @@ function tramitarPedido() {
 
         $.ajax({
             data: pedidosJSON,
-            url: 'index.php?controller=pedidos&action=realizarPedido',
+            url: 'index.php?controller=Pedidos&action=realizarPedido',
             type: 'post',
             success: function (data) {
 

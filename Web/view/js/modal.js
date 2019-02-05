@@ -45,12 +45,18 @@ $("#modalProductos").on('hidden.bs.modal', function(){
     $('#errorMsg').html("");
 });
 
+$("#modalPedido").on('hidden.bs.modal', function () {
+
+    $('#errorFecha').html("");
+});
+
 $('#tramitarPedido').on('show.bs.modal', function (event) {
 
     var button = $(event.relatedTarget);
     var id = button.data('id');
     var correo = button.data('correo');
     var nombre = button.data('nombre');
+    var nombre = button.data('fechaentrega');
 
     var modal = $(this);
     modal.find('.modal-body .pedidoNombre').html("<b>" + nombre + "</b>");
@@ -62,25 +68,25 @@ $('#tramitarPedido').on('show.bs.modal', function (event) {
         case 'A':
             boton.html("Aceptar el pedido");
             boton.attr("class","btn btn-primary");
-            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','A')");
+            form.attr("onsubmit","return tramitarPedido("+nombre+","+id+",'"+correo+"','A',null)");
             break;
 
         case 'R':
             boton.html("Rechazar el pedido");
             boton.attr("class","btn btn-danger");
-            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','R')");
+            form.attr("onsubmit","return tramitarPedido("+nombre+","+id+",'"+correo+"','R',null)");
             break;
 
         case 'N':
             boton.html("Pedido preparado");
             boton.attr("class","btn btn-success");
-            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','N')");
+            form.attr("onsubmit","return tramitarPedido("+nombre+","+id+",'"+correo+"','N','"+fechaentrega+"')");
             break;
 
         case 'E':
             boton.html("Pedido entregado");
             boton.attr("class","btn btn-success");
-            form.attr("onsubmit","return tramitarPedido("+id+",'"+correo+"','E')");
+            form.attr("onsubmit","return tramitarPedido("+nombre+","+id+",'"+correo+"','E',null)");
             break;
 
     }
