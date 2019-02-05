@@ -74,13 +74,14 @@
                 {% set unidades=0 %}
                 {% for producto in carrito %}
                     <li id='eliminar{{ producto.id }}' class='p-4 list-group-item item-separation'>
-                        {{ producto.nombre }}
+                        <span class="nombreProductoCarrito">{{ producto.nombre }}</span>
                         <span>
                             <img id='hoverItem' class='mr-2' src='img/minus.svg' height='25' onclick='cambiarUnidades({{ producto.id }},0,1,{{ producto.min }})'>
                             <img id='hoverItem' class='mr-3 mt-0' src='img/plus.svg' height='25' onclick='cambiarUnidades({{ producto.id }},1,1,{{ producto.min }})'>
                             <span id='cambiar{{ producto.id }}'>
                                 {{ producto.cantidad }}
                             </span> Unidades
+                            &nbsp;&nbsp;&nbsp; <img id='hoverItem' class='mr-2' src='img/delete.svg' height='25' onclick='cambiarUnidades({{ producto.id }},0,1,999)'>
                         </span>
                     </li>
                     {% set unidades = unidades + producto.cantidad|number_format %}
@@ -151,7 +152,7 @@
                     </div>
 
                     <div class="modal-footer justify-content-center">
-                        <a type="button" id="actualizarPagina" class="btn btn-primary" data-dismiss="modal">✔</a>
+                        <a type="button" id="actualizarPagina" class="btn btn-primary" data-dismiss="modal">Aceptar</a>
                     </div>
                 </div>
 
