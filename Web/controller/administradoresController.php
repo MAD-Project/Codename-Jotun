@@ -1,8 +1,8 @@
 <?php
 
-require_once 'IndexController.php';
+require_once 'indexController.php';
 
-class AdministradoresController extends IndexController {
+class administradoresController extends IndexController {
     private $conectar;
     private $conexion;
 
@@ -73,6 +73,14 @@ class AdministradoresController extends IndexController {
         $estadisticasClientes = $pedido->estadisticasClientes();
 
         die(json_encode($estadisticasClientes));
+    }
+
+    public function estadisticasProductos(){
+
+        $pedido = new Pedido($this->conexion);
+        $estadisticasProductos = $pedido->estadisticasProductos();
+
+        die(json_encode($estadisticasProductos));
     }
 
 }

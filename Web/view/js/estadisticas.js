@@ -3,10 +3,17 @@ $(document).ready(function () {
 
     estadisticasClientes();
     estadisticasProductos();
+
     $('#estaClientes').click(function () {
 
         estadisticasClientes();
     });
+
+    $('#estaProductos').click(function () {
+
+        estadisticasProductos();
+    });
+
 });
 
 function estadisticasClientes() {
@@ -28,8 +35,8 @@ function estadisticasClientes() {
                     labels: ["Número de clientes nuevos", "Número de clientes que repiten", "Número de clientes habituales"],
                     datasets: [{
                         data: [clientesNuevos, clientesQueRepiten, clientesHabituales],
-                        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-                        hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+                        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
+                        hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
                     }]
                 },
                 options: {
@@ -46,33 +53,71 @@ function estadisticasClientes() {
 
 function estadisticasProductos() {
 
-    new Chart(document.getElementById("horizontalBar"), {
-        "type": "horizontalBar",
-        "data": {
-            "labels": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey"],
-            "datasets": [{
-                "label": "Pedidos Realizados ",
-                "data": [22, 33, 55, 12, 86, 23, 14],
-                "fill": true,
-                "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
-                    "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)",
-                    "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"
-                ],
-                "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
-                    "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"
-                ],
-                "borderWidth": 1
-            }]
-        },
-        "options": {
-            "scales": {
-                "xAxes": [{
-                    "ticks": {
-                        "beginAtZero": true
-                    }
-                }]
+    $.ajax({
+        type: 'GET',
+        url: 'index.php?controller=administradores&action=estadisticasProductos',
+        dataType:"json",
+        success: function (data) {
+
+            var nombres = [];
+            var numPedidos = [];
+            var colores = [];
+
+            for (i=0;i<data.length;i++){
+                nombres.push(data[i][0]);
+                numPedidos.push(data[i][1]);
+                colores.push(colorAleatorio());
             }
+
+            new Chart(document.getElementById("horizontalBar"), {
+                "type": "horizontalBar",
+                "data": {
+                    "labels": nombres,
+                    "datasets": [{
+                        "label": "Pedidos Realizados ",
+                        "data": numPedidos,
+                        "fill": true,
+                        "backgroundColor": colores,
+                        "borderWidth": 1
+                    }]
+                },
+                "options": {
+                    "scales": {
+                        "xAxes": [{
+                            "ticks": {
+                                "beginAtZero": true
+                            }
+                        }]
+                    }
+                }
+            });
+
+        },
+        error: function (data) {
+            alert(data);
         }
     });
 
+}
+
+function colorAleatorio() {
+
+    function aleatorio(inferior,superior){
+        numPosibilidades = superior - inferior;
+        aleat = Math.random() * numPosibilidades;
+        aleat = Math.floor(aleat);
+        return parseInt(inferior) + aleat;
+    }
+
+    function colorA(){
+        hexadecimal = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+        color_aleatorio = "#";
+        for (x=0;x<6;x++){
+            posarray = aleatorio(0,hexadecimal.length);
+            color_aleatorio += hexadecimal[posarray];
+        }
+        return color_aleatorio;
+    }
+
+    return colorA();
 }
