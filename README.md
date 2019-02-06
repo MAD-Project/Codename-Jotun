@@ -23,6 +23,6 @@ Necesitaremos XAMPP para su despliegue.
 
 <br/><br/><br/>
 
-<img src="Media/Logo.jpeg" height="50" width="100" alt="Logo"/> 
+<img src="Media/Logo.jpeg" height="40" width="100" alt="Logo"/> 
 
 ###### Realizado por MAD project bajo licencia [MIT](LICENSE). 2019.
