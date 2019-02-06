@@ -13,24 +13,16 @@ function goTop() {
     }, 1000);
 }
 
+/* ANIMACIONES VISUALES */
+
 //Dos funciones que ocultan y muestran el carrito y la flecha para ir a tope dependiendo del scrolling y de si se ha seleccionado un producto
 $(window).scroll(function (e) {
-    if ($(this).scrollTop() >= $("#nav").offset().top && localStorage.getItem("scrollDone") != 1) {
-        $('html, body').animate({
-            scrollTop: $("#productosDiv").offset().top
-        }, 1000);
-        localStorage.setItem("scrollDone", 1);
-    }
-
     if ($(this).scrollTop() >= $(".scroller_anchor").offset().top) {
         $('#scroller2').fadeIn();
     } else if ($(this).scrollTop() < $(".scroller_anchor").offset().top) {
         $('#scroller2').fadeOut();
     }
 });
-
-
-/* ANIMACIONES VISUALES */
 
 // Desplaza la pagina hasta el div del carrito
 function irCarrito() {

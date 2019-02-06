@@ -2,6 +2,7 @@
 $(document).ready(function () {
     $('#tablaProductosAdmin').DataTable();
     $('.dataTables_length').addClass('bs-select');
+    $('#tablaProductosAdmin_wrapper').addClass('w-100');
 });
 
 function rotateArrow(id) {
@@ -31,11 +32,13 @@ function habilitarPedidos(nombreAdmin) {
     $.ajax({
         type: "POST",
         url: "index.php?controller=Administradores&action=habilitarPedidos",
-        data: { nombreAdmin: nombreAdmin,
-            habilitar: $('#pedidosActivo').prop('checked')},
+        data: {
+            nombreAdmin: nombreAdmin,
+            habilitar: $('#pedidosActivo').prop('checked')
+        },
 
         error: function (data) {
-            alert("Error"+data);
+            alert("Error" + data);
         }
 
     });
