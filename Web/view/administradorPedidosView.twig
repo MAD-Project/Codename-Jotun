@@ -11,8 +11,8 @@
         {% for pedido in pedidos if pedido.ESTADO == 'P'%}
             <span class="list-group-item list-group-item-action collapsed d-flex justify-content-around" data-toggle="collapse" data-target="#collapsePendientes{{ pedido.ID_PEDIDO }}">
                 <span class="col-3"><i class="fas fa-user mr-2"></i>{{ pedido.NOMBRE }}</span>
-                <span class="col-3"><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA }}</span>
-                <span class="col-3"><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA }}</span>
+                <span class="col-3"><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA|date("m/d/Y") }}</span>
+                <span class="col-3"><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA|date("m/d/Y") }}</span>
                 {%  if (pedido.COMENTARIO) %}
                     <a class="btn btn-outline-info d-none d-md-block btn-sm" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}">Ver comentario</a>
                     <a class="d-md-none" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}"><i class="fas fa-comment text-info"></i></a>
@@ -24,7 +24,7 @@
                 <div class="d-flex row">
                     <ul class="list-group list-group-flush col-md-5 col-10 offset-1">
                     {% for producto in pedido.productos %}
-                        <li class="list-group-item list-group-item-warning">
+                        <li class="list-group-item border">
                             <span>{{ producto.nombre }}</span>
                             <span class="badge badge-primary badge-pill ">{{ producto.cantidad }} </span>
                         </li>
@@ -55,8 +55,8 @@
             {% for pedido in pedidos if pedido.ESTADO == 'A'%}
                 <span class="list-group-item list-group-item-action collapsed d-flex justify-content-around" data-toggle="collapse" data-target="#collapseAceptados{{ pedido.ID_PEDIDO }}">
                     <span class="col-3"><i class="fas fa-user mr-2"></i>{{ pedido.NOMBRE }}</span>
-                    <span class="col-3"><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA }}</span>
-                    <span class="col-3"><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA }}</span>
+                    <span class="col-3"><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA|date("m/d/Y") }}</span>
+                    <span class="col-3"><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA|date("m/d/Y") }}</span>
                     {%  if (pedido.COMENTARIO) %}
                         <a class="btn btn-outline-info d-none d-md-block btn-sm" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}">Ver comentario</a>
                         <a class="d-md-none" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}"><i class="fas fa-comment text-info"></i></a>
@@ -68,7 +68,7 @@
                     <div class="d-flex row">
                         <ul class="list-group list-group-flush col-md-5 col-10 offset-1">
                             {% for producto in pedido.productos %}
-                                <li class="list-group-item list-group-item-primary">
+                                <li class="list-group-item border">
                                     <span>{{ producto.nombre }}</span>
                                     <span class="badge badge-primary badge-pill">{{ producto.cantidad }} </span>
                                 </li>
@@ -99,8 +99,8 @@
             {% for pedido in pedidos if  pedido.ESTADO == 'N' %}
                 <span class="list-group-item list-group-item-action collapsed d-flex justify-content-around" data-toggle="collapse" data-target="#collapsePreparados{{ pedido.ID_PEDIDO }}">
                     <span class="col-3"><i class="fas fa-user mr-2"></i>{{ pedido.NOMBRE }}</span>
-                    <span class="col-3"><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA }}</span>
-                    <span class="col-3"><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA }}</span>
+                    <span class="col-3"><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA|date("m/d/Y") }}</span>
+                    <span class="col-3"><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA|date("m/d/Y") }}</span>
                     {%  if (pedido.COMENTARIO) %}
                         <a class="btn btn-outline-info d-none d-md-block btn-sm" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}">Ver comentario</a>
                         <a class="d-md-none" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}"><i class="fas fa-comment text-info"></i></a>
@@ -112,7 +112,7 @@
                     <div class="d-flex row">
                         <ul class="list-group list-group-flush col-md-5 col-10 offset-1">
                             {% for producto in pedido.productos %}
-                                <li class="list-group-item list-group-item-success">
+                                <li class="list-group-item border">
                                     <span>{{ producto.nombre }}</span>
                                     <span class="badge badge-primary badge-pill">{{ producto.cantidad }} </span>
                                 </li>
@@ -143,8 +143,8 @@
             {% for pedido in pedidos if pedido.ESTADO == 'R' or pedido.ESTADO == 'E'%}
                 <span class="list-group-item list-group-item-action collapsed d-flex justify-content-around" data-toggle="collapse" data-target="#collapseHistoricos{{ pedido.ID_PEDIDO }}">
                     <span class="col-3"><i class="fas fa-user mr-2"></i>{{ pedido.NOMBRE }}</span>
-                    <span class="col-3"><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA }}</span>
-                    <span class="col-3"><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA }}</span>
+                    <span class="col-3"><i class="fas fa-calendar-alt mr-2"></i>{{ pedido.FECHA|date("m/d/Y") }}</span>
+                    <span class="col-3"><i class="fas fa-calendar-check mr-2"></i>{{ pedido.FECHA_ENTREGA|date("m/d/Y") }}</span>
                     {%  if (pedido.COMENTARIO) %}
                         <a class="btn btn-outline-info d-none d-md-block btn-sm" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}">Ver comentario</a>
                         <a class="d-md-none" data-toggle="popover" data-trigger="hover" data-content="{{ pedido.COMENTARIO}}"><i class="fas fa-comment text-info"></i></a>
@@ -156,7 +156,7 @@
                 <div id="collapseHistoricos{{ pedido.ID_PEDIDO }}" class="collapse" >
                     <ul class="list-group list-group-flush list-group-item-action">
                         {% for producto in pedido.productos %}
-                            <li class="list-group-item">
+                            <li class="list-group-item border">
                                 <span>{{ producto.nombre }}</span>
                                 <span class="badge badge-primary badge-pill">{{ producto.cantidad }} </span>
                             </li>
