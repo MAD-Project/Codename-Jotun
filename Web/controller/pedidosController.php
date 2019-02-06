@@ -43,23 +43,31 @@ class pedidosController extends IndexController {
 
     }
 
-    public function enviarMail(){
-        exec("echo '<h1>Egibide - Escuela de hosteleria</h1><br><h2>Su pedido ha sido confirmado.</h2> Puede pasar a recogerlo dentro de 4 días laborables.<br>' | mail -s 'This is the subject\nContent-Type: text/html' " . $_POST['email'] ."");
-    }
-
     public function tramitarPedido(){
 
         $pedido = new Pedido($this->conexion);
         $pedido->setId($_POST["idPedido"]);
         $pedido->setEstado($_POST["nuevoEstado"]);
 
-        if($pedido->tramitarPedido()){
+        if($pedido->tramitarPedidoModel()){
             if ($_POST["nuevoEstado"] != "E") {
-                enviarMail();
+                switch ($_POST["nuevoEstado"]) {
+                    case 'A':
+                        exec("echo '<h1>Egibide - Escuela de hosteleria</h1><br><h2>Hola " . $_POST["nombre"] . ". Su pedido ha sido confirmado.</h2> Se le enviará la fecha de recogida una vez preparado.<br>' | mail -s 'Pedido - Escuela Hosteleria\nContent-Type: text/html' " . $_POST["email"] ."");
+                    break;
+                    
+                    case 'R':
+                        exec("echo '<h1>Egibide - Escuela de hosteleria</h1><br><h2>Hola " . $_POST["nombre"] . ". Su pedido ha sido rechazado. Disculpa las molestias.</h2><br>' | mail -s 'Pedido - Escuela Hosteleria\nContent-Type: text/html' " . $_POST["email"] ."");
+                    break;
+        
+                    case 'N':
+                        exec("echo '<h1>Egibide - Escuela de hosteleria</h1><br><h2>Hola " . $_POST["nombre"] . ". Su pedido ya esta preparado.</h2>Puede recogerlo el día " . $_POST["fechaEntrega"] . " <br>' | mail -s 'Pedido - Escuela Hosteleria\nContent-Type: text/html' " . $_POST["email"] ."");
+                    break;
+                }
+
+                echo "enviado";
             }
-            return true;
         }
-        return false;
 
     }
 
