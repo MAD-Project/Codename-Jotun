@@ -66,6 +66,8 @@ class pedidosController extends IndexController {
                 }
 
                 echo "enviado";
+            } else {
+                echo "entregado";
             }
         }
 
