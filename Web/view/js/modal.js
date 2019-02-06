@@ -56,7 +56,7 @@ $('#tramitarPedido').on('show.bs.modal', function (event) {
     var id = button.data('id');
     var correo = button.data('correo');
     var nombre = button.data('nombre');
-    var nombre = button.data('fechaentrega');
+    var fechaentrega = button.data('fechaentrega');
 
     var modal = $(this);
     modal.find('.modal-body .pedidoNombre').html("<b>" + nombre + "</b>");
