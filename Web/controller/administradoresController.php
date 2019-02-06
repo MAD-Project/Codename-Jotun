@@ -73,18 +73,32 @@ class administradoresController extends IndexController {
 
     public function estadisticasClientes(){
 
-        $pedido = new Pedido($this->conexion);
-        $estadisticasClientes = $pedido->estadisticasClientes();
+        if ($_SESSION['login'] == 1){
 
-        die(json_encode($estadisticasClientes));
+            $pedido = new Pedido($this->conexion);
+            $estadisticasClientes = $pedido->estadisticasClientes();
+
+            die(json_encode($estadisticasClientes));
+        }
+        else {
+
+            die(json_encode("noLogin"));
+        }
     }
 
     public function estadisticasProductos(){
 
-        $pedido = new Pedido($this->conexion);
-        $estadisticasProductos = $pedido->estadisticasProductos();
+        if ($_SESSION['login'] == 1){
 
-        die(json_encode($estadisticasProductos));
+            $pedido = new Pedido($this->conexion);
+            $estadisticasProductos = $pedido->estadisticasProductos();
+
+            die(json_encode($estadisticasProductos));
+        }
+        else {
+
+            die(json_encode("noLogin"));
+        }
     }
 
     public function habilitarPedidos(){
