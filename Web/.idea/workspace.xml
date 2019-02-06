@@ -11,22 +11,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="estadisticas.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="estadisticas.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/js/estadisticas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="987">
               <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="administradoresController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="adminLayout.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/templates/adminLayout.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="administradoresController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/administradoresController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="75" column="37" lean-forward="true" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+            <state relative-caret-position="119">
+              <caret line="73" column="43" lean-forward="true" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="administradorView.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/administradorView.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1037">
+              <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+              <folding>
+                <element signature="e#222#228#0#HTML" expanded="true" />
+                <element signature="e#228#234#0#HTML" expanded="true" />
+                <element signature="e#234#240#0#HTML" expanded="true" />
+                <marker date="1549451929145" expanded="true" signature="11061:11070" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminLogInView.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/adminLogInView.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="administradorPedidosView.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/administradorPedidosView.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+              <folding>
+                <marker date="1549451929141" expanded="false" signature="12404:12411" ph="×" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,10 +119,10 @@
         <option value="$PROJECT_DIR$/view/templates/indexLayout.html.twig" />
         <option value="$PROJECT_DIR$/view/templates/adminLayout.twig" />
         <option value="$PROJECT_DIR$/view/administradorView.twig" />
-        <option value="$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/estadisticas.js" />
         <option value="$PROJECT_DIR$/controller/administradoresController.php" />
         <option value="$PROJECT_DIR$/view/js/estadisticas.js" />
         <option value="$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/AdministradoresController.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/estadisticas.js" />
       </list>
     </option>
   </component>
@@ -86,9 +133,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="141" />
-    <option name="y" value="56" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="125" />
+    <option name="y" value="74" />
     <option name="width" value="1686" />
     <option name="height" value="1017" />
   </component>
@@ -185,18 +232,18 @@
       <workItem from="1549006042752" duration="14913000" />
       <workItem from="1549264990972" duration="15995000" />
       <workItem from="1549351538699" duration="10731000" />
-      <workItem from="1549442187139" duration="1191000" />
+      <workItem from="1549442187139" duration="4187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72771000" />
+    <option name="totallyTimeSpent" value="75767000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="125" y="74" width="1686" height="1017" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20898204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -239,6 +286,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="28" lean-forward="false" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <marker date="1549451929163" expanded="true" signature="2923:2946" ph="..." />
+            <marker date="1549451929163" expanded="true" signature="2923:2953" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -255,8 +306,8 @@
         <state relative-caret-position="544">
           <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
           <folding>
-            <marker date="1549368454684" expanded="true" signature="1260:1269" ph="..." />
-            <marker date="1549368454684" expanded="true" signature="1814:1821" ph="..." />
+            <marker date="1549451929137" expanded="true" signature="1260:1269" ph="..." />
+            <marker date="1549451929137" expanded="true" signature="1814:1821" ph="..." />
           </folding>
         </state>
       </provider>
@@ -296,6 +347,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
           <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+          <folding>
+            <marker date="1549368454707" expanded="true" signature="1693:1699" ph=" " />
+            <marker date="1549368454707" expanded="true" signature="1699:1705" ph=" " />
+            <marker date="1549368454707" expanded="true" signature="1705:1711" ph=" " />
+            <marker date="1549368454707" expanded="true" signature="3413:3436" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -303,6 +360,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="28" lean-forward="false" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <marker date="1549451929163" expanded="true" signature="2923:2946" ph="..." />
+            <marker date="1549451929163" expanded="true" signature="2923:2953" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -334,8 +395,8 @@
         <state relative-caret-position="442">
           <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding>
-            <marker date="1549368454684" expanded="true" signature="1260:1269" ph="..." />
-            <marker date="1549368454684" expanded="true" signature="1814:1821" ph="..." />
+            <marker date="1549451929137" expanded="true" signature="1260:1269" ph="..." />
+            <marker date="1549451929137" expanded="true" signature="1814:1821" ph="..." />
           </folding>
         </state>
       </provider>
@@ -352,6 +413,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1549368454707" expanded="true" signature="1693:1699" ph=" " />
+            <marker date="1549368454707" expanded="true" signature="1699:1705" ph=" " />
+            <marker date="1549368454707" expanded="true" signature="1705:1711" ph=" " />
+            <marker date="1549368454707" expanded="true" signature="3413:3436" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -445,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/administradorPedidosView.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/js/clasesJS/Cliente.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -486,8 +546,8 @@
         <state relative-caret-position="521">
           <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding>
-            <marker date="1549368454684" expanded="true" signature="1260:1269" ph="..." />
-            <marker date="1549368454684" expanded="true" signature="1814:1821" ph="..." />
+            <marker date="1549451929137" expanded="true" signature="1260:1269" ph="..." />
+            <marker date="1549451929137" expanded="true" signature="1814:1821" ph="..." />
           </folding>
         </state>
       </provider>
@@ -497,24 +557,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="45" column="3" lean-forward="false" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+          <folding>
+            <marker date="1549451929163" expanded="true" signature="2923:2946" ph="..." />
+            <marker date="1549451929163" expanded="true" signature="2923:2953" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/carrito.js" />
-    <entry file="file://$PROJECT_DIR$/view/adminLogInView.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/js/carrito.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="136" column="57" lean-forward="false" selection-start-line="136" selection-start-column="57" selection-end-line="136" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/scss/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -592,25 +642,7 @@
         <state relative-caret-position="459">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <marker date="1549442372220" expanded="true" signature="2383:2389" ph="{% if desabilitado == 1 ...%}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/templates/adminLayout.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/administradorView.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-          <folding>
-            <marker date="1549368454699" expanded="true" signature="10902:10911" ph="..." />
+            <marker date="1549451929175" expanded="true" signature="2383:2389" ph="{% if desabilitado == 1 ...%}" />
           </folding>
         </state>
       </provider>
@@ -625,24 +657,76 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/FileZillaPortableTemp/fz3temp-2/estadisticas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="251">
+          <caret line="79" column="29" lean-forward="true" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/js/carrito.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1223">
+          <caret line="136" column="57" lean-forward="false" selection-start-line="136" selection-start-column="57" selection-end-line="136" selection-end-column="57" />
+          <folding>
+            <marker date="1549368454707" expanded="true" signature="1693:1699" ph=" " />
+            <marker date="1549368454707" expanded="true" signature="1699:1705" ph=" " />
+            <marker date="1549368454707" expanded="true" signature="1705:1711" ph=" " />
+            <marker date="1549368454707" expanded="true" signature="3413:3436" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/administradorView.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1037">
+          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <folding>
+            <element signature="e#222#228#0#HTML" expanded="true" />
+            <element signature="e#228#234#0#HTML" expanded="true" />
+            <element signature="e#234#240#0#HTML" expanded="true" />
+            <marker date="1549451929145" expanded="true" signature="11061:11070" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/adminLogInView.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/administradorPedidosView.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <marker date="1549451929141" expanded="false" signature="12404:12411" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/js/estadisticas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/templates/adminLayout.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/administradoresController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="75" column="37" lean-forward="true" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/js/estadisticas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+        <state relative-caret-position="119">
+          <caret line="73" column="43" lean-forward="true" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
           <folding />
         </state>
       </provider>
