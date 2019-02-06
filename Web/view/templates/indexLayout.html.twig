@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jotun</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="view/css/custom.css" />
+        <script src="view/js/jquery-3.3.1.min.js"></script>
+        <script src="view/js/bootstrapjs/popper.min.js"></script>
+        <script src="view/js/bootstrapjs/bootstrap.min.js"></script>
+        <script src="view/js/clasesJS/ProductosCarrito.js"></script>
+        <script src="view/js/clasesJS/Cliente.js"></script>
+        <script src="view/js/index.js"></script>
+        <script src="view/js/carrito.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+        <link rel="stylesheet" href="view/css/index.css">
+    </head>
+
+    <body data-spy="scroll" data-target="#categorias" data-offset="0">
+        <nav id="nav" class="navbar navbar-light">
+            <div class="ml-auto mr-auto">
+                <a class="navbar-brand" href="https://www.egibide.org/escuela-de-hosteleria/">
+                    <img height="55" src="img/logo-restaurante.png">
+                </a>
+            </div>
+        </nav>
+
+        <section class="container-fluid carousel-position">
+            <div class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/comidaCarrusel1.jpg"
+                            alt="Comida 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/comidaCarrusel2.jpg"
+                            alt="Comida 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/comidaCarrusel3.jpg"
+                            alt="Comida 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="productosDiv" class="container-fluid pt-1 bg-light">
+            <div class="container">
+                
+                <div class="row">
+
+                    <div class="scroller_anchor"></div>
+
+                    <div class="p-4 mt-0">
+                        {% if not (pedidosHabilitado) %}
+                            <div class="mb-4">
+                                <h1 class="text-danger">Pedidos deshabilitados</h1>
+                                <div class="card p-4 border-danger">
+                                    <p><strong>Debido a la gran demanda no se aceptan nuevos pedidos. Disculpe las molestias.</strong></p>
+                                </div>
+                            </div>
+                        {% endif %}
+
+                        <div>
+                            <h1>Normas de pedido</h1>
+                            <div class="card p-4">
+                                <p>Los pedidos se realizarán con un mínimo de
+                                    <strong>4 días
+                                        lectivos de antelación</strong>
+                                    (por ejemplo para recoger un viernes, se debe encargar como muy tarde el lunes).</p>
+                                <p>Únicamente se ponen a la venta platos para
+                                    los
+                                    <strong>miércoles,
+                                        jueves o viernes</strong>
+                                    (aunque éstos últimos se pueden pasar a recoger también los sábados).</p>
+                                <p>Los pedidos se recogen en la cafetería de la
+                                    escuela entre las
+                                    15:00 y las 20:00 (de
+                                    miércoles a viernes) y de 11:30 a 20:00( el sábado).</p>
+                                <p>Los pagos se realizarán en efectivo en el
+                                    momento
+                                    de recogerlo.</p>
+                                <p>Los pedidos se <strong>confirmarán con una
+                                        notificación por
+                                        email.</strong></p>
+                            </div>
+                        </div>
+
+                        <div id="productos" class="mt-5">
+                            <h1>Productos</h1>
+                            {% block productos %}
+                            {% endblock productos %}
+                        </div>
+                            <div id="carrito" class="mt-5 d-flex flex-column">
+                                <h1>Carrito</h1>
+                                {% block carrito %}
+                                {% endblock carrito %}
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="scroller" class="p-2" onclick="irCarrito();">
+                <span id="numeroProductosCarrito" class="badge badge-dark badge-pill badge-position">0</span>
+                <img height="50" src="img/cart.png">    
+            </div>
+
+            <div id="scroller2" class="p-2 hoverItem" onclick="goTop();">
+                <img height="50" src="img/arrow-up.png">   
+            </div>
+
+            <footer class="container-fluid pt-5 pb-4">
+                <span class="pl-sm-5 ml-sm-5">MAD Project 2019. </span><span class="float-sm-right pr-sm-5 mr-sm-5">Hecho con <img src="img/heart.svg" height="18"> desde Vitoria-Gasteiz.</span>
+            </footer>
+        </section>
+
+        <script src="view/js/modal.js"></script>
+
+    </body>
+
+</html>

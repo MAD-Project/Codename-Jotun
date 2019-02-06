@@ -1,0 +1,40 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8' />
+        <title>Plantilla correo</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    </head>
+
+    <body style='padding-top: 5%; padding-bottom: 5%; background-color: #ededed; font-family: 'Roboto', sans-serif;'>
+        <div id='encabezado' style='margin-left: 39.5%; width: 20%; background-color: #82005d; border-top-left-radius: 20px; border-top-right-radius: 20px;'>
+            <img src='{{ absolute_url('/img/logo_egibide.png') }}' alt='LogoEgibide' width='70%' style='margin-left: 15.5%; margin-top: 5.5%;'>
+        </div>
+        <div style='margin: 0 auto; color: grey; border-radius: 10px; width: 70%; border: 2px solid #82005d; background-color: white;'>
+            <div id='contenido' style='padding-left: 5%; width: 90%;'>
+                <h1 style='margin-top: 5%; font-size: 160%;'>¿Ha contratado la empresa a algún candidato en esta
+                    oferta?</h1>
+                <div style='border: 2px solid grey; text-align: center; padding-bottom: 5%;'>
+                    <h1 style='margin-top: 5%; font-size: 160%;'>{{ oferta.name }}</h1>
+                    <p style='margin-bottom: 5%;'>{{ oferta.descripcion }}</p>
+                    <a href='' style='text-decoration: none; background-color: #82005d; color: white; width: 30%; border: none; border-radius: 5px; padding: 10px; padding-left: 50px; padding-right: 50px;'>Si</a>
+                    <a href='' style='text-decoration: none; margin-left: 15%; background-color: #82005d; color: white; width: 30%; border: none; border-radius: 5px; padding: 10px; padding-left: 50px; padding-right: 50px;'>No</a>
+                </div>
+                <br><br>
+            </div>
+            <div id=' pie' style='margin-top: 10%; margin-bottom: 5%; text-align: center;'>
+                <span>Si tienes dudas o problemas, manda un email a:</span><br />
+                <a href='mailto:bolsaempleo-soporte@egibide.org' style='color: #82005d; margin-bottom: 5%;'>bolsaempleo-soporte@egibide.org</a>
+                <p>Politicas y cosas</p>
+                <address>Calle y cosas</address>
+                <address>Pozoa S/n</address>
+            </div>
+        </div>
+    </body>
+
+</html>
