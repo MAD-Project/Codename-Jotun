@@ -3,6 +3,9 @@
 
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?longCache=true&style=flat)](https://github.com/MAD-Project/Codename-Jotun/blob/master/LICENSE)
 
+## IMPORTANTE
+Si se quiere probar o desarrollar esta web, el envio de correo necesita ser configurado y usado en un servidor. NO funciona en un XAMPP local.
+
 ## ¿Qué es?
 Un web minimalista y user friendly para realizar pedidos online a la Escuela de Hosteleria de Egibide.
 
