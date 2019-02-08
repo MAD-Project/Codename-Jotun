@@ -1,6 +1,8 @@
 <h1 align="center">Codename Jotun</h1>
 <h3 align="center">Web de pedidos para la Escuela de Hostelería de Egibide.</h3>
 
+[![Version](https://img.shields.io/badge/Version-1.1-green.svg?longCache=true&style=flat)](https://github.com/MAD-Project/Codename-Jotun/releasesE)
+
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?longCache=true&style=flat)](https://github.com/MAD-Project/Codename-Jotun/blob/master/LICENSE)
 
 ## IMPORTANTE
